@@ -1,0 +1,30 @@
+--白名單
+local StarterGui = game:GetService("StarterGui")
+local Players = game:GetService("Players")
+local Whitelisted = {
+    ["suedrr4"] = false,
+    ["dt106101zz"] = true,
+    ["jay04_23"] = true,
+    ["Kadys5373"] = true,
+ }
+
+local function IsWhitelisted(player)
+    return Whitelisted[player.Name] or false
+end
+
+local localPlayer = Players.LocalPlayer
+
+local isLocalPlayerWhitelisted = IsWhitelisted(localPlayer)
+
+if isLocalPlayerWhitelisted then
+    StarterGui:SetCore("SendNotification", {
+        Title = "白名单认证",
+        Text = "玩家:"..localPlayer.Name.."，腳本由可軒製作",
+        Duration = 7,
+    })
+loadstring(game:HttpGet("https://raw.githubusercontent.com/kexuan001/Fast-attack-in-pc/refs/heads/main/zero1"))()else
+    localPlayer:Kick("你個死糖拿別人腳本很驕傲嗎^^")
+end
+
+
+
