@@ -1,0 +1,158 @@
+-- 載入 Luna UI
+local Luna = loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebula-Softworks/Luna-Interface-Suite/main/source.lua"))()
+
+-- 1. 窗口與分頁
+local Window = Luna:CreateWindow({
+    Name = "Zero Mobile - v1.1.5",
+    Subtitle = "腳本由可軒製作",
+    Color = Color3.fromRGB(0, 170, 255),
+    ConfigSaving = false
+})
+
+local Tab1 = Window:CreateTab({Name = "main"})
+local Tab2 = Window:CreateTab({Name = "戰鬥模組"})
+local Tab3 = Window:CreateTab({Name = "功能/透視(待開發)"})
+local Tab4 = Window:CreateTab({Name = "視覺設定(待開發)"})
+local Tab5 = Window:CreateTab({Name = "開發資訊"})
+
+-- --- 分頁 1: main ---
+Tab1:CreateButton({Name = "飛行", Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/dt106101-ai/fly-gui-by-kexuan/refs/heads/main/README.md"))() end})
+Tab1:CreateButton({Name = "快速攻擊 (Fast Attack)", Callback = function() _G.FastAttack = true; loadstring(game:HttpGet("https://raw.githubusercontent.com/kexuan001/Fast-attack-in-pc/refs/heads/main/thes%20fast"))() end})
+
+-- --- 分頁 2: 戰鬥模組 ---
+_G.AttackRange = 50
+Tab2:CreateSlider({Name = "攻擊範圍", Range = {1, 500}, CurrentValue = 50, Callback = function(V) _G.AttackRange = V end})
+Tab2:CreateSlider({Name = "視角最大縮放 (Zoom)", Range = {128, 2000}, CurrentValue = 500, Callback = function(V) game.Players.LocalPlayer.CameraMaxZoomDistance = V end})
+_G.EnergyValue = 1000
+Tab2:CreateSlider({Name = "能量鎖定", Range = {100, 10000}, CurrentValue = 1000, Callback = function(V) _G.EnergyValue = V end})
+
+-- --- 分頁 3: 功能/透視 (新增全亮開關) ---
+Tab3:CreateToggle({
+    Name = "地圖全亮 (Full Bright)",
+    CurrentValue = false,
+    Callback = function(Value)
+        _G.FullBright = Value
+        if Value then
+            Luna:Notification({Title = "系統", Content = "已開啟全亮模式", Duration = 2})
+        else
+            Luna:Notification({Title = "系統", Content = "已恢復原始亮度", Duration = 2})
+        end
+    end
+})
+
+Tab3:CreateLabel("--- 玩家透視 ---")
+_G.ShowESP_ID = false
+_G.ShowESP_Health = false
+
+Tab3:CreateToggle({
+    Name = "顯示玩家 ID (名字+距離)",
+    CurrentValue = false,
+    Callback = function(V) _G.ShowESP_ID = V end
+})
+
+Tab3:CreateToggle({
+    Name = "顯示血量數值",
+    CurrentValue = false,
+    Callback = function(V) _G.ShowESP_Health = V end
+})
+
+-- --- 分頁 4 & 5 ---
+Tab4:CreateColorPicker({Name = "小球顏色", Color = Color3.fromRGB(0, 170, 255), Callback = function(V) end})
+Tab5:CreateParagraph({Title = "系統狀態", Content = "作者：可軒\n版本：V1.1.1\n新增：地圖全亮控制"})
+
+-- ==========================================
+-- 4. 🚀 核心邏輯處理
+-- ==========================================
+
+-- A. 地圖全亮控制循環
+task.spawn(function()
+    local Lighting = game:GetService("Lighting")
+    -- 紀錄原始設定，方便關閉時恢復
+    local oldAmbient = Lighting.Ambient
+    local oldOutdoorAmbient = Lighting.OutdoorAmbient
+    local oldFogEnd = Lighting.FogEnd
+    
+    while true do
+        if _G.FullBright then
+            Lighting.Ambient = Color3.new(1, 1, 1)
+            Lighting.OutdoorAmbient = Color3.new(1, 1, 1)
+            Lighting.FogEnd = 999999
+            Lighting.GlobalShadows = false
+        else
+            -- 這裡不強行恢復原始值，因為不同遊戲設定不同
+            -- 但關閉時我們會把亮度調回一個合理的範圍，或者你可以重新載入
+            Lighting.GlobalShadows = true
+        end
+        task.wait(1)
+    end
+end)
+
+-- B. 雙開關 ESP 邏輯
+task.spawn(function()
+    local Players = game:GetService("Players")
+    local LocalPlayer = Players.LocalPlayer
+    while task.wait(0.4) do
+        if _G.ShowESP_ID or _G.ShowESP_Health then
+            for _, player in pairs(Players:GetPlayers()) do
+                pcall(function()
+                    if player ~= LocalPlayer and player.Character then
+                        local head = player.Character:FindFirstChild("Head")
+                        local hum = player.Character:FindFirstChild("Humanoid")
+                        if head and hum then
+                            local tag = player.Character:FindFirstChild("LunaSplitTag")
+                            if not tag then
+                                tag = Instance.new("BillboardGui", player.Character)
+                                tag.Name = "LunaSplitTag"; tag.Adornee = head
+                                tag.Size = UDim2.new(0, 250, 0, 80); tag.AlwaysOnTop = true
+                                tag.ExtentsOffset = Vector3.new(0, 4, 0)
+                                local label = Instance.new("TextLabel", tag)
+                                label.Name = "InfoLabel"; label.BackgroundTransparency = 1; label.Size = UDim2.new(1, 0, 1, 0)
+                                label.TextColor3 = Color3.new(1, 1, 1); label.TextStrokeTransparency = 0
+                                label.Font = Enum.Font.SourceSansBold; label.TextSize = 22; label.RichText = true
+                            end
+                            local content = ""
+                            local dist = math.floor((LocalPlayer.Character.HumanoidRootPart.Position - head.Position).Magnitude)
+                            if _G.ShowESP_ID then content = content .. player.DisplayName .. " [" .. dist .. "m]" end
+                            if _G.ShowESP_Health then
+                                local hp = math.floor(hum.Health); local maxHp = math.floor(hum.MaxHealth); local percent = (hp / maxHp) * 100
+                                local hpColor = (percent > 60 and "0,255,0") or (percent > 30 and "255,255,0") or "255,0,0"
+                                if content ~= "" then content = content .. "\n" end
+                                content = content .. "<color rgb('" .. hpColor .. "')>HP: " .. hp .. "/" .. maxHp .. "</color>"
+                            end
+                            tag.InfoLabel.Text = content
+                            tag.Enabled = (content ~= "")
+                        end
+                    end
+                end)
+            end
+        end
+    end
+end)
+
+-- C. 能量同步與懸浮球
+local ScreenGui = Instance.new("ScreenGui", game:GetService("CoreGui"))
+local FloatIcon = Instance.new("ImageButton", ScreenGui)
+FloatIcon.Size = UDim2.new(0, 60, 0, 60); FloatIcon.Position = UDim2.new(0.05, 0, 0.4, 0)
+FloatIcon.BackgroundColor3 = Color3.fromRGB(20, 20, 20); FloatIcon.Image = "rbxassetid://4483345906"
+FloatIcon.Draggable = true; local UIStroke = Instance.new("UIStroke", FloatIcon)
+UIStroke.Thickness = 3; UIStroke.Color = Color3.fromRGB(0, 170, 255)
+Instance.new("UICorner", FloatIcon).CornerRadius = UDim.new(1, 0)
+
+task.spawn(function()
+    local MainFrame = nil
+    while not MainFrame do
+        for _, v in pairs(game:GetService("CoreGui"):GetChildren()) do
+            if v:IsA("ScreenGui") and (v.Name == "Luna" or v:FindFirstChild("Main")) then MainFrame = v:FindFirstChild("Main") or v:FindFirstChildOfClass("Frame") end
+        end
+        task.wait(1)
+    end
+    FloatIcon.MouseButton1Click:Connect(function() MainFrame.Visible = true; FloatIcon.Visible = false end)
+    while true do
+        FloatIcon.Visible = not (MainFrame and MainFrame.Visible)
+        pcall(function() if _G.EnergyValue then game.Players.LocalPlayer.Character.Energy.Value = _G.EnergyValue end end)
+        task.wait(0.5)
+    end
+end)
+
+Luna:Notification({Title = "修復完畢", Content = "所有功能已更新！", Duration = 3})
+game.StarterGui:SetCore("SendNotification", {Title="腳本已載入!"; Text="由可軒製作"; Duration=5;})
