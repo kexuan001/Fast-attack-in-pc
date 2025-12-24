@@ -131,10 +131,11 @@ if _G.FastAttack then
 
         -- 這是你 GitHub 檔案裡的最後一段
 task.spawn(function()
-    while task.wait(Settings.ClickDelay) do
-        -- 加上這一行判斷！這是開關能停下來的唯一原因
+    while true do
+        -- 只有 UI 開關打開時，才執行攻擊邏輯
         if _G.FastAttack and Settings.AutoClick then
             FastAttack:BladeHits()
         end
+        task.wait(Settings.ClickDelay)
     end
 end)
