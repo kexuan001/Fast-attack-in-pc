@@ -1,5 +1,5 @@
 --快速攻擊
-_G.FastAttack = true
+_G.FastAttack = false
 
 if _G.FastAttack then
     local _ENV = (getgenv or getrenv or getfenv)()
