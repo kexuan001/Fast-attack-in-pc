@@ -129,15 +129,12 @@ if _G.FastAttack then
             end
         end
 
-        task.spawn(function()
-            while task.wait(Settings.ClickDelay) do
-                if Settings.AutoClick then
-                    FastAttack:BladeHits()
-                end
-            end
-        end)
-
-        _ENV.rz_FastAttack = FastAttack
-        return FastAttack
-    end)()
-end
+        -- 這是你 GitHub 檔案裡的最後一段
+task.spawn(function()
+    while task.wait(Settings.ClickDelay) do
+        -- 加上這一行判斷！這是開關能停下來的唯一原因
+        if _G.FastAttack and Settings.AutoClick then
+            FastAttack:BladeHits()
+        end
+    end
+end)
