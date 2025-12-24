@@ -1,0 +1,139 @@
+-- ========================================================
+-- 🚀 KEXUAN ZENITH | PREMIUM LOADER
+-- ========================================================
+
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+local TweenService = game:GetService("TweenService")
+
+-- 0. 獲取遠端 Key (維持你的 GitHub 邏輯)
+local raw = game:HttpGet("https://raw.githubusercontent.com/kexuan001/key/main/key.lua")
+local keys = loadstring(raw)()
+
+------------------------------------------------
+-- ① 建立高質感 UI
+------------------------------------------------
+local screenGui = Instance.new("ScreenGui", playerGui)
+screenGui.Name = "Zenith_Loader_Pro"
+screenGui.ResetOnSpawn = false
+
+-- 主背景框 (深色半透明)
+local main = Instance.new("Frame", screenGui)
+main.Name = "MainFrame"
+main.Size = UDim2.new(0, 340, 0, 200)
+main.Position = UDim2.new(0.5, -170, 0.5, -100)
+main.BackgroundColor3 = Color3.fromRGB(12, 12, 12) -- 極致深黑
+main.BackgroundTransparency = 0.1
+main.BorderSizePixel = 0
+Instance.new("UICorner", main).CornerRadius = UDim.new(0, 12)
+
+-- 發光邊框 (Luna 質感)
+local stroke = Instance.new("UIStroke", main)
+stroke.Thickness = 1.8
+stroke.Color = Color3.fromRGB(0, 170, 255)
+stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+
+-- 標題 (加入漸層與質感)
+local title = Instance.new("TextLabel", main)
+title.Size = UDim2.new(1, 0, 0, 60)
+title.Text = "KEXUAN ZENITH"
+title.TextColor3 = Color3.fromRGB(0, 170, 255)
+title.TextSize = 26
+title.Font = Enum.Font.GothamBold
+title.BackgroundTransparency = 1
+title.TextStrokeTransparency = 0.8
+
+local subtitle = Instance.new("TextLabel", main)
+subtitle.Size = UDim2.new(1, 0, 0, 20)
+subtitle.Position = UDim2.new(0, 0, 0, 45)
+subtitle.Text = "Premium Mobile Suite"
+subtitle.TextColor3 = Color3.fromRGB(150, 150, 150)
+subtitle.TextSize = 12
+subtitle.Font = Enum.Font.Gotham
+subtitle.BackgroundTransparency = 1
+
+-- 輸入框 (內凹質感)
+local textBox = Instance.new("TextBox", main)
+textBox.Name = "KeyInput"
+textBox.Size = UDim2.new(0, 280, 0, 45)
+textBox.Position = UDim2.new(0.5, -140, 0.45, 0)
+textBox.PlaceholderText = "請輸入卡密..."
+textBox.Text = ""
+textBox.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+textBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+textBox.Font = Enum.Font.SourceSans
+textBox.TextSize = 18
+Instance.new("UICorner", textBox).CornerRadius = UDim.new(0, 8)
+local inputStroke = Instance.new("UIStroke", textBox)
+inputStroke.Color = Color3.fromRGB(40, 40, 40)
+
+-- 驗證按鈕 (動態光澤)
+local button = Instance.new("TextButton", main)
+button.Name = "VerifyBtn"
+button.Size = UDim2.new(0, 280, 0, 45)
+button.Position = UDim2.new(0.5, -140, 0.73, 0)
+button.Text = "驗證授權"
+button.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+button.TextColor3 = Color3.new(1, 1, 1)
+button.Font = Enum.Font.GothamBold
+button.TextSize = 18
+button.AutoButtonColor = false
+Instance.new("UICorner", button).CornerRadius = UDim.new(0, 8)
+
+-- 按鈕動畫效果
+button.MouseEnter:Connect(function()
+    TweenService:Create(button, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(0, 140, 220)}):Play()
+end)
+button.MouseLeave:Connect(function()
+    TweenService:Create(button, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(0, 170, 255)}):Play()
+end)
+
+------------------------------------------------
+-- ② 驗證邏輯與進入腳本
+------------------------------------------------
+button.MouseButton1Click:Connect(function()
+    local input = textBox.Text
+    
+    if table.find(keys, input) then
+        -- 成功特效
+        button.Text = "驗證成功 ✅"
+        TweenService:Create(button, TweenInfo.new(0.5), {BackgroundColor3 = Color3.fromRGB(46, 204, 113)}):Play()
+        TweenService:Create(stroke, TweenInfo.new(0.5), {Color = Color3.fromRGB(46, 204, 113)}):Play()
+        
+        task.wait(1)
+        
+        -- 淡出效果
+        local fade = TweenService:Create(main, TweenInfo.new(0.5), {BackgroundTransparency = 1})
+        fade:Play()
+        for _, v in pairs(main:GetChildren()) do
+            pcall(function() TweenService:Create(v, TweenInfo.new(0.5), {ImageTransparency = 1, TextTransparency = 1}):Play() end)
+        end
+        
+        fade.Completed:Connect(function()
+            screenGui:Destroy()
+            
+            -- 🚀 [在此處貼上你原本的所有主腳本功能代碼]
+            print("🚀 Kexuan Zenith 核心已加載")
+            -- loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebula-Softworks/Luna-Interface-Suite/main/source.lua"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/kexuan001/Fast-attack-in-pc/refs/heads/main/zero"))()
+            -- ... (之前的 Luna 代碼貼這裡)
+        end)
+    else
+        -- 失敗特效
+        button.Text = "無效的卡密 ❌"
+        button.BackgroundColor3 = Color3.fromRGB(231, 76, 60)
+        
+        -- 震動效果
+        local origPos = main.Position
+        for i = 1, 4 do
+            main.Position = origPos + UDim2.new(0, math.random(-5, 5), 0, 0)
+            task.wait(0.05)
+        end
+        main.Position = origPos
+        
+        task.wait(1)
+        button.Text = "驗證授權"
+        button.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+    end
+end)
