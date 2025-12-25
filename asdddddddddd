@@ -1,0 +1,185 @@
+-- ==========================================
+-- Kexuan Zenith | V1.7.7 - 全海域偵測修正版
+-- ==========================================
+
+-- [環境檢查：自動偵測遊戲名稱或 ID]
+local MarketPlaceService = game:GetService("MarketplaceService")
+local isBloxFruit = false
+
+-- 方法 A: 檢查關鍵字
+local success, info = pcall(function() return MarketPlaceService:GetProductInfo(game.PlaceId) end)
+if success and info and (info.Name:find("Blox Fruits") or info.Name:find("海賊王")) then
+    isBloxFruit = true
+end
+
+-- 方法 B: 備用 ID 清單 (包含所有已知海域)
+local IDs = {27539155, 444227218, 7449423635, 1530292088, 11448431235}
+for _, id in pairs(IDs) do
+    if game.PlaceId == id then isBloxFruit = true break end
+end
+
+-- [如果偵測失敗，我們讓它印出訊息，方便除錯]
+if not isBloxFruit then 
+    warn("Kexuan Zenith 偵測到當前 PlaceID 為: " .. game.PlaceId .. "，非 Blox Fruits 遊戲，取消啟動。")
+    -- 如果你希望不論什麼遊戲都強制啟動，可以把下面的 return 註解掉
+    return 
+end
+
+-- [確認遊戲完全加載]
+if not game:IsLoaded() then game.Loaded:Wait() end
+
+-- --- 以下為腳本核心內容 (V1.7.5 穩定版邏輯) ---
+local Luna = loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebula-Softworks/Luna-Interface-Suite/main/source.lua"))()
+local Window = Luna:CreateWindow({
+    Name = "Kexuan Zenith | 旗艦版",
+    Subtitle = "V1.7.7 - 穩定對應全海域",
+    Color = Color3.fromRGB(0, 170, 255),
+    ConfigSaving = false
+})
+
+_G.Aimbot = false
+_G.ManualLock = false
+_G.SelectedPlayer = nil
+_G.AutoV3 = false
+_G.AutoV4 = false
+_G.AutoBuso = true 
+_G.NoClip = false
+_G.EnergyValue = 14095
+_G.ShowESP_ID = false
+_G.ShowESP_Health = false
+_G.ShowTracer = false
+
+local Tab1 = Window:CreateTab({Name = "主要功能"})
+local Tab2 = Window:CreateTab({Name = "戰鬥模組"})
+local Tab3 = Window:CreateTab({Name = "功能/透視"})
+local Tab4 = Window:CreateTab({Name = "玩家清單"}) 
+
+-- [功能按鈕載入]
+Tab1:CreateButton({Name = "飛行 (FLY)", Callback = function() pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/dt106101-ai/fly-gui-by-kexuan/refs/heads/main/README.md"))() end) end})
+Tab1:CreateButton({Name = "啟動快速攻擊", Callback = function() pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/kexuan001/Fast-attack-in-pc/refs/heads/main/thes%20fast"))() end) end})
+Tab1:CreateButton({Name = "海盜陣營", Callback = function() game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam", "Pirates") end})
+Tab1:CreateButton({Name = "海軍陣營", Callback = function() game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam", "Marines") end})
+
+Tab2:CreateToggle({Name = "自動自瞄 (中心優先)", CurrentValue = false, Callback = function(V) _G.Aimbot = V end})
+Tab2:CreateToggle({Name = "開啟穿牆 (G)", CurrentValue = false, Callback = function(V) _G.NoClip = V end})
+Tab2:CreateToggle({Name = "自動 V3", CurrentValue = false, Callback = function(V) _G.AutoV3 = V end})
+Tab2:CreateToggle({Name = "自動 V4", CurrentValue = false, Callback = function(V) _G.AutoV4 = V end})
+Tab2:CreateToggle({Name = "自動武裝色", CurrentValue = true, Callback = function(V) _G.AutoBuso = V end})
+Tab2:CreateSlider({Name = "能量鎖定", Range = {100, 14095}, CurrentValue = 14095, Callback = function(V) _G.EnergyValue = V end})
+
+Tab3:CreateSlider({Name = "視角解鎖", Range = {128, 5000}, CurrentValue = 400, Callback = function(V) game.Players.LocalPlayer.CameraMaxZoomDistance = V end})
+Tab3:CreateToggle({Name = "顯示名字/距離", CurrentValue = false, Callback = function(V) _G.ShowESP_ID = V end})
+Tab3:CreateToggle({Name = "顯示血量", CurrentValue = false, Callback = function(V) _G.ShowESP_Health = V end})
+Tab3:CreateToggle({Name = "顯示射線", CurrentValue = false, Callback = function(V) _G.ShowTracer = V end})
+
+local function GetPlayerList()
+    local List = {}
+    for _, p in pairs(game.Players:GetPlayers()) do table.insert(List, p.DisplayName.."("..p.Name..")") end
+    return List
+end
+Tab4:CreateToggle({Name = "開啟：手動鎖定選中玩家", CurrentValue = false, Callback = function(V) _G.ManualLock = V end})
+local PlayerDropdown;
+task.delay(1, function()
+    PlayerDropdown = Tab4:CreateDropdown({
+        Name = "選取鎖定目標",
+        Options = GetPlayerList(),
+        CurrentOption = "",
+        Callback = function(v)
+            local id = v:match("%((.-)%)")
+            _G.SelectedPlayer = game.Players:FindFirstChild(id)
+        end
+    })
+end)
+Tab4:CreateButton({Name = "刷新清單", Callback = function() if PlayerDropdown then PlayerDropdown:Refresh(GetPlayerList()) end end})
+
+-- [核心運算]
+local UIS = game:GetService("UserInputService")
+local RS = game:GetService("RunService")
+local LP = game.Players.LocalPlayer
+local VIM = game:GetService("VirtualInputManager")
+local Cam = workspace.CurrentCamera
+
+local TracerGui = game:GetService("CoreGui"):FindFirstChild("Zenith_Render") or Instance.new("ScreenGui", game:GetService("CoreGui"))
+TracerGui.Name = "Zenith_Render"; TracerGui.IgnoreGuiInset = true 
+
+RS.RenderStepped:Connect(function()
+    if not _G.ShowTracer then TracerGui:ClearAllChildren() return end
+    for _, p in pairs(game.Players:GetPlayers()) do
+        local tName = "Tracer_" .. p.Name
+        local existing = TracerGui:FindFirstChild(tName)
+        if p ~= LP and p.Character and p.Character:FindFirstChild("HumanoidRootPart") and _G.ShowTracer then
+            local hrp = p.Character.HumanoidRootPart
+            local sPos, on = Cam:WorldToViewportPoint(hrp.Position)
+            if on then
+                local tFrame = existing or Instance.new("Frame", TracerGui)
+                tFrame.Name = tName; tFrame.AnchorPoint = Vector2.new(0.5, 0.5); tFrame.BackgroundColor3 = Color3.new(1, 1, 1); tFrame.BorderSizePixel = 0
+                local startPos = Vector2.new(Cam.ViewportSize.X / 2, Cam.ViewportSize.Y)
+                local targetPos = Vector2.new(sPos.X, sPos.Y)
+                tFrame.Size = UDim2.new(0, (targetPos - startPos).Magnitude, 0, 1)
+                tFrame.Position = UDim2.new(0, (startPos.X + targetPos.X) / 2, 0, (startPos.Y + targetPos.Y) / 2)
+                tFrame.Rotation = math.deg(math.atan2(targetPos.Y - startPos.Y, targetPos.X - startPos.X))
+                tFrame.Visible = true
+            else if existing then existing:Destroy() end end
+        else if existing then existing:Destroy() end end
+    end
+end)
+
+RS.Heartbeat:Connect(function()
+    if not LP.Character then return end
+    if _G.ManualLock and _G.SelectedPlayer and _G.SelectedPlayer.Character and _G.SelectedPlayer.Character:FindFirstChild("Head") then
+        Cam.CFrame = CFrame.new(Cam.CFrame.Position, _G.SelectedPlayer.Character.Head.Position)
+    elseif _G.Aimbot then
+        local target = nil; local sd = math.huge
+        for _, p in pairs(game.Players:GetPlayers()) do
+            if p ~= LP and p.Character and p.Character:FindFirstChild("Head") and p.Character.Humanoid.Health > 0 then
+                local pos, on = Cam:WorldToViewportPoint(p.Character.Head.Position)
+                if on then
+                    local d = (Vector2.new(pos.X, pos.Y) - Vector2.new(Cam.ViewportSize.X/2, Cam.ViewportSize.Y/2)).Magnitude
+                    if d < sd then sd = d; target = p end
+                end
+            end
+        end
+        if target then Cam.CFrame = CFrame.new(Cam.CFrame.Position, target.Character.Head.Position) end
+    end
+    if _G.AutoBuso and not LP.Character:FindFirstChild("HasBuso") and not LP.Character:FindFirstChild("Haki") then
+        VIM:SendKeyEvent(true, "J", false, game); task.wait(0.01); VIM:SendKeyEvent(false, "J", false, game)
+    end
+    if _G.AutoV3 then VIM:SendKeyEvent(true, "T", false, game); task.wait(0.01); VIM:SendKeyEvent(false, "T", false, game) end
+    if _G.AutoV4 then VIM:SendKeyEvent(true, "Y", false, game); task.wait(0.01); VIM:SendKeyEvent(false, "Y", false, game) end
+    if _G.EnergyValue and LP.Character:FindFirstChild("Energy") then LP.Character.Energy.Value = _G.EnergyValue end
+end)
+
+-- ESP 標籤 (16 號字)
+RS.RenderStepped:Connect(function()
+    for _, p in pairs(game.Players:GetPlayers()) do
+        if p ~= LP and p.Character and p.Character:FindFirstChild("Head") then
+            local tag = p.Character:FindFirstChild("ZenTag")
+            if _G.ShowESP_ID or _G.ShowESP_Health then
+                if not tag then
+                    tag = Instance.new("BillboardGui", p.Character); tag.Name = "ZenTag"; tag.AlwaysOnTop = true; tag.Size = UDim2.new(0, 200, 0, 50); tag.ExtentsOffset = Vector3.new(0, 3, 0)
+                    local l = Instance.new("TextLabel", tag); l.BackgroundTransparency = 1; l.Size = UDim2.new(1,0,1,0); l.TextColor3 = Color3.new(1,1,1); l.Font = Enum.Font.GothamBold; l.TextSize = 16; l.RichText = true
+                end
+                local dist = math.floor((LP.Character.HumanoidRootPart.Position - p.Character.HumanoidRootPart.Position).Magnitude)
+                tag.TextLabel.Text = (_G.ShowESP_ID and "<b>"..p.DisplayName.."</b>\n<font color='#FFA500'>["..dist.."m]</font>" or "") .. (_G.ShowESP_Health and "\n<font color='#00FF00'>HP: "..math.floor(p.Character.Humanoid.Health).."</font>" or "")
+                tag.Enabled = true
+            elseif tag then tag.Enabled = false end
+        end
+    end
+end)
+
+UIS.InputBegan:Connect(function(i, g) if not g and i.KeyCode == Enum.KeyCode.G then _G.NoClip = not _G.NoClip end end)
+RS.Stepped:Connect(function()
+    if _G.NoClip and LP.Character then
+        for _, v in pairs(LP.Character:GetDescendants()) do if v:IsA("BasePart") then v.CanCollide = false end end
+    end
+end)
+
+local FloatBtnGui = Instance.new("ScreenGui", game:GetService("CoreGui"))
+local B = Instance.new("ImageButton", FloatBtnGui)
+B.Size = UDim2.new(0, 50, 0, 50); B.Position = UDim2.new(0, 10, 0.5, 0); B.Image = "rbxassetid://4483345906"; Instance.new("UICorner", B); B.Draggable = true
+B.MouseButton1Click:Connect(function()
+    local gui = game:GetService("CoreGui").Luna:FindFirstChild("Main") or game:GetService("CoreGui").Luna:FindFirstChildOfClass("Frame")
+    if gui then gui.Visible = not gui.Visible end
+end)
+
+Luna:Notification({Title = "Kexuan Zenith", Content = "V1.7.7 加載成功，已偵測海域環境。", Duration = 3})
