@@ -1,0 +1,26 @@
+local StarterGui = game:GetService("StarterGui")
+local Players = game:GetService("Players")
+local Whitelisted = {
+    ["nuiaKZcFs09y6"] = true,
+    ["Kadys5373"] = true,
+ }
+
+local function IsWhitelisted(player)
+    return Whitelisted[player.Name] or false
+end
+
+local localPlayer = Players.LocalPlayer
+
+local isLocalPlayerWhitelisted = IsWhitelisted(localPlayer)
+
+if isLocalPlayerWhitelisted then
+    StarterGui:SetCore("SendNotification", {
+        Title = "白名單認證",
+        Text = "玩家:"..localPlayer.Name.."，檢查完畢白名單玩家，稍後會凌霄脚本",
+        Duration = 7,
+    })
+--放腳本
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mknhghv/67/refs/heads/main/零中心腳本"))()
+else
+    localPlayer:Kick("未公開還拿的到腳本 你被通緝了^^") ")
+end
