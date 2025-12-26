@@ -1,0 +1,94 @@
+--这个范围没有限制
+--zy
+
+local old
+old = hookmetamethod(game:GetService("StarterGui"), "__namecall", newcclosure(function(self, ...)
+       local method = getnamecallmethod()
+       local args = {...}
+       if method == "SetCore" and args[1] == "SendNotification" then
+           local options = args[2]
+           if type(options) == "table" and 
+              tostring(options.Title) == "零脚本" and 
+              tostring(options.Text) == "小轩制作" 
+           then
+               local modifiedOptions = table.clone(options)
+               modifiedOptions.Text = "1"
+           end
+       end
+    return old(self, ...)
+end))
+
+
+local main = require(game:GetService("ReplicatedStorage").Util.CameraShaker.Main)
+local returnnil = function() return nil end
+
+main.StartShake = returnnil
+main.ShakeOnce = returnnil
+main.ShakeSustain = returnnil
+main.CameraShakeInstance = returnnil
+main.Shake = returnnil
+main.Start = returnnil
+
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "零脚本",
+	Text = "小轩制作",
+	Duration = 5;
+})
+wait(0.1)
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local LocalPlayer = Players.LocalPlayer
+local Camera = workspace.CurrentCamera 
+local workspace = game:GetService("Workspace")  
+local Player = Players.LocalPlayer  
+local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/ni7ykt/test1/refs/heads/main/ui"))()  
+local win = ui:new("零中心")
+local UITab1 = win:Tab("公告",'7734068321')
+local UITab2 = win:Tab("脚本",'7734068321')
+local UITab3 = win:Tab("秒杀",'7734068321')
+local UITab4 = win:Tab("透视",'7734068321')
+local UITab5 = win:Tab("传送",'7734068321')
+
+local about = UITab1:section("公告",true)
+
+about:Label("小轩制作")
+about:Label("脚本测试中")
+local about = UITab2:section("脚本",true)
+about:Slider("视角缩放距离", "Slider",  128, 128, 10000, false, function(Value)
+   game:GetService("Players").LocalPlayer.CameraMaxZoomDistance = Value
+end)
+-- 自动v4
+
+local toggleKey = "自动v4"
+local autoV4Task = nil
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+local function getToggleState(key)
+   if not _G.ToggleStates then _G.ToggleStates = {} end
+   return _G.ToggleStates[key] or false
+end
+
+local function callAwakeningRemote()
+   local Backpack = LocalPlayer:FindFirstChild("Backpack")
+   if not Backpack then return end
+   
+   local Awakening = Backpack:FindFirstChild("Awakening")
+   if not Awakening then return end
+   
+   local RemoteFunc = Awakening:FindFirstChild("RemoteFunction")
+   if not RemoteFunc or not RemoteFunc:IsA("RemoteFunction") then return end
+   
+   local success, err = pcall(function()
+       RemoteFunc:InvokeServer(true)
+   end)
+   if not success then
+       warn("自动v4调用失败：", err)
+   end
+end
+
+local function toggleAutoV4(enable)
+   if autoV4Task then
+       task.cancel(autoV4Task)
+       autoV4Task = nil
