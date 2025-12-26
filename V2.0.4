@@ -1,0 +1,225 @@
+-- ==========================================
+-- Kexuan Zenith | V2.0.7 (修復射線殘留 + 20號大字)
+-- ==========================================
+
+-- 1. 核心環境修復
+local UserInputService = game:GetService("UserInputService")
+UserInputService.ModalEnabled = false 
+
+local Luna = loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebula-Softworks/Luna-Interface-Suite/main/source.lua"))()
+
+-- 2. 視窗初始化
+local Window = Luna:CreateWindow({
+    Name = "Kexuan Zenith | 旗艦版",
+    Subtitle = "V2.0.7 - 修復射線殘留",
+    Color = Color3.fromRGB(0, 170, 255),
+    ConfigSaving = false
+})
+
+-- 3. 分頁構建
+local Tab1 = Window:CreateTab({Name = "Main"})
+local Tab2 = Window:CreateTab({Name = "戰鬥模組"})
+local Tab3 = Window:CreateTab({Name = "功能/透視"})
+local Tab4 = Window:CreateTab({Name = "介面設定"})
+
+-- --- 全域變數初始化 ---
+_G.CatSpeedActive = false
+_G.CatSpeedValue = 50
+_G.AutoV3 = false
+_G.AutoV4 = false
+_G.AutoBuso = true
+_G.NoClip = false
+_G.EnergyValue = 14095
+_G.ShowESP_ID = false
+_G.ShowESP_Health = false
+_G.ShowTracer = false
+
+-- --- [分頁 1: Main] ---
+Tab1:CreateSection("--- 移動加速 (平滑位移) ---")
+Tab1:CreateToggle({
+    Name = "開啟平滑加速 (TranslateBy)", 
+    CurrentValue = false, 
+    Callback = function(V) _G.CatSpeedActive = V end
+})
+Tab1:CreateSlider({
+    Name = "調整速度數值",
+    Range = {0, 500},
+    CurrentValue = 50,
+    Callback = function(V) _G.CatSpeedValue = V end
+})
+Tab1:CreateSection("--- 其他工具 ---")
+Tab1:CreateButton({
+    Name = "飛行 (FLY)", 
+    Callback = function() pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/dt106101-ai/fly-gui-by-kexuan/refs/heads/main/README.md"))() end) end
+})
+Tab1:CreateButton({
+    Name = "啟動快速攻擊", 
+    Callback = function() 
+        _G.FastAttack = true
+        pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/kexuan001/Fast-attack-in-pc/refs/heads/main/thes%20fast"))() end)
+    end
+})
+
+-- --- [分頁 2: 戰鬥模組] ---
+Tab2:CreateToggle({Name = "自動 V3 覺醒 (虛擬按鍵)", CurrentValue = false, Callback = function(V) _G.AutoV3 = V end})
+Tab2:CreateToggle({Name = "自動 V4 變身 (底層原理)", CurrentValue = false, Callback = function(V) _G.AutoV4 = V end})
+Tab2:CreateToggle({Name = "自動武裝色 (Buso)", CurrentValue = true, Callback = function(V) _G.AutoBuso = V end})
+
+local NoClipToggle = Tab2:CreateToggle({
+    Name = "開啟穿牆 (快捷鍵 G)", 
+    CurrentValue = false, 
+    Callback = function(V) _G.NoClip = V end
+})
+
+Tab2:CreateSlider({Name = "能量鎖定", Range = {100, 14095}, CurrentValue = 14095, Callback = function(V) _G.EnergyValue = V end})
+Tab2:CreateSlider({Name = "視角最大縮放", Range = {128, 5000}, CurrentValue = 500, Callback = function(V) game.Players.LocalPlayer.CameraMaxZoomDistance = V end})
+
+-- --- [核心運算區] ---
+local LP = game:GetService("Players").LocalPlayer
+local RunService = game:GetService("RunService")
+local VIM = game:GetService("VirtualInputManager")
+local camera = workspace.CurrentCamera
+
+-- 鍵盤快捷鍵 (G 鍵穿牆)
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+    if gameProcessed then return end
+    if input.KeyCode == Enum.KeyCode.G then
+        _G.NoClip = not _G.NoClip
+        NoClipToggle:Set(_G.NoClip)
+        Luna:Notification({Title = "系統", Content = "穿牆模式: " .. (_G.NoClip and "開啟" or "關閉"), Duration = 1})
+    end
+end)
+
+RunService.Heartbeat:Connect(function()
+    local char = LP.Character
+    if not char then return end
+    local hum = char:FindFirstChildOfClass("Humanoid")
+
+    if _G.CatSpeedActive and hum and hum.MoveDirection.Magnitude > 0 then
+        pcall(function() char:TranslateBy(hum.MoveDirection * (_G.CatSpeedValue / 10)) end)
+    end
+
+    if _G.AutoV3 then
+        pcall(function()
+            VIM:SendKeyEvent(true, Enum.KeyCode.T, false, game)
+            task.wait(0.01)
+            VIM:SendKeyEvent(false, Enum.KeyCode.T, false, game)
+        end)
+    end
+
+    if _G.AutoV4 then
+        pcall(function()
+            local awake = LP.Backpack:FindFirstChild("Awakening") or char:FindFirstChild("Awakening")
+            if awake then awake.RemoteFunction:InvokeServer(true) end
+        end)
+    end
+
+    if _G.AutoBuso and not char:FindFirstChild("HasBuso") then
+        pcall(function() game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Buso") end)
+    end
+    if _G.EnergyValue and char:FindFirstChild("Energy") then
+        char.Energy.Value = _G.EnergyValue
+    end
+end)
+
+-- 穿牆實作
+RunService.Stepped:Connect(function()
+    if LP.Character then
+        for _, v in pairs(LP.Character:GetDescendants()) do
+            if v:IsA("BasePart") then v.CanCollide = not _G.NoClip end
+        end
+    end
+end)
+
+-- --- [分頁 3: 透視核心 (修復殘留機制)] ---
+local TracerGui = game:GetService("CoreGui"):FindFirstChild("Kexuan_Tracer_System") or Instance.new("ScreenGui", game:GetService("CoreGui"))
+TracerGui.Name = "Kexuan_Tracer_System"
+
+Tab3:CreateToggle({Name = "顯示玩家 ID (20號字)", CurrentValue = false, Callback = function(V) _G.ShowESP_ID = V end})
+Tab3:CreateToggle({Name = "顯示血量數值 (20號字)", CurrentValue = false, Callback = function(V) _G.ShowESP_Health = V end})
+Tab3:CreateToggle({Name = "顯示連接射線", CurrentValue = false, Callback = function(V) _G.ShowTracer = V end})
+
+RunService.RenderStepped:Connect(function()
+    -- 清理已離開玩家的射線
+    for _, item in pairs(TracerGui:GetChildren()) do
+        local playerName = item.Name:gsub("_Tracer", "")
+        if not game:GetService("Players"):FindFirstChild(playerName) then
+            item:Destroy()
+        end
+    end
+
+    for _, p in pairs(game:GetService("Players"):GetPlayers()) do
+        if p ~= LP then
+            local char = p.Character
+            local hrp = char and char:FindFirstChild("HumanoidRootPart")
+            local tracer = TracerGui:FindFirstChild(p.Name .. "_Tracer")
+            
+            -- 射線渲染與即時清理
+            if _G.ShowTracer and hrp then
+                if not tracer then
+                    tracer = Instance.new("Frame", TracerGui); tracer.Name = p.Name .. "_Tracer"
+                    tracer.BackgroundColor3 = Color3.new(1,1,1); tracer.BorderSizePixel = 0; tracer.AnchorPoint = Vector2.new(0.5, 0.5)
+                end
+                local vector, onScreen = camera:WorldToViewportPoint(hrp.Position)
+                if onScreen then
+                    local startPos = Vector2.new(camera.ViewportSize.X / 2, camera.ViewportSize.Y)
+                    local targetPos = Vector2.new(vector.X, vector.Y)
+                    tracer.Size = UDim2.new(0, (startPos - targetPos).Magnitude, 0, 1)
+                    tracer.Position = UDim2.new(0, (startPos.X + targetPos.X)/2, 0, (startPos.Y + targetPos.Y)/2)
+                    tracer.Rotation = math.atan2(targetPos.Y - startPos.Y, targetPos.X - startPos.X) * (180/math.pi)
+                    tracer.Visible = true
+                else tracer.Visible = false end
+            else
+                if tracer then tracer.Visible = false end
+            end
+
+            -- 標籤渲染 (20號字)
+            if char and hrp then
+                local tag = char:FindFirstChild("LunaSplitTag")
+                if (_G.ShowESP_ID or _G.ShowESP_Health) then
+                    if not tag then
+                        tag = Instance.new("BillboardGui", char); tag.Name = "LunaSplitTag"; tag.AlwaysOnTop = true
+                        tag.Size = UDim2.new(0, 300, 0, 100); tag.Adornee = char:FindFirstChild("Head") or hrp
+                        tag.ExtentsOffset = Vector3.new(0, 3, 0)
+                        local l = Instance.new("TextLabel", tag); l.BackgroundTransparency = 1; l.Size = UDim2.new(1,0,1,0); l.Name = "InfoLabel"
+                        l.TextColor3 = Color3.new(1,1,1); l.Font = Enum.Font.GothamBold; l.TextSize = 20; l.RichText = true; l.TextStrokeTransparency = 0
+                    end
+                    local dist = math.floor((LP.Character.HumanoidRootPart.Position - hrp.Position).Magnitude)
+                    local content = "<b>" .. p.DisplayName .. "</b>"
+                    if _G.ShowESP_ID then content = content .. "\n[" .. dist .. "m]" end
+                    if _G.ShowESP_Health and char:FindFirstChild("Humanoid") then
+                        content = content .. '\n<font color="#00FF00">HP: ' .. math.floor(char.Humanoid.Health) .. "</font>"
+                    end
+                    tag.InfoLabel.Text = content; tag.Enabled = true
+                elseif tag then tag.Enabled = false end
+            end
+        end
+    end
+end)
+
+-- --- [分頁 4: 介面設定] ---
+Tab4:CreateButton({
+    Name = "重置手機搖桿與 UI",
+    Callback = function()
+        UserInputService.ModalEnabled = false
+        Luna:Notification({Title = "修復", Content = "已重置介面鎖定狀態", Duration = 2})
+    end
+})
+
+-- --- 懸浮球 ---
+local ScreenGui = Instance.new("ScreenGui", game:GetService("CoreGui"))
+local FloatIcon = Instance.new("ImageButton", ScreenGui)
+FloatIcon.Size = UDim2.new(0, 55, 0, 55); FloatIcon.Position = UDim2.new(0.05, 0, 0.4, 0)
+FloatIcon.BackgroundColor3 = Color3.fromRGB(20, 20, 20); FloatIcon.Image = "rbxassetid://4483345906"
+Instance.new("UICorner", FloatIcon).CornerRadius = UDim.new(1, 0)
+FloatIcon.Draggable = true
+FloatIcon.MouseButton1Click:Connect(function()
+    pcall(function()
+        local lunaGui = game:GetService("CoreGui"):FindFirstChild("Luna")
+        local main = lunaGui:FindFirstChild("Main") or lunaGui:FindFirstChildOfClass("Frame")
+        main.Visible = not main.Visible
+        UserInputService.ModalEnabled = false 
+    end)
+end)
+
+Luna:Notification({Title = "Kexuan Zenith", Content = "V2.0.7 射線清理邏輯修復", Duration = 3})
