@@ -1,86 +1,86 @@
 --[[ ENCRYPTED BY ZERO SECTOR VM v9.4.2 ]]
 local _0x_Auth = true; local _0x_Hardware = 'OK'
 
-local function _0x_func_7507(v) return (v * 36) % 380 end
-local function _0x_func_5839(v) return (v * 53) % 594 end
-local function _0x_func_1757(v) return (v * 35) % 783 end
-local function _0x_func_3213(v) return (v * 85) % 237 end
-local function _0x_func_3599(v) return (v * 86) % 581 end
-local function _0x_func_4575(v) return (v * 86) % 961 end
-local function _0x_func_7093(v) return (v * 65) % 968 end
-local function _0x_func_5038(v) return (v * 72) % 672 end
-local function _0x_func_9808(v) return (v * 1) % 769 end
-local function _0x_func_9224(v) return (v * 18) % 797 end
-local function _0x_func_5726(v) return (v * 55) % 345 end
-local function _0x_func_8210(v) return (v * 24) % 484 end
-local function _0x_func_7683(v) return (v * 19) % 381 end
-local function _0x_func_9887(v) return (v * 96) % 416 end
-local function _0x_func_6127(v) return (v * 70) % 590 end
-local function _0x_func_7989(v) return (v * 14) % 286 end
-local function _0x_func_9025(v) return (v * 42) % 187 end
-local function _0x_func_4018(v) return (v * 30) % 212 end
-local function _0x_func_7843(v) return (v * 17) % 133 end
-local function _0x_func_7402(v) return (v * 82) % 317 end
-local function _0x_func_4830(v) return (v * 59) % 972 end
-local function _0x_func_8572(v) return (v * 56) % 790 end
-local function _0x_func_2404(v) return (v * 61) % 544 end
-local function _0x_func_3584(v) return (v * 45) % 846 end
-local function _0x_func_7633(v) return (v * 97) % 511 end
-local function _0x_func_8200(v) return (v * 57) % 183 end
-local function _0x_func_2285(v) return (v * 2) % 564 end
-local function _0x_func_5035(v) return (v * 86) % 110 end
-local function _0x_func_1270(v) return (v * 44) % 138 end
-local function _0x_func_4425(v) return (v * 45) % 620 end
-local function _0x_func_5814(v) return (v * 73) % 327 end
-local function _0x_func_4088(v) return (v * 51) % 234 end
-local function _0x_func_2316(v) return (v * 64) % 674 end
-local function _0x_func_6831(v) return (v * 61) % 100 end
-local function _0x_func_6598(v) return (v * 51) % 961 end
-local function _0x_func_1976(v) return (v * 56) % 561 end
-local function _0x_func_9557(v) return (v * 93) % 984 end
-local function _0x_func_5570(v) return (v * 71) % 631 end
-local function _0x_func_1284(v) return (v * 64) % 230 end
-local function _0x_func_2658(v) return (v * 54) % 790 end
-local function _0x_func_2521(v) return (v * 89) % 603 end
-local function _0x_func_5347(v) return (v * 24) % 788 end
-local function _0x_func_6878(v) return (v * 27) % 423 end
-local function _0x_func_3249(v) return (v * 20) % 651 end
-local function _0x_func_2640(v) return (v * 91) % 918 end
-local function _0x_func_8572(v) return (v * 38) % 190 end
-local function _0x_func_3913(v) return (v * 61) % 314 end
-local function _0x_func_6028(v) return (v * 49) % 942 end
-local function _0x_func_4039(v) return (v * 62) % 363 end
-local function _0x_func_3630(v) return (v * 54) % 426 end
-local function _0x_func_1839(v) return (v * 35) % 519 end
-local function _0x_func_1300(v) return (v * 81) % 918 end
-local function _0x_func_8759(v) return (v * 32) % 162 end
-local function _0x_func_1707(v) return (v * 94) % 220 end
-local function _0x_func_8625(v) return (v * 96) % 192 end
-local function _0x_func_5015(v) return (v * 81) % 291 end
-local function _0x_func_9842(v) return (v * 100) % 807 end
-local function _0x_func_2636(v) return (v * 76) % 638 end
-local function _0x_func_2666(v) return (v * 71) % 195 end
-local function _0x_func_7220(v) return (v * 20) % 410 end
-local function _0x_func_5083(v) return (v * 1) % 942 end
-local function _0x_func_2999(v) return (v * 20) % 164 end
-local function _0x_func_7041(v) return (v * 26) % 189 end
-local function _0x_func_8461(v) return (v * 28) % 737 end
-local function _0x_func_4266(v) return (v * 92) % 978 end
-local function _0x_func_6296(v) return (v * 57) % 915 end
-local function _0x_func_8577(v) return (v * 96) % 679 end
-local function _0x_func_4971(v) return (v * 13) % 910 end
-local function _0x_func_5401(v) return (v * 93) % 795 end
-local function _0x_func_8384(v) return (v * 52) % 539 end
-local function _0x_func_7958(v) return (v * 35) % 441 end
-local function _0x_func_2216(v) return (v * 42) % 871 end
-local function _0x_func_7990(v) return (v * 39) % 495 end
-local function _0x_func_9399(v) return (v * 94) % 542 end
-local function _0x_func_3672(v) return (v * 52) % 860 end
-local function _0x_func_5954(v) return (v * 77) % 340 end
-local function _0x_func_9460(v) return (v * 79) % 936 end
-local function _0x_func_9960(v) return (v * 32) % 800 end
-local function _0x_func_2416(v) return (v * 86) % 741 end
-local function _0x_func_1945(v) return (v * 100) % 480 end
+local function _0x_func_6855(v) return (v * 95) % 564 end
+local function _0x_func_5654(v) return (v * 77) % 160 end
+local function _0x_func_6426(v) return (v * 43) % 161 end
+local function _0x_func_8466(v) return (v * 66) % 757 end
+local function _0x_func_9408(v) return (v * 30) % 115 end
+local function _0x_func_2894(v) return (v * 45) % 856 end
+local function _0x_func_4792(v) return (v * 94) % 162 end
+local function _0x_func_1022(v) return (v * 25) % 230 end
+local function _0x_func_5882(v) return (v * 78) % 129 end
+local function _0x_func_4247(v) return (v * 77) % 199 end
+local function _0x_func_5183(v) return (v * 24) % 672 end
+local function _0x_func_9671(v) return (v * 43) % 958 end
+local function _0x_func_5748(v) return (v * 66) % 584 end
+local function _0x_func_3342(v) return (v * 2) % 798 end
+local function _0x_func_3618(v) return (v * 92) % 988 end
+local function _0x_func_5960(v) return (v * 93) % 276 end
+local function _0x_func_5503(v) return (v * 88) % 539 end
+local function _0x_func_4725(v) return (v * 21) % 911 end
+local function _0x_func_8908(v) return (v * 32) % 506 end
+local function _0x_func_2969(v) return (v * 88) % 910 end
+local function _0x_func_4220(v) return (v * 50) % 922 end
+local function _0x_func_6121(v) return (v * 74) % 765 end
+local function _0x_func_7146(v) return (v * 88) % 465 end
+local function _0x_func_1242(v) return (v * 31) % 692 end
+local function _0x_func_1827(v) return (v * 66) % 889 end
+local function _0x_func_4534(v) return (v * 56) % 173 end
+local function _0x_func_7615(v) return (v * 1) % 307 end
+local function _0x_func_7695(v) return (v * 72) % 393 end
+local function _0x_func_3736(v) return (v * 98) % 233 end
+local function _0x_func_9577(v) return (v * 67) % 258 end
+local function _0x_func_4821(v) return (v * 31) % 950 end
+local function _0x_func_9631(v) return (v * 63) % 783 end
+local function _0x_func_2715(v) return (v * 88) % 903 end
+local function _0x_func_7423(v) return (v * 11) % 601 end
+local function _0x_func_8886(v) return (v * 79) % 778 end
+local function _0x_func_3723(v) return (v * 20) % 532 end
+local function _0x_func_7188(v) return (v * 20) % 268 end
+local function _0x_func_9587(v) return (v * 23) % 246 end
+local function _0x_func_3400(v) return (v * 97) % 217 end
+local function _0x_func_6696(v) return (v * 60) % 451 end
+local function _0x_func_7621(v) return (v * 22) % 945 end
+local function _0x_func_7361(v) return (v * 43) % 369 end
+local function _0x_func_4964(v) return (v * 60) % 318 end
+local function _0x_func_9894(v) return (v * 34) % 786 end
+local function _0x_func_3049(v) return (v * 48) % 367 end
+local function _0x_func_4021(v) return (v * 10) % 352 end
+local function _0x_func_6957(v) return (v * 11) % 559 end
+local function _0x_func_4850(v) return (v * 79) % 899 end
+local function _0x_func_7653(v) return (v * 51) % 405 end
+local function _0x_func_3177(v) return (v * 80) % 961 end
+local function _0x_func_5839(v) return (v * 86) % 854 end
+local function _0x_func_8878(v) return (v * 43) % 640 end
+local function _0x_func_1331(v) return (v * 81) % 528 end
+local function _0x_func_5128(v) return (v * 56) % 909 end
+local function _0x_func_9478(v) return (v * 69) % 599 end
+local function _0x_func_8870(v) return (v * 51) % 738 end
+local function _0x_func_3350(v) return (v * 77) % 547 end
+local function _0x_func_7347(v) return (v * 81) % 121 end
+local function _0x_func_6286(v) return (v * 36) % 164 end
+local function _0x_func_1799(v) return (v * 60) % 842 end
+local function _0x_func_4531(v) return (v * 87) % 368 end
+local function _0x_func_2955(v) return (v * 55) % 943 end
+local function _0x_func_9627(v) return (v * 46) % 167 end
+local function _0x_func_1839(v) return (v * 59) % 647 end
+local function _0x_func_8125(v) return (v * 75) % 845 end
+local function _0x_func_3573(v) return (v * 32) % 757 end
+local function _0x_func_9824(v) return (v * 36) % 821 end
+local function _0x_func_3783(v) return (v * 32) % 190 end
+local function _0x_func_5906(v) return (v * 49) % 305 end
+local function _0x_func_7069(v) return (v * 48) % 277 end
+local function _0x_func_8173(v) return (v * 18) % 203 end
+local function _0x_func_9165(v) return (v * 81) % 249 end
+local function _0x_func_6669(v) return (v * 45) % 286 end
+local function _0x_func_7294(v) return (v * 87) % 717 end
+local function _0x_func_1686(v) return (v * 14) % 749 end
+local function _0x_func_1124(v) return (v * 23) % 736 end
+local function _0x_func_7983(v) return (v * 37) % 360 end
+local function _0x_func_9365(v) return (v * 57) % 599 end
+local function _0x_func_5403(v) return (v * 42) % 283 end
+local function _0x_func_7285(v) return (v * 17) % 412 end
 local _0x_V = {getfenv, game, string}
 local function _0x_VM_CORE(d, k)
     local r = ""
@@ -92,27 +92,27 @@ local function _0x_VM_CORE(d, k)
     return r
 end
 
-local _0x_SEC_DATA = {69, 90, 68, 67, 68, 6, 109, 102, 35, 59, 19, 65, 28, 225, 226, 205, 192, 164, 173, 152, 154, 102, 73, 46, 55, 6, 233, 201, 183, 206, 157, 114, 80, 113, 247, 215, 161, 218, 37, 9, 80, 185, 140, 234, 38, 75, 18, 244, 166, 157, 7, 118, 160, 182, 159, 87, 26, 141, 180, 114, 50, 244, 189, 34, 32, 239, 185, 125, 120, 210, 167, 98, 62, 251, 80, 4}
-local _0x_var_1 = 2076; local _0x_var_2 = 189; local _0x_var_3 = 8375; local _0x_var_4 = 9050; local _0x_var_5 = 2470; 
-local _0x_var_6 = 6823; local _0x_var_7 = 7561; local _0x_var_8 = 8851; local _0x_var_9 = 7189; local _0x_var_10 = 4807; 
-local _0x_var_11 = 6276; local _0x_var_12 = 1895; local _0x_var_13 = 7392; local _0x_var_14 = 6982; local _0x_var_15 = 1019; 
-local _0x_var_16 = 1827; local _0x_var_17 = 1931; local _0x_var_18 = 8032; local _0x_var_19 = 6520; local _0x_var_20 = 678; 
-local _0x_var_21 = 3522; local _0x_var_22 = 6698; local _0x_var_23 = 1966; local _0x_var_24 = 9835; local _0x_var_25 = 9519; 
-local _0x_var_26 = 5444; local _0x_var_27 = 2952; local _0x_var_28 = 5709; local _0x_var_29 = 1019; local _0x_var_30 = 8950; 
-local _0x_var_31 = 7666; local _0x_var_32 = 733; local _0x_var_33 = 4456; local _0x_var_34 = 640; local _0x_var_35 = 784; 
-local _0x_var_36 = 2223; local _0x_var_37 = 5308; local _0x_var_38 = 1481; local _0x_var_39 = 6773; local _0x_var_40 = 2275; 
-local _0x_var_41 = 5819; local _0x_var_42 = 1492; local _0x_var_43 = 5353; local _0x_var_44 = 1354; local _0x_var_45 = 1180; 
-local _0x_var_46 = 4221; local _0x_var_47 = 5300; local _0x_var_48 = 2435; local _0x_var_49 = 6000; local _0x_var_50 = 3850; 
-local _0x_var_51 = 6263; local _0x_var_52 = 2589; local _0x_var_53 = 4161; local _0x_var_54 = 9034; local _0x_var_55 = 4621; 
-local _0x_var_56 = 1846; local _0x_var_57 = 3227; local _0x_var_58 = 2064; local _0x_var_59 = 8733; local _0x_var_60 = 185; 
-local _0x_var_61 = 87; local _0x_var_62 = 3268; local _0x_var_63 = 1343; local _0x_var_64 = 7761; local _0x_var_65 = 5609; 
-local _0x_var_66 = 1352; local _0x_var_67 = 7710; local _0x_var_68 = 1258; local _0x_var_69 = 7870; local _0x_var_70 = 3280; 
-local _0x_var_71 = 6713; local _0x_var_72 = 4382; local _0x_var_73 = 519; local _0x_var_74 = 4953; local _0x_var_75 = 7574; 
-local _0x_var_76 = 3132; local _0x_var_77 = 7640; local _0x_var_78 = 4483; local _0x_var_79 = 1532; local _0x_var_80 = 9130; 
-local _0x_var_81 = 3965; local _0x_var_82 = 9632; local _0x_var_83 = 4516; local _0x_var_84 = 5162; local _0x_var_85 = 8560; 
-local _0x_var_86 = 3041; local _0x_var_87 = 4676; local _0x_var_88 = 3460; local _0x_var_89 = 9502; local _0x_var_90 = 9146; 
-local _0x_var_91 = 7556; local _0x_var_92 = 2764; local _0x_var_93 = 7755; local _0x_var_94 = 4570; local _0x_var_95 = 3519; 
-local _0x_var_96 = 4068; local _0x_var_97 = 1003; local _0x_var_98 = 5552; local _0x_var_99 = 9064; local _0x_var_100 = 7797; 
+local _0x_SEC_DATA = {69, 90, 68, 67, 68, 6, 109, 102, 35, 59, 19, 65, 28, 225, 226, 205, 192, 164, 173, 152, 154, 102, 73, 46, 55, 6, 233, 201, 183, 206, 157, 114, 80, 113, 248, 202, 166, 131, 106, 76, 0, 228, 153, 232, 60, 23, 75, 186, 183, 147, 78, 40, 160, 172, 159, 80, 13, 209, 243, 122, 50, 249, 160, 34, 32, 235, 185, 100}
+local _0x_var_1 = 9883; local _0x_var_2 = 2610; local _0x_var_3 = 1783; local _0x_var_4 = 4785; local _0x_var_5 = 8763; 
+local _0x_var_6 = 5589; local _0x_var_7 = 6491; local _0x_var_8 = 3611; local _0x_var_9 = 6837; local _0x_var_10 = 6801; 
+local _0x_var_11 = 7558; local _0x_var_12 = 2935; local _0x_var_13 = 3156; local _0x_var_14 = 2228; local _0x_var_15 = 4448; 
+local _0x_var_16 = 1113; local _0x_var_17 = 8848; local _0x_var_18 = 7838; local _0x_var_19 = 8701; local _0x_var_20 = 3231; 
+local _0x_var_21 = 8921; local _0x_var_22 = 6288; local _0x_var_23 = 9504; local _0x_var_24 = 1080; local _0x_var_25 = 7343; 
+local _0x_var_26 = 6738; local _0x_var_27 = 9097; local _0x_var_28 = 4758; local _0x_var_29 = 3746; local _0x_var_30 = 5719; 
+local _0x_var_31 = 948; local _0x_var_32 = 9140; local _0x_var_33 = 6019; local _0x_var_34 = 6792; local _0x_var_35 = 3576; 
+local _0x_var_36 = 7166; local _0x_var_37 = 3456; local _0x_var_38 = 3575; local _0x_var_39 = 331; local _0x_var_40 = 3730; 
+local _0x_var_41 = 2351; local _0x_var_42 = 116; local _0x_var_43 = 3823; local _0x_var_44 = 6072; local _0x_var_45 = 7510; 
+local _0x_var_46 = 9675; local _0x_var_47 = 3407; local _0x_var_48 = 2281; local _0x_var_49 = 9300; local _0x_var_50 = 5086; 
+local _0x_var_51 = 1163; local _0x_var_52 = 2407; local _0x_var_53 = 9605; local _0x_var_54 = 8755; local _0x_var_55 = 6810; 
+local _0x_var_56 = 1918; local _0x_var_57 = 5581; local _0x_var_58 = 5555; local _0x_var_59 = 9443; local _0x_var_60 = 5394; 
+local _0x_var_61 = 5695; local _0x_var_62 = 9343; local _0x_var_63 = 8355; local _0x_var_64 = 4588; local _0x_var_65 = 37; 
+local _0x_var_66 = 3831; local _0x_var_67 = 6678; local _0x_var_68 = 9507; local _0x_var_69 = 9829; local _0x_var_70 = 8756; 
+local _0x_var_71 = 9332; local _0x_var_72 = 5771; local _0x_var_73 = 5941; local _0x_var_74 = 4856; local _0x_var_75 = 9777; 
+local _0x_var_76 = 8083; local _0x_var_77 = 3816; local _0x_var_78 = 568; local _0x_var_79 = 1354; local _0x_var_80 = 5432; 
+local _0x_var_81 = 120; local _0x_var_82 = 7690; local _0x_var_83 = 7106; local _0x_var_84 = 9069; local _0x_var_85 = 7620; 
+local _0x_var_86 = 9089; local _0x_var_87 = 2869; local _0x_var_88 = 6451; local _0x_var_89 = 7745; local _0x_var_90 = 6282; 
+local _0x_var_91 = 395; local _0x_var_92 = 9536; local _0x_var_93 = 5558; local _0x_var_94 = 3867; local _0x_var_95 = 6405; 
+local _0x_var_96 = 9863; local _0x_var_97 = 8417; local _0x_var_98 = 4032; local _0x_var_99 = 6341; local _0x_var_100 = 9254; 
 local _0x_S1 = _0x_VM_CORE({81, 112, 98, 103, 114, 113, 111, 106, 113, 102}, 0x2D)
 local _0x_S2 = _0x_VM_CORE({41, 117, 117, 113, 76, 101, 117, 117, 76, 102, 117}, 0x2D)
 _0x_V[1]()[_0x_S1](_0x_V[2][_0x_S2](_0x_V[2], _0x_VM_CORE(_0x_SEC_DATA, 0x2D)))()
