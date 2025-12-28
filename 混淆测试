@@ -1,52 +1,118 @@
-====================================
-   ?? 皜祈岫?啣?
-====================================
-甇???蝬脣?: https://raw.githubusercontent.com/xiaoxuan-77/-/refs/heads/main/?
+--[[ ENCRYPTED BY ZERO SECTOR VM v9.4.2 ]]
+local _0x_Auth = true; local _0x_Hardware = 'OK'
 
-[!!!] 憒?雿??圈?摮?隞?”?瑁???鈭?
-隢靘輯撓?乩??摮??嗅???Enter 蝯?嚗
-雿??撓?乩?: nil
-皜祈岫蝯?嚗憓?100% 甇?虜嚗
-C:\Users\Admin\Downloads\lua-5.4.2_Win64_bin\lua54.exe: main.lua:14: interrupted!
-stack traceback:
-        [C]: in function 'print'
-        main.lua:14: in main chunk
-        [C]: in ?
-PS C:\Users\Admin\Downloads\lua-5.4.2_Win64_bin> .\lua54.exe main.lua
-
-[ ?Ｙ?摰? ] 隢?鋆賭??寥畾萄雿? Roblox ???刻ㄐ嚗?
-
---------------------------------------------------
-local _0x_DATA = {100, 23, 113, 61, 127, 89, 42, 98, 126, 2, 114, 99, 107, 10, 113, 37, 121, 1, 112, 62, 105, 17, 102, 34, 98, 23, 96, 35, 120, 77, 102, 34, 97, 76, 125, 36, 109, 12, 125, 56, 109, 13, 40, 122, 59, 76, 40, 98, 126, 6, 99, 62, 35, 11, 96, 44, 104, 16, 42, 32, 109, 10, 107, 98, 229, 248, 179}
-local _0x_VM = function(d)
-    local k = {77, 12, 99, 5}
+local function _0x_func_7507(v) return (v * 36) % 380 end
+local function _0x_func_5839(v) return (v * 53) % 594 end
+local function _0x_func_1757(v) return (v * 35) % 783 end
+local function _0x_func_3213(v) return (v * 85) % 237 end
+local function _0x_func_3599(v) return (v * 86) % 581 end
+local function _0x_func_4575(v) return (v * 86) % 961 end
+local function _0x_func_7093(v) return (v * 65) % 968 end
+local function _0x_func_5038(v) return (v * 72) % 672 end
+local function _0x_func_9808(v) return (v * 1) % 769 end
+local function _0x_func_9224(v) return (v * 18) % 797 end
+local function _0x_func_5726(v) return (v * 55) % 345 end
+local function _0x_func_8210(v) return (v * 24) % 484 end
+local function _0x_func_7683(v) return (v * 19) % 381 end
+local function _0x_func_9887(v) return (v * 96) % 416 end
+local function _0x_func_6127(v) return (v * 70) % 590 end
+local function _0x_func_7989(v) return (v * 14) % 286 end
+local function _0x_func_9025(v) return (v * 42) % 187 end
+local function _0x_func_4018(v) return (v * 30) % 212 end
+local function _0x_func_7843(v) return (v * 17) % 133 end
+local function _0x_func_7402(v) return (v * 82) % 317 end
+local function _0x_func_4830(v) return (v * 59) % 972 end
+local function _0x_func_8572(v) return (v * 56) % 790 end
+local function _0x_func_2404(v) return (v * 61) % 544 end
+local function _0x_func_3584(v) return (v * 45) % 846 end
+local function _0x_func_7633(v) return (v * 97) % 511 end
+local function _0x_func_8200(v) return (v * 57) % 183 end
+local function _0x_func_2285(v) return (v * 2) % 564 end
+local function _0x_func_5035(v) return (v * 86) % 110 end
+local function _0x_func_1270(v) return (v * 44) % 138 end
+local function _0x_func_4425(v) return (v * 45) % 620 end
+local function _0x_func_5814(v) return (v * 73) % 327 end
+local function _0x_func_4088(v) return (v * 51) % 234 end
+local function _0x_func_2316(v) return (v * 64) % 674 end
+local function _0x_func_6831(v) return (v * 61) % 100 end
+local function _0x_func_6598(v) return (v * 51) % 961 end
+local function _0x_func_1976(v) return (v * 56) % 561 end
+local function _0x_func_9557(v) return (v * 93) % 984 end
+local function _0x_func_5570(v) return (v * 71) % 631 end
+local function _0x_func_1284(v) return (v * 64) % 230 end
+local function _0x_func_2658(v) return (v * 54) % 790 end
+local function _0x_func_2521(v) return (v * 89) % 603 end
+local function _0x_func_5347(v) return (v * 24) % 788 end
+local function _0x_func_6878(v) return (v * 27) % 423 end
+local function _0x_func_3249(v) return (v * 20) % 651 end
+local function _0x_func_2640(v) return (v * 91) % 918 end
+local function _0x_func_8572(v) return (v * 38) % 190 end
+local function _0x_func_3913(v) return (v * 61) % 314 end
+local function _0x_func_6028(v) return (v * 49) % 942 end
+local function _0x_func_4039(v) return (v * 62) % 363 end
+local function _0x_func_3630(v) return (v * 54) % 426 end
+local function _0x_func_1839(v) return (v * 35) % 519 end
+local function _0x_func_1300(v) return (v * 81) % 918 end
+local function _0x_func_8759(v) return (v * 32) % 162 end
+local function _0x_func_1707(v) return (v * 94) % 220 end
+local function _0x_func_8625(v) return (v * 96) % 192 end
+local function _0x_func_5015(v) return (v * 81) % 291 end
+local function _0x_func_9842(v) return (v * 100) % 807 end
+local function _0x_func_2636(v) return (v * 76) % 638 end
+local function _0x_func_2666(v) return (v * 71) % 195 end
+local function _0x_func_7220(v) return (v * 20) % 410 end
+local function _0x_func_5083(v) return (v * 1) % 942 end
+local function _0x_func_2999(v) return (v * 20) % 164 end
+local function _0x_func_7041(v) return (v * 26) % 189 end
+local function _0x_func_8461(v) return (v * 28) % 737 end
+local function _0x_func_4266(v) return (v * 92) % 978 end
+local function _0x_func_6296(v) return (v * 57) % 915 end
+local function _0x_func_8577(v) return (v * 96) % 679 end
+local function _0x_func_4971(v) return (v * 13) % 910 end
+local function _0x_func_5401(v) return (v * 93) % 795 end
+local function _0x_func_8384(v) return (v * 52) % 539 end
+local function _0x_func_7958(v) return (v * 35) % 441 end
+local function _0x_func_2216(v) return (v * 42) % 871 end
+local function _0x_func_7990(v) return (v * 39) % 495 end
+local function _0x_func_9399(v) return (v * 94) % 542 end
+local function _0x_func_3672(v) return (v * 52) % 860 end
+local function _0x_func_5954(v) return (v * 77) % 340 end
+local function _0x_func_9460(v) return (v * 79) % 936 end
+local function _0x_func_9960(v) return (v * 32) % 800 end
+local function _0x_func_2416(v) return (v * 86) % 741 end
+local function _0x_func_1945(v) return (v * 100) % 480 end
+local _0x_V = {getfenv, game, string}
+local function _0x_VM_CORE(d, k)
     local r = ""
-    for i = 1, #d do r = r .. string.char(d[i] ~ k[(i % #k) + 1]) end
+    local seed = k
+    for i = 1, #d do
+        r = r .. _0x_V[3].char(d[i] ~ seed)
+        seed = (seed + i) % 256
+    end
     return r
 end
 
--- ?ㄐ??loadstring ?賡?絲靘?憓??渲圾??漲
-local _0x_RUN = getfenv()[_0x_VM({105, 11, 102, 9, 117, 28, 117, 4, 105, 11})]
-local _0x_GET = game[_0x_VM({11, 28, 11, 21, 56, 12, 21, 17, 56, 2, 21})]
-
-_0x_RUN(_0x_GET(game, _0x_VM(_0x_DATA)))()
-
---------------------------------------------------
-PS C:\Users\Admin\Downloads\lua-5.4.2_Win64_bin> .\lua54.exe main.lua
-
-[ ?Ｙ?摰? ] 隢?鋆賭??寥畾萄雿? Roblox ???刻ㄐ嚗?
-
---------------------------------------------------
-local _0x_DATA = {100, 23, 113, 61, 127, 89, 42, 98, 126, 2, 114, 99, 107, 10, 113, 37, 121, 1, 112, 62, 105, 17, 102, 34, 98, 23, 96, 35, 120, 77, 102, 34, 97, 76, 125, 36, 109, 12, 125, 56, 109, 13, 40, 122, 59, 76, 40, 98, 126, 6, 99, 62, 35, 11, 96, 44, 104, 16, 42, 32, 109, 10, 107, 98, 229, 248, 179}
-local _0x_VM = function(d)
-    local k = {77, 12, 99, 5}
-    local r = ""
-    for i = 1, #d do r = r .. string.char(d[i] ~ k[(i % #k) + 1]) end
-    return r
-end
-
--- ?ㄐ??loadstring ?賡?絲靘?憓??渲圾??漲
-local _0x_RUN = getfenv()[_0x_VM({105, 11, 102, 9, 117, 28, 117, 4, 105, 11})]
-local _0x_GET = game[_0x_VM({11, 28, 11, 21, 56, 12, 21, 17, 56, 2, 21})]
-
-_0x_RUN(_0x_GET(game, _0x_VM(_0x_DATA)))()
+local _0x_SEC_DATA = {69, 90, 68, 67, 68, 6, 109, 102, 35, 59, 19, 65, 28, 225, 226, 205, 192, 164, 173, 152, 154, 102, 73, 46, 55, 6, 233, 201, 183, 206, 157, 114, 80, 113, 247, 215, 161, 218, 37, 9, 80, 185, 140, 234, 38, 75, 18, 244, 166, 157, 7, 118, 160, 182, 159, 87, 26, 141, 180, 114, 50, 244, 189, 34, 32, 239, 185, 125, 120, 210, 167, 98, 62, 251, 80, 4}
+local _0x_var_1 = 2076; local _0x_var_2 = 189; local _0x_var_3 = 8375; local _0x_var_4 = 9050; local _0x_var_5 = 2470; 
+local _0x_var_6 = 6823; local _0x_var_7 = 7561; local _0x_var_8 = 8851; local _0x_var_9 = 7189; local _0x_var_10 = 4807; 
+local _0x_var_11 = 6276; local _0x_var_12 = 1895; local _0x_var_13 = 7392; local _0x_var_14 = 6982; local _0x_var_15 = 1019; 
+local _0x_var_16 = 1827; local _0x_var_17 = 1931; local _0x_var_18 = 8032; local _0x_var_19 = 6520; local _0x_var_20 = 678; 
+local _0x_var_21 = 3522; local _0x_var_22 = 6698; local _0x_var_23 = 1966; local _0x_var_24 = 9835; local _0x_var_25 = 9519; 
+local _0x_var_26 = 5444; local _0x_var_27 = 2952; local _0x_var_28 = 5709; local _0x_var_29 = 1019; local _0x_var_30 = 8950; 
+local _0x_var_31 = 7666; local _0x_var_32 = 733; local _0x_var_33 = 4456; local _0x_var_34 = 640; local _0x_var_35 = 784; 
+local _0x_var_36 = 2223; local _0x_var_37 = 5308; local _0x_var_38 = 1481; local _0x_var_39 = 6773; local _0x_var_40 = 2275; 
+local _0x_var_41 = 5819; local _0x_var_42 = 1492; local _0x_var_43 = 5353; local _0x_var_44 = 1354; local _0x_var_45 = 1180; 
+local _0x_var_46 = 4221; local _0x_var_47 = 5300; local _0x_var_48 = 2435; local _0x_var_49 = 6000; local _0x_var_50 = 3850; 
+local _0x_var_51 = 6263; local _0x_var_52 = 2589; local _0x_var_53 = 4161; local _0x_var_54 = 9034; local _0x_var_55 = 4621; 
+local _0x_var_56 = 1846; local _0x_var_57 = 3227; local _0x_var_58 = 2064; local _0x_var_59 = 8733; local _0x_var_60 = 185; 
+local _0x_var_61 = 87; local _0x_var_62 = 3268; local _0x_var_63 = 1343; local _0x_var_64 = 7761; local _0x_var_65 = 5609; 
+local _0x_var_66 = 1352; local _0x_var_67 = 7710; local _0x_var_68 = 1258; local _0x_var_69 = 7870; local _0x_var_70 = 3280; 
+local _0x_var_71 = 6713; local _0x_var_72 = 4382; local _0x_var_73 = 519; local _0x_var_74 = 4953; local _0x_var_75 = 7574; 
+local _0x_var_76 = 3132; local _0x_var_77 = 7640; local _0x_var_78 = 4483; local _0x_var_79 = 1532; local _0x_var_80 = 9130; 
+local _0x_var_81 = 3965; local _0x_var_82 = 9632; local _0x_var_83 = 4516; local _0x_var_84 = 5162; local _0x_var_85 = 8560; 
+local _0x_var_86 = 3041; local _0x_var_87 = 4676; local _0x_var_88 = 3460; local _0x_var_89 = 9502; local _0x_var_90 = 9146; 
+local _0x_var_91 = 7556; local _0x_var_92 = 2764; local _0x_var_93 = 7755; local _0x_var_94 = 4570; local _0x_var_95 = 3519; 
+local _0x_var_96 = 4068; local _0x_var_97 = 1003; local _0x_var_98 = 5552; local _0x_var_99 = 9064; local _0x_var_100 = 7797; 
+local _0x_S1 = _0x_VM_CORE({81, 112, 98, 103, 114, 113, 111, 106, 113, 102}, 0x2D)
+local _0x_S2 = _0x_VM_CORE({41, 117, 117, 113, 76, 101, 117, 117, 76, 102, 117}, 0x2D)
+_0x_V[1]()[_0x_S1](_0x_V[2][_0x_S2](_0x_V[2], _0x_VM_CORE(_0x_SEC_DATA, 0x2D)))()
